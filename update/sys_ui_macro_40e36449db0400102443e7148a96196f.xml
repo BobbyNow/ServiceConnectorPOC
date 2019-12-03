@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>stringify_json</name>
+        <scoped_name>x_snc_con_stringify_json</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 16:09:49</sys_created_on>
+        <sys_id>40e36449db0400102443e7148a96196f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>stringify_json</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_ui_macro_40e36449db0400102443e7148a96196f</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 16:15:08</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<g2:evaluate>
+	var payload = current.payload+'';
+	var tst = JSON.stringify(payload, null, 4);
+	</g2:evaluate>
+	<h1>JSON View</h1>
+		<div id="message" style="white-space: pre; font-family: monospace;">
+		</div>
+	<g2:no_escape>
+
+		<script>
+			var payload = JSON.parse('$[payload]');
+			document.getElementById('message').appendChild(document.createTextNode(JSON.stringify(payload, null, 4)));
+		</script>
+		<br/>
+		
+	</g2:no_escape>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

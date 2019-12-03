@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>f8d4d8d2db7b7300bb528f423a9619da</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>8040c412db3b7300bb528f423a9619ba</answer>
+        <condition table="var__m_sys_decision_input_19d24492db3b7300bb528f423a9619cd">u_impact=3^u_urgency=3^EQ<item display_value="3 - Low" endquery="false" field="u_impact" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item display_value="3 - Low" endquery="false" field="u_urgency" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Connector - Inbound Priority Mapping">19d24492db3b7300bb528f423a9619cd</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_19d24492db3b7300bb528f423a9619cd</input_table>
+        <label>5 - Planning</label>
+        <order>0</order>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-12 02:00:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f8d4d8d2db7b7300bb528f423a9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-12 02:00:05</sys_updated_on>
+    </sys_decision_question>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-12 02:00:05</sys_created_on>
+        <sys_id>70d4d8d2db7b7300bb528f423a9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_metadata_link_70d4d8d2db7b7300bb528f423a9619db</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-12 02:00:05</sys_updated_on>
+        <tablename>sys_decision_question</tablename>
+    </sys_metadata_link>
+</record_update>

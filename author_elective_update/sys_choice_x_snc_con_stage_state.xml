@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_snc_con_stage" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending</label>
+            <language>en</language>
+            <name>x_snc_con_stage</name>
+            <sequence>0</sequence>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:20:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>73b3dcb4db044810bb528f423a961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:20:11</sys_updated_on>
+            <value>Pending</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ready</label>
+            <language>en</language>
+            <name>x_snc_con_stage</name>
+            <sequence>1</sequence>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:20:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3bb3dcb4db044810bb528f423a961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:20:11</sys_updated_on>
+            <value>Ready</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In Progress</label>
+            <language>en</language>
+            <name>x_snc_con_stage</name>
+            <sequence>2</sequence>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:20:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f7b3dcb4db044810bb528f423a961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:20:11</sys_updated_on>
+            <value>In Progress</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete</label>
+            <language>en</language>
+            <name>x_snc_con_stage</name>
+            <sequence>3</sequence>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:20:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84c3dcb4db044810bb528f423a961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:20:11</sys_updated_on>
+            <value>Complete</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Error</label>
+            <language>en</language>
+            <name>x_snc_con_stage</name>
+            <sequence>4</sequence>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:20:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44c3dcb4db044810bb528f423a961984</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:20:11</sys_updated_on>
+            <value>Error</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_snc_con_stage</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:20:11</sys_created_on>
+            <sys_id>29f4b4d0db144c101bdb5a75dc96192c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+            <sys_update_name>sys_choice_x_snc_con_stage_state</sys_update_name>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:20:11</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

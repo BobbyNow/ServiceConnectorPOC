@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD185960ced308c0100cb5569b780a2d99</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>1e9c2d2bdb6f3300bb528f423a9619b5</scope_name>
+        <serialized_content>{"FlowDesigner:FD185960ced308c0100cb5569b780a2d99":{},"FlowDesigner:FD185960ced308c0100cb5569b780a2d99.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD185960ced308c0100cb5569b780a2d99\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Record\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-23 19:06:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d85960cedb08c0102443e7148a961999</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD185960ced308c0100cb5569b780a2d99</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_complex_object_d85960cedb08c0102443e7148a961999</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-23 19:06:49</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

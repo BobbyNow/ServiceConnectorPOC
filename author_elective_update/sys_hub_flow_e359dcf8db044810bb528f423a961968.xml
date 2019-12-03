@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>connector_data_stream_test</internal_name>
+        <label_cache>[{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.record","label":"1➛Record","reference_display":"Record","type":"object","base_type":"object"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.response_headers","label":"1➛response_headers","reference_display":"response_headers","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.error_message","label":"1➛error_message","reference_display":"error_message","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.status_code","label":"1➛status_code","reference_display":"status_code","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.error_code","label":"1➛error_code","reference_display":"error_code","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.ds_output_page_variables","label":"1➛ds_output_page_variables","reference_display":"ds_output_page_variables","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.ds_parsed_stream","label":"1➛ds_parsed_stream","reference_display":"ds_parsed_stream","type":"string","base_type":"string"},{"name":"Created_1.current.value","label":"Trigger➛State Mapping Record➛Value","reference":"","reference_display":"Value","type":"string","base_type":"string","parent_table_name":"x_snc_con_state_mapping","column_name":"value"}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot>1e6e9830db444810bb528f423a9619ee</master_snapshot>
+        <name>Connector Data Stream Test</name>
+        <outputs/>
+        <remote_trigger_id>6a6ed830db444810bb528f423a961952</remote_trigger_id>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 20:44:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e359dcf8db044810bb528f423a961968</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Connector Data Stream Test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_hub_flow_e359dcf8db044810bb528f423a961968</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:10:53</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e359dcf8db044810bb528f423a961968"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e359dcf8db044810bb528f423a961968"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_con_state_mapping">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6a6ed830db444810bb528f423a961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:47</sys_updated_on>
+        <table>x_snc_con_state_mapping</table>
+    </sys_flow_record_trigger>
+    <sys_hub_flow_component action="delete_multiple" query="flow=e359dcf8db044810bb528f423a961968^sys_idNOT IN996e9830db444810bb528f423a96198f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Connector - Data Stream">300958f8db044810bb528f423a9619df</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Connector Data Stream Test">e359dcf8db044810bb528f423a961968</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:42</sys_created_on>
+        <sys_id>996e9830db444810bb528f423a96198f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:10:53</sys_updated_on>
+        <ui_id>04c427c5-015f-44cb-b76e-9adf8b12560b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=996e9830db444810bb528f423a96198f"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=e359dcf8db044810bb528f423a961968^sys_idNOT INea5f1870db444810bb528f423a961963"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Connector Data Stream Test">e359dcf8db044810bb528f423a961968</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:10:53</sys_created_on>
+        <sys_id>ea5f1870db444810bb528f423a961963</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:10:53</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ea5f1870db444810bb528f423a961963"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>ea5f1870db444810bb528f423a961963</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:10:53</sys_created_on>
+        <sys_id>e25f1870db444810bb528f423a961964</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:10:53</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>ea5f1870db444810bb528f423a961963</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:10:53</sys_created_on>
+        <sys_id>e65f1870db444810bb528f423a961964</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:10:53</sys_updated_on>
+        <value>x_snc_con_mapping</value>
+        <variable display_value="">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e359dcf8db044810bb528f423a961968^sys_idNOT INa359dcf8db044810bb528f423a961969"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e359dcf8db044810bb528f423a961968</id>
+        <name>Connector Data Stream Test</name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 20:44:44</sys_created_on>
+        <sys_id>a359dcf8db044810bb528f423a961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 20:44:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=e359dcf8db044810bb528f423a961968^sys_idNOT INdcdad43cdb044810bb528f423a96194f,e4da147cdb044810bb528f423a96192e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Connector Data Stream Test">e359dcf8db044810bb528f423a961968</model>
+        <model_id>e359dcf8db044810bb528f423a961968</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 20:51:04</sys_created_on>
+        <sys_id>dcdad43cdb044810bb528f423a96194f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:10:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Connector Data Stream Test">e359dcf8db044810bb528f423a961968</model>
+        <model_id>e359dcf8db044810bb528f423a961968</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 20:51:04</sys_created_on>
+        <sys_id>e4da147cdb044810bb528f423a96192e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:10:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e359dcf8db044810bb528f423a961968^sys_idNOT IN996e9830db444810bb528f423a96198f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Connector - Data Stream">300958f8db044810bb528f423a9619df</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Connector Data Stream Test">e359dcf8db044810bb528f423a961968</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:42</sys_created_on>
+        <sys_id>996e9830db444810bb528f423a96198f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:10:53</sys_updated_on>
+        <ui_id>04c427c5-015f-44cb-b76e-9adf8b12560b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=996e9830db444810bb528f423a96198f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968^sys_idNOT IN6cda147cdb044810bb528f423a961932,ecda147cdb044810bb528f423a96192c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 20:51:04</sys_created_on>
+        <sys_id>6cda147cdb044810bb528f423a961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968_table_name_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 20:51:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 20:51:04</sys_created_on>
+        <sys_id>ecda147cdb044810bb528f423a96192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968_current_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 20:51:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e359dcf8db044810bb528f423a961968^sys_idNOT IN6e6ed830db444810bb528f423a961953"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>e359dcf8db044810bb528f423a961968</plan_id>
+        <snapshot>1e6e9830db444810bb528f423a9619ee</snapshot>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6e6ed830db444810bb528f423a961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:47</sys_updated_on>
+        <trigger display_value="">6a6ed830db444810bb528f423a961952</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>connector_data_stream_test</internal_name>
+        <label_cache>[{"name":"Created_1.current.value","label":"Trigger➛State Mapping Record➛Value","reference":"","reference_display":"Value","type":"string","base_type":"string","parent_table_name":"x_snc_con_state_mapping","column_name":"value"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.ds_parsed_stream","label":"1➛ds_parsed_stream","reference_display":"ds_parsed_stream","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.ds_output_page_variables","label":"1➛ds_output_page_variables","reference_display":"ds_output_page_variables","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.error_code","label":"1➛error_code","reference_display":"error_code","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.status_code","label":"1➛status_code","reference_display":"status_code","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.error_message","label":"1➛error_message","reference_display":"error_message","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.response_headers","label":"1➛response_headers","reference_display":"response_headers","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.record","label":"1➛Record","reference_display":"Record","type":"object","base_type":"object"}]</label_cache>
+        <master>true</master>
+        <name>Connector Data Stream Test</name>
+        <outputs/>
+        <parent_flow display_value="Connector Data Stream Test">e359dcf8db044810bb528f423a961968</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1e6e9830db444810bb528f423a9619ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:45</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=1e6e9830db444810bb528f423a9619ee"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1e6e9830db444810bb528f423a9619ee"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=1e6e9830db444810bb528f423a9619ee^sys_idNOT INde6ed830db444810bb528f423a961925"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Connector - Data Stream">300958f8db044810bb528f423a9619df</action_type>
+        <action_type_parent display_value="Connector - Data Stream">ff64d8f4db044810bb528f423a961973</action_type_parent>
+        <comment/>
+        <compiled_snapshot>300958f8db044810bb528f423a9619df</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Connector Data Stream Test">1e6e9830db444810bb528f423a9619ee</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:46</sys_created_on>
+        <sys_id>de6ed830db444810bb528f423a961925</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:46</sys_updated_on>
+        <ui_id>04c427c5-015f-44cb-b76e-9adf8b12560b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=de6ed830db444810bb528f423a961925"/>
+    <sys_element_mapping action="delete_multiple" query="id=de6ed830db444810bb528f423a961925"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload</field>
+        <id>de6ed830db444810bb528f423a961925</id>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:46</sys_created_on>
+        <sys_id>9e6ed830db444810bb528f423a961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_300958f8db044810bb528f423a9619df</table>
+        <value>{{Created_1.current.value}}</value>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=1e6e9830db444810bb528f423a9619ee^sys_idNOT IN526ed830db444810bb528f423a961927"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Connector Data Stream Test">1e6e9830db444810bb528f423a9619ee</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:46</sys_created_on>
+        <sys_id>526ed830db444810bb528f423a961927</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:47</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=526ed830db444810bb528f423a961927"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>526ed830db444810bb528f423a961927</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:46</sys_created_on>
+        <sys_id>5e6ed830db444810bb528f423a961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:46</sys_updated_on>
+        <value>x_snc_con_state_mapping</value>
+        <variable display_value="">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>526ed830db444810bb528f423a961927</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:46</sys_created_on>
+        <sys_id>926ed830db444810bb528f423a961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:46</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1e6e9830db444810bb528f423a9619ee^sys_idNOT IN126e9830db444810bb528f423a9619f0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1e6e9830db444810bb528f423a9619ee</id>
+        <name>Connector Data Stream Test</name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:45</sys_created_on>
+        <sys_id>126e9830db444810bb528f423a9619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:45</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=1e6e9830db444810bb528f423a9619ee^sys_idNOT IN1a6ed830db444810bb528f423a961919,9e6e9830db444810bb528f423a9619f1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Connector Data Stream Test">1e6e9830db444810bb528f423a9619ee</model>
+        <model_id>1e6e9830db444810bb528f423a9619ee</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:46</sys_created_on>
+        <sys_id>1a6ed830db444810bb528f423a961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Connector Data Stream Test">1e6e9830db444810bb528f423a9619ee</model>
+        <model_id>1e6e9830db444810bb528f423a9619ee</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:45</sys_created_on>
+        <sys_id>9e6e9830db444810bb528f423a9619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1e6e9830db444810bb528f423a9619ee^sys_idNOT INde6ed830db444810bb528f423a961925"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Connector - Data Stream">300958f8db044810bb528f423a9619df</action_type>
+        <action_type_parent display_value="Connector - Data Stream">ff64d8f4db044810bb528f423a961973</action_type_parent>
+        <comment/>
+        <compiled_snapshot>300958f8db044810bb528f423a9619df</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Connector Data Stream Test">1e6e9830db444810bb528f423a9619ee</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:46</sys_created_on>
+        <sys_id>de6ed830db444810bb528f423a961925</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:46</sys_updated_on>
+        <ui_id>04c427c5-015f-44cb-b76e-9adf8b12560b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=de6ed830db444810bb528f423a961925"/>
+    <sys_element_mapping action="delete_multiple" query="id=de6ed830db444810bb528f423a961925"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload</field>
+        <id>de6ed830db444810bb528f423a961925</id>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:46</sys_created_on>
+        <sys_id>9e6ed830db444810bb528f423a961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_300958f8db044810bb528f423a9619df</table>
+        <value>{{Created_1.current.value}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee^sys_idNOT IN966e9830db444810bb528f423a9619f7,d66ed830db444810bb528f423a96191e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:46</sys_created_on>
+        <sys_id>966e9830db444810bb528f423a9619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee_current_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:06:46</sys_created_on>
+        <sys_id>d66ed830db444810bb528f423a96191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee_table_name_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:06:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</application>
+        <file_path/>
+        <instance_id>63489765db7633403050ac44d49619d5</instance_id>
+        <instance_name>serviceconnectaus</instance_name>
+        <name>sys_hub_flow_e359dcf8db044810bb528f423a961968</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;connector_data_stream_test&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.record","label":"1➛Record","reference_display":"Record","type":"object","base_type":"object"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.response_headers","label":"1➛response_headers","reference_display":"response_headers","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.error_message","label":"1➛error_message","reference_display":"error_message","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.status_code","label":"1➛status_code","reference_display":"status_code","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.error_code","label":"1➛error_code","reference_display":"error_code","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.ds_output_page_variables","label":"1➛ds_output_page_variables","reference_display":"ds_output_page_variables","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.ds_parsed_stream","label":"1➛ds_parsed_stream","reference_display":"ds_parsed_stream","type":"string","base_type":"string"},{"name":"Created_1.current.value","label":"Trigger➛State Mapping Record➛Value","reference":"","reference_display":"Value","type":"string","base_type":"string","parent_table_name":"x_snc_con_state_mapping","column_name":"value"}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot&gt;1e6e9830db444810bb528f423a9619ee&lt;/master_snapshot&gt;&lt;name&gt;Connector Data Stream Test&lt;/name&gt;&lt;outputs/&gt;&lt;remote_trigger_id&gt;6a6ed830db444810bb528f423a961952&lt;/remote_trigger_id&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 20:44:44&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e359dcf8db044810bb528f423a961968&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Connector Data Stream Test&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Connector" source="x_snc_con"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_e359dcf8db044810bb528f423a961968&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:10:53&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=e359dcf8db044810bb528f423a961968"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=e359dcf8db044810bb528f423a961968"/&gt;&lt;sys_flow_record_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;condition table="x_snc_con_state_mapping"&gt;^EQ&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;name/&gt;&lt;on_delete&gt;false&lt;/on_delete&gt;&lt;on_insert&gt;true&lt;/on_insert&gt;&lt;on_update&gt;false&lt;/on_update&gt;&lt;run_flow_in&gt;background&lt;/run_flow_in&gt;&lt;run_when_setting&gt;both&lt;/run_when_setting&gt;&lt;run_when_user_list/&gt;&lt;run_when_user_setting&gt;any&lt;/run_when_user_setting&gt;&lt;sys_class_name&gt;sys_flow_record_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6a6ed830db444810bb528f423a961952&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:47&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_con_state_mapping&lt;/table&gt;&lt;/sys_flow_record_trigger&gt;&lt;sys_hub_flow_component action="delete_multiple" query="flow=e359dcf8db044810bb528f423a961968^sys_idNOT IN996e9830db444810bb528f423a96198f"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Connector - Data Stream"&gt;300958f8db044810bb528f423a9619df&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Connector Data Stream Test"&gt;e359dcf8db044810bb528f423a961968&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:42&lt;/sys_created_on&gt;&lt;sys_id&gt;996e9830db444810bb528f423a96198f&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:10:53&lt;/sys_updated_on&gt;&lt;ui_id&gt;04c427c5-015f-44cb-b76e-9adf8b12560b&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=996e9830db444810bb528f423a96198f"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=e359dcf8db044810bb528f423a961968^sys_idNOT INea5f1870db444810bb528f423a961963"/&gt;&lt;sys_hub_trigger_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Connector Data Stream Test"&gt;e359dcf8db044810bb528f423a961968&lt;/flow&gt;&lt;name&gt;Created&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:10:53&lt;/sys_created_on&gt;&lt;sys_id&gt;ea5f1870db444810bb528f423a961963&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:10:53&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created"&gt;798916a0c31322002841b63b12d3ae7c&lt;/trigger_definition&gt;&lt;trigger_inputs/&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=ea5f1870db444810bb528f423a961963"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;ea5f1870db444810bb528f423a961963&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:10:53&lt;/sys_created_on&gt;&lt;sys_id&gt;e25f1870db444810bb528f423a961964&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:10:53&lt;/sys_updated_on&gt;&lt;value&gt;^EQ&lt;/value&gt;&lt;variable display_value=""&gt;66aadea0c31322002841b63b12d3aebf&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;ea5f1870db444810bb528f423a961963&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:10:53&lt;/sys_created_on&gt;&lt;sys_id&gt;e65f1870db444810bb528f423a961964&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:10:53&lt;/sys_updated_on&gt;&lt;value&gt;x_snc_con_mapping&lt;/value&gt;&lt;variable display_value=""&gt;cfca92e0c31322002841b63b12d3ae00&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=e359dcf8db044810bb528f423a961968^sys_idNOT INa359dcf8db044810bb528f423a961969"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;e359dcf8db044810bb528f423a961968&lt;/id&gt;&lt;name&gt;Connector Data Stream Test&lt;/name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 20:44:44&lt;/sys_created_on&gt;&lt;sys_id&gt;a359dcf8db044810bb528f423a961969&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 20:44:44&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=e359dcf8db044810bb528f423a961968^sys_idNOT INdcdad43cdb044810bb528f423a96194f,e4da147cdb044810bb528f423a96192e"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Connector Data Stream Test"&gt;e359dcf8db044810bb528f423a961968&lt;/model&gt;&lt;model_id&gt;e359dcf8db044810bb528f423a961968&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 20:51:04&lt;/sys_created_on&gt;&lt;sys_id&gt;dcdad43cdb044810bb528f423a96194f&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:10:52&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Connector Data Stream Test"&gt;e359dcf8db044810bb528f423a961968&lt;/model&gt;&lt;model_id&gt;e359dcf8db044810bb528f423a961968&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 20:51:04&lt;/sys_created_on&gt;&lt;sys_id&gt;e4da147cdb044810bb528f423a96192e&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:10:53&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=e359dcf8db044810bb528f423a961968^sys_idNOT IN996e9830db444810bb528f423a96198f"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Connector - Data Stream"&gt;300958f8db044810bb528f423a9619df&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Connector Data Stream Test"&gt;e359dcf8db044810bb528f423a961968&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:42&lt;/sys_created_on&gt;&lt;sys_id&gt;996e9830db444810bb528f423a96198f&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:10:53&lt;/sys_updated_on&gt;&lt;ui_id&gt;04c427c5-015f-44cb-b76e-9adf8b12560b&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=996e9830db444810bb528f423a96198f"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968^sys_idNOT IN6cda147cdb044810bb528f423a961932,ecda147cdb044810bb528f423a96192c"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 20:51:04&lt;/sys_created_on&gt;&lt;sys_id&gt;6cda147cdb044810bb528f423a961932&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Table Name&lt;/sys_name&gt;&lt;sys_package display_value="Connector" source="x_snc_con"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968_table_name_en&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 20:51:04&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 20:51:04&lt;/sys_created_on&gt;&lt;sys_id&gt;ecda147cdb044810bb528f423a96192c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Record&lt;/sys_name&gt;&lt;sys_package display_value="Connector" source="x_snc_con"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_var__m_sys_hub_flow_input_e359dcf8db044810bb528f423a961968_current_en&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 20:51:04&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=e359dcf8db044810bb528f423a961968^sys_idNOT IN6e6ed830db444810bb528f423a961953"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.OncePerRecord&lt;/binding_strategy&gt;&lt;plan/&gt;&lt;plan_id&gt;e359dcf8db044810bb528f423a961968&lt;/plan_id&gt;&lt;snapshot&gt;1e6e9830db444810bb528f423a9619ee&lt;/snapshot&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6e6ed830db444810bb528f423a961953&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:47&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;6a6ed830db444810bb528f423a961952&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;connector_data_stream_test&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Created_1.current.value","label":"Trigger➛State Mapping Record➛Value","reference":"","reference_display":"Value","type":"string","base_type":"string","parent_table_name":"x_snc_con_state_mapping","column_name":"value"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.ds_parsed_stream","label":"1➛ds_parsed_stream","reference_display":"ds_parsed_stream","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.ds_output_page_variables","label":"1➛ds_output_page_variables","reference_display":"ds_output_page_variables","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.error_code","label":"1➛error_code","reference_display":"error_code","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.status_code","label":"1➛status_code","reference_display":"status_code","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.error_message","label":"1➛error_message","reference_display":"error_message","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.response_headers","label":"1➛response_headers","reference_display":"response_headers","type":"string","base_type":"string"},{"name":"04c427c5-015f-44cb-b76e-9adf8b12560b.record","label":"1➛Record","reference_display":"Record","type":"object","base_type":"object"}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Connector Data Stream Test&lt;/name&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Connector Data Stream Test"&gt;e359dcf8db044810bb528f423a961968&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:45&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1e6e9830db444810bb528f423a9619ee&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:45&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=1e6e9830db444810bb528f423a9619ee"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=1e6e9830db444810bb528f423a9619ee"/&gt;&lt;sys_hub_flow_component action="delete_multiple" query="flow=1e6e9830db444810bb528f423a9619ee^sys_idNOT INde6ed830db444810bb528f423a961925"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Connector - Data Stream"&gt;300958f8db044810bb528f423a9619df&lt;/action_type&gt;&lt;action_type_parent display_value="Connector - Data Stream"&gt;ff64d8f4db044810bb528f423a961973&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;300958f8db044810bb528f423a9619df&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Connector Data Stream Test"&gt;1e6e9830db444810bb528f423a9619ee&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:46&lt;/sys_created_on&gt;&lt;sys_id&gt;de6ed830db444810bb528f423a961925&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:46&lt;/sys_updated_on&gt;&lt;ui_id&gt;04c427c5-015f-44cb-b76e-9adf8b12560b&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=de6ed830db444810bb528f423a961925"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=de6ed830db444810bb528f423a961925"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;payload&lt;/field&gt;&lt;id&gt;de6ed830db444810bb528f423a961925&lt;/id&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:46&lt;/sys_created_on&gt;&lt;sys_id&gt;9e6ed830db444810bb528f423a961926&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:46&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_300958f8db044810bb528f423a9619df&lt;/table&gt;&lt;value&gt;{{Created_1.current.value}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=1e6e9830db444810bb528f423a9619ee^sys_idNOT IN526ed830db444810bb528f423a961927"/&gt;&lt;sys_hub_trigger_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Connector Data Stream Test"&gt;1e6e9830db444810bb528f423a9619ee&lt;/flow&gt;&lt;name&gt;Created&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:46&lt;/sys_created_on&gt;&lt;sys_id&gt;526ed830db444810bb528f423a961927&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:47&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created"&gt;798916a0c31322002841b63b12d3ae7c&lt;/trigger_definition&gt;&lt;trigger_inputs/&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=526ed830db444810bb528f423a961927"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;526ed830db444810bb528f423a961927&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:46&lt;/sys_created_on&gt;&lt;sys_id&gt;5e6ed830db444810bb528f423a961928&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:46&lt;/sys_updated_on&gt;&lt;value&gt;x_snc_con_state_mapping&lt;/value&gt;&lt;variable display_value=""&gt;cfca92e0c31322002841b63b12d3ae00&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;526ed830db444810bb528f423a961927&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:46&lt;/sys_created_on&gt;&lt;sys_id&gt;926ed830db444810bb528f423a961928&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:46&lt;/sys_updated_on&gt;&lt;value&gt;^EQ&lt;/value&gt;&lt;variable display_value=""&gt;66aadea0c31322002841b63b12d3aebf&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=1e6e9830db444810bb528f423a9619ee^sys_idNOT IN126e9830db444810bb528f423a9619f0"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;1e6e9830db444810bb528f423a9619ee&lt;/id&gt;&lt;name&gt;Connector Data Stream Test&lt;/name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:45&lt;/sys_created_on&gt;&lt;sys_id&gt;126e9830db444810bb528f423a9619f0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:45&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=1e6e9830db444810bb528f423a9619ee^sys_idNOT IN1a6ed830db444810bb528f423a961919,9e6e9830db444810bb528f423a9619f1"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Connector Data Stream Test"&gt;1e6e9830db444810bb528f423a9619ee&lt;/model&gt;&lt;model_id&gt;1e6e9830db444810bb528f423a9619ee&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:46&lt;/sys_created_on&gt;&lt;sys_id&gt;1a6ed830db444810bb528f423a961919&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:46&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Connector Data Stream Test"&gt;1e6e9830db444810bb528f423a9619ee&lt;/model&gt;&lt;model_id&gt;1e6e9830db444810bb528f423a9619ee&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:45&lt;/sys_created_on&gt;&lt;sys_id&gt;9e6e9830db444810bb528f423a9619f1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:45&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=1e6e9830db444810bb528f423a9619ee^sys_idNOT INde6ed830db444810bb528f423a961925"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Connector - Data Stream"&gt;300958f8db044810bb528f423a9619df&lt;/action_type&gt;&lt;action_type_parent display_value="Connector - Data Stream"&gt;ff64d8f4db044810bb528f423a961973&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;300958f8db044810bb528f423a9619df&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Connector Data Stream Test"&gt;1e6e9830db444810bb528f423a9619ee&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:46&lt;/sys_created_on&gt;&lt;sys_id&gt;de6ed830db444810bb528f423a961925&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:46&lt;/sys_updated_on&gt;&lt;ui_id&gt;04c427c5-015f-44cb-b76e-9adf8b12560b&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=de6ed830db444810bb528f423a961925"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=de6ed830db444810bb528f423a961925"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;payload&lt;/field&gt;&lt;id&gt;de6ed830db444810bb528f423a961925&lt;/id&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:46&lt;/sys_created_on&gt;&lt;sys_id&gt;9e6ed830db444810bb528f423a961926&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:46&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_300958f8db044810bb528f423a9619df&lt;/table&gt;&lt;value&gt;{{Created_1.current.value}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee^sys_idNOT IN966e9830db444810bb528f423a9619f7,d66ed830db444810bb528f423a96191e"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:46&lt;/sys_created_on&gt;&lt;sys_id&gt;966e9830db444810bb528f423a9619f7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Record&lt;/sys_name&gt;&lt;sys_package display_value="Connector" source="x_snc_con"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee_current_en&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:46&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 21:06:46&lt;/sys_created_on&gt;&lt;sys_id&gt;d66ed830db444810bb528f423a96191e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Table Name&lt;/sys_name&gt;&lt;sys_package display_value="Connector" source="x_snc_con"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_var__m_sys_hub_flow_input_1e6e9830db444810bb528f423a9619ee_table_name_en&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-19 21:06:46&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-445858465</payload_hash>
+        <record_name>Connector Data Stream Test</record_name>
+        <reverted_from/>
+        <source>169c2d2bdb6f3300bb528f423a9619b8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:10:53</sys_created_on>
+        <sys_id>fa5f1870db444810bb528f423a961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16d4b5d129c0000001</sys_recorded_at>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:10:53</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>765f1870754448105852d5a690c05082</update_guid>
+        <update_guid_history>765f1870754448105852d5a690c05082:-445858465,6a6ed830fe444810a704ae083c83f889:-1174692253,026e98309a4448105d8945ea60ad22e6:-865308570,e56e98307b444810c4bca0345d08f2a2:-1512551338,2adb54bc6f04481000af4c49a29798e7:-404724503,ecda147c850448103f8944f3989e0449:362832450,6f59dcf8ba04481069c3d29ee68adc6b:1866743257</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 21:35:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>010484e032db408b825f3556b44a8d99</sys_id>
+        <sys_metadata>e359dcf8db044810bb528f423a961968</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Connector Data Stream Test</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_scope_delete display_value="">0378b0684cc94906889237221c6da631</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_e359dcf8db044810bb528f423a961968</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_e359dcf8db044810bb528f423a961968">fa5f1870db444810bb528f423a961982</sys_update_version>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 21:35:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

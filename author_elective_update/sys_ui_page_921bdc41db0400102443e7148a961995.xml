@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="DELETE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_snc_con_test.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<g:evaluate>
+	var gr = new GlideRecord('x_snc_con_stage');
+	gr.get('fd839cb4db044810bb528f423a96197f');
+	var payload = gr.payload+'';
+	var tst = JSON.stringify(payload, null, 4);
+</g:evaluate>
+		<div id="message" style="white-space: pre; font-family: monospace;">
+		</div>
+	<g:no_escape>
+
+		<script>
+			var payload = JSON.parse('${payload}');
+			document.getElementById('message').appendChild(document.createTextNode(JSON.stringify(payload, null, 4)));
+		</script>
+		<br/>
+		
+	</g:no_escape>
+</j:jelly>]]></html>
+        <name>test</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 15:33:57</sys_created_on>
+        <sys_id>921bdc41db0400102443e7148a961995</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_ui_page_921bdc41db0400102443e7148a961995</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 16:08:26</sys_updated_on>
+    </sys_ui_page>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</application>
+        <file_path/>
+        <instance_id>63489765db7633403050ac44d49619d5</instance_id>
+        <instance_name>serviceconnectaus</instance_name>
+        <name>sys_ui_page_921bdc41db0400102443e7148a961995</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script/&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint&gt;x_snc_con_test.do&lt;/endpoint&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+&lt;g:evaluate&gt;
+	var gr = new GlideRecord('x_snc_con_stage');
+	gr.get('fd839cb4db044810bb528f423a96197f');
+	var payload = gr.payload+'';
+	var tst = JSON.stringify(payload, null, 4);
+&lt;/g:evaluate&gt;
+		&lt;div id="message" style="white-space: pre; font-family: monospace;"&gt;
+		&lt;/div&gt;
+	&lt;g:no_escape&gt;
+
+		&lt;script&gt;
+			var payload = JSON.parse('${payload}');
+			document.getElementById('message').appendChild(document.createTextNode(JSON.stringify(payload, null, 4)));
+		&lt;/script&gt;
+		&lt;br/&gt;
+		
+	&lt;/g:no_escape&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;test&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 15:33:57&lt;/sys_created_on&gt;&lt;sys_id&gt;921bdc41db0400102443e7148a961995&lt;/sys_id&gt;&lt;sys_mod_count&gt;35&lt;/sys_mod_count&gt;&lt;sys_name&gt;test&lt;/sys_name&gt;&lt;sys_package display_value="Connector" source="x_snc_con"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_921bdc41db0400102443e7148a961995&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 16:08:26&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>83867358</payload_hash>
+        <record_name>test</record_name>
+        <reverted_from/>
+        <source>169c2d2bdb6f3300bb528f423a9619b8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 16:08:26</sys_created_on>
+        <sys_id>71b36049db0400102443e7148a961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16d4f6e85f40000001</sys_recorded_at>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 16:08:26</sys_updated_on>
+        <type>UI Page</type>
+        <update_guid>f9b3604907040010cbaf4fa703ccff66</update_guid>
+        <update_guid_history>f9b3604907040010cbaf4fa703ccff66:83867358,5a936049590400108f7d8b51f63da71a:1696330676,7f63ec09dd0400105b6bfa8b49d219f9:-798973032,3553ec0952040010072d3653e2215fa0:-2061029545,39132c099b040010842b181609c99f46:1096356564,a7d26809e3040010d9d1b22c4a38d32b:-702867048,cbb2a00903040010e608add89ac46917:1991599057,e34228c572040010d33811264ab6c026:721532063,9291a4c5cd04001084191e9e9cdffb28:502631071,576124c5cc040010e9c084e515c35b96:1558658464,1f51a0c5c20400100f580603dc7d92c1:1419593867,8051a0c59f040010656127a5433788f2:1505663984,1321a0c5320400109069ab674f9abea0:2028508315,6d01ec85ba04001024fdd596c6c63358:611875496,fbe0e8852b040010c89e900e24d2d7fb:-731652158,e0506c45e50400101140284166ebaa90:-1434357026,28006085f5040010acfc54a6c643ca7a:926489091,089f5c45e50400107ec2734af917d40d:-441952731,996fd445b404001027f8254314185aaa:1546145112,4d2f1445e5040010133d7331bbe2142e:1687557608,8eeed0454f0400105f9f96e60be8e795:-1171395192,e57e1c053404001044ed99c91a7f3a66:-1158457537,c15e98056f040010a7a17e84a8fcf0b4:-1253467037,0e3ed4055a0400104656e831c671adb4:-1076817129,0a0ed405670400101133aa6f5c4e63ab:838560725,dbed9405650400109e2d7b416f0cd31f:-1369917134,23ad1cc10f0400107db1cd350eebf7e9:-15117934,433d58c1bb04001065858c607368b829:1312460591,31fc18c17d0400100b47420b9577f9b8:-770993109,d28c90c1a704001057de60861985d920:1698251357,5f6c50c1f40400109803509cebbadbb7:-13155361,895c5c81fd0400107610a9b336bbfa4c:679029277,ea1c1c81d0040010d54afda33a40f530:732476931,0e0c9881cf040010a8eb7e4ce9e82a65:1665713383,12eb98814b0400109c7250cc26f3333d:732476931,b0db54814d040010307d0b6c75d42193:1709635122</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 16:29:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_page">sys_ui_page</sys_db_object>
+        <sys_id>426576e514364898a16e9463eb1b1440</sys_id>
+        <sys_metadata>921bdc41db0400102443e7148a961995</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_scope_delete display_value="">0378b0684cc94906889237221c6da631</sys_scope_delete>
+        <sys_update_name>sys_ui_page_921bdc41db0400102443e7148a961995</sys_update_name>
+        <sys_update_version display_value="sys_ui_page_921bdc41db0400102443e7148a961995">71b36049db0400102443e7148a961967</sys_update_version>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 16:29:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

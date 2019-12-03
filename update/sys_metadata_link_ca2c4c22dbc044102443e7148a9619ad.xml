@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e4d670ccdb00c410bb528f423a96199c</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="x_snc_con_field_mapping"&gt;
+    &lt;x_snc_con_field_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;advanced&gt;false&lt;/advanced&gt;
+        &lt;display_value&gt;true&lt;/display_value&gt;
+        &lt;field&gt;contact_type&lt;/field&gt;
+        &lt;mandatory&gt;false&lt;/mandatory&gt;
+        &lt;script&gt;&lt;![CDATA[/* This script must return the desired value for the field  */
+(function() {
+    var answer = current.getValue(field);
+    //Your code here
+    return answer;
+})(current, field);]]&gt;&lt;/script&gt;
+        &lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2019-09-17 14:57:59&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;e4d670ccdb00c410bb528f423a96199c&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_overrides/&gt;
+        &lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2019-09-19 16:20:25&lt;/sys_updated_on&gt;
+        &lt;table&gt;incident&lt;/table&gt;
+    &lt;/x_snc_con_field_mapping&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 06:16:23</sys_created_on>
+        <sys_id>ca2c4c22dbc044102443e7148a9619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2019-09-17 07:57:59</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_metadata_link_ca2c4c22dbc044102443e7148a9619ad</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 06:16:23</sys_updated_on>
+        <tablename>x_snc_con_field_mapping</tablename>
+    </sys_metadata_link>
+</record_update>

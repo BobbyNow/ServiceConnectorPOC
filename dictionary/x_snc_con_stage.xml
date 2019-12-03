@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Stage" max_length="40" name="x_snc_con_stage" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Activity" max_length="40" name="activity" type="journal_input"/>
+        <element label="Endpoint" max_length="32" name="endpoint" reference="x_snc_con_endpoint" type="reference"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Payload" max_length="16777215" name="payload" type="json"/>
+        <element choice="1" label="Response status" max_length="40" name="response_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Success" sequence="0" value="200"/>
+                <element inactive_on_update="false" label="Created" sequence="1" value="201"/>
+                <element inactive_on_update="false" label="Bad Request" sequence="2" value="400"/>
+                <element inactive_on_update="false" label="Unauthorized" sequence="3" value="401"/>
+                <element inactive_on_update="false" label="Forbidden" sequence="4" value="403"/>
+                <element inactive_on_update="false" label="Not Found" sequence="5" value="404"/>
+                <element inactive_on_update="false" label="Method Not Allowed" sequence="6" value="405"/>
+                <element inactive_on_update="false" label="Not Acceptable" sequence="7" value="406"/>
+                <element inactive_on_update="false" label="Method Failed" sequence="8" value="500"/>
+                <element inactive_on_update="false" label="Unsupported Media Type" sequence="8" value="415"/>
+            </choice>
+        </element>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="Pending"/>
+                <element inactive_on_update="false" label="Ready" sequence="1" value="Ready"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="In Progress"/>
+                <element inactive_on_update="false" label="Complete" sequence="3" value="Complete"/>
+                <element inactive_on_update="false" label="Error" sequence="4" value="Error"/>
+            </choice>
+        </element>
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element label="Domain Path" max_length="255" name="sys_domain_path" type="domain_path"/>
+        <element label="Table" max_length="80" name="table" type="table_name"/>
+        <index name="index">
+            <element name="endpoint"/>
+        </index>
+        <index name="index2">
+            <element name="sys_domain"/>
+        </index>
+        <index name="index3">
+            <element name="sys_domain_path"/>
+        </index>
+    </element>
+</database>

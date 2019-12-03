@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_group">
+    <gsw_content_group action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <checksum>8iA9KYYg3GzCk5xTMG7loP/WX2Q=</checksum>
+        <child_can_have_roles>false</child_can_have_roles>
+        <children_layout>1</children_layout>
+        <dependent_on_contents/>
+        <dependent_on_plugins/>
+        <dependent_on_plugins_ids/>
+        <description><![CDATA[<p>Verify the pre-defined field mappings for each table, as well as state and priority mapping.</p>]]></description>
+        <display_child_max_num/>
+        <done_status_text/>
+        <hide_getting_started>false</hide_getting_started>
+        <icon/>
+        <implicit_dependent_on/>
+        <implicit_plugin_dependencies/>
+        <is_root_content>false</is_root_content>
+        <order>200</order>
+        <parent display_value="Connector Setup">d490f3e0dbdc8c101bdb5a75dc9619c8</parent>
+        <parents>d490f3e0dbdc8c101bdb5a75dc9619c8</parents>
+        <progress_text/>
+        <roles/>
+        <root_intro_frame_link/>
+        <root_parent display_value="Connector Setup">d490f3e0dbdc8c101bdb5a75dc9619c8</root_parent>
+        <skippable>true</skippable>
+        <supports_child_content>true</supports_child_content>
+        <sys_class_name>gsw_content_group</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-02 04:36:19</sys_created_on>
+        <sys_id>3618b72cdbdc8c101bdb5a75dc961913</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Configure Outbound Mapping</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>gsw_content_group_3618b72cdbdc8c101bdb5a75dc961913</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-02 04:43:09</sys_updated_on>
+        <title>Configure Outbound Mapping</title>
+        <weight>1</weight>
+    </gsw_content_group>
+    <sys_translated_text action="delete_multiple" query="documentkey=3618b72cdbdc8c101bdb5a75dc961913"/>
+</record_update>

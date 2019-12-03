@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="Status" label="Status" language="en" table="var__m_sys_hub_action_output_14859c25db7fb700bb528f423a9619e2">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>Status</element>
+            <help/>
+            <hint/>
+            <label>Status</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_14859c25db7fb700bb528f423a9619e2</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-09 18:07:37</sys_created_on>
+            <sys_id>ac85dc25db7fb700bb528f423a961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Status</sys_name>
+            <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_output_14859c25db7fb700bb528f423a9619e2_Status_en</sys_update_name>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-09 18:07:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

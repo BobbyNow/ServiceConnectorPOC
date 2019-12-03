@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_information">
+    <gsw_content_information action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <article/>
+        <best_practice_acceptable>false</best_practice_acceptable>
+        <dependent_on_contents/>
+        <dependent_on_plugins/>
+        <dependent_on_plugins_ids/>
+        <description/>
+        <embedded_help_qualifier/>
+        <end_point>swp?spa=1&amp;table=x_snc_con_field_mapping&amp;id=lf&amp;filter=table%3Dincident</end_point>
+        <end_point_open_mode>1</end_point_open_mode>
+        <end_point_type>1</end_point_type>
+        <field/>
+        <filter/>
+        <filter_result/>
+        <implicit_dependent_on/>
+        <implicit_plugin_dependencies/>
+        <is_dynamic>false</is_dynamic>
+        <more_info_available>false</more_info_available>
+        <more_info_html/>
+        <order>100</order>
+        <parent display_value="Configure Outbound Mapping">3618b72cdbdc8c101bdb5a75dc961913</parent>
+        <parents>3618b72cdbdc8c101bdb5a75dc961913,d490f3e0dbdc8c101bdb5a75dc9619c8</parents>
+        <plugin_id/>
+        <property_name/>
+        <property_value/>
+        <quick_startable>false</quick_startable>
+        <root_parent display_value="Connector Setup">d490f3e0dbdc8c101bdb5a75dc9619c8</root_parent>
+        <skippable>false</skippable>
+        <supports_child_content>false</supports_child_content>
+        <sys_class_name>gsw_content_information</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-02 04:37:44</sys_created_on>
+        <sys_id>1b68fbe8dbdc8c101bdb5a75dc961915</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Outbound Incident field Mapping</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>gsw_content_information_1b68fbe8dbdc8c101bdb5a75dc961915</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-02 05:05:55</sys_updated_on>
+        <table/>
+        <title>Outbound Incident field Mapping</title>
+        <weight>1</weight>
+    </gsw_content_information>
+    <sys_translated_text action="delete_multiple" query="documentkey=1b68fbe8dbdc8c101bdb5a75dc961915"/>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="table" label="Table" language="en" table="x_snc_con_field_mapping">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>table</element>
+            <help/>
+            <hint/>
+            <label>Table</label>
+            <language>en</language>
+            <name>x_snc_con_field_mapping</name>
+            <plural>Tables</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-17 14:51:00</sys_created_on>
+            <sys_id>2bf3fc9cdbd04c101bdb5a75dc961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Table</sys_name>
+            <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_con_field_mapping_table_en</sys_update_name>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-17 14:51:00</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

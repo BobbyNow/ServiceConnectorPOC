@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Connector" section_id="900d041edb3b7300bb528f423a96196b" sys_domain="global" table="sys_decision_question" version="3" view="connector">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>label</element>
+            <position>0</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-12 01:26:47</sys_created_on>
+            <sys_id>c13d841edb3b7300bb528f423a961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-12 01:26:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>order</element>
+            <position>1</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-12 01:26:47</sys_created_on>
+            <sys_id>cd3d841edb3b7300bb528f423a961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-12 01:26:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-12 01:26:47</sys_created_on>
+            <sys_id>413d841edb3b7300bb528f423a961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-12 01:26:47</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>answer</element>
+            <position>3</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-12 01:26:47</sys_created_on>
+            <sys_id>c13d841edb3b7300bb528f423a961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-12 01:26:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>default_answer</element>
+            <position>4</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-12 01:26:47</sys_created_on>
+            <sys_id>453d841edb3b7300bb528f423a961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-12 01:26:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-12 01:26:47</sys_created_on>
+            <sys_id>c53d841edb3b7300bb528f423a961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-12 01:26:47</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>condition</element>
+            <position>6</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-12 01:26:47</sys_created_on>
+            <sys_id>493d841edb3b7300bb528f423a961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-12 01:26:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Connector</caption>
+            <header>false</header>
+            <name>sys_decision_question</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-12 01:25:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>900d041edb3b7300bb528f423a96196b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Connector</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+            <sys_update_name>sys_ui_section_900d041edb3b7300bb528f423a96196b</sys_update_name>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-12 01:25:55</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Connector" name="connector">88eb40dadb3b7300bb528f423a9619d6</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</application>
+        <file_path/>
+        <instance_id>63489765db7633403050ac44d49619d5</instance_id>
+        <instance_name>serviceconnectaus</instance_name>
+        <name>sys_ui_section_900d041edb3b7300bb528f423a96196b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Connector" section_id="900d041edb3b7300bb528f423a96196b" sys_domain="global" table="sys_decision_question" version="3" view="connector"><sys_ui_element action="INSERT_OR_UPDATE"><element>label</element><position>0</position><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-12 01:26:47</sys_created_on><sys_id>c13d841edb3b7300bb528f423a961960</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-12 01:26:47</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>order</element><position>1</position><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-12 01:26:47</sys_created_on><sys_id>cd3d841edb3b7300bb528f423a961960</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-12 01:26:47</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-12 01:26:47</sys_created_on><sys_id>413d841edb3b7300bb528f423a961961</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-12 01:26:47</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>answer</element><position>3</position><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-12 01:26:47</sys_created_on><sys_id>c13d841edb3b7300bb528f423a961961</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-12 01:26:47</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>default_answer</element><position>4</position><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-12 01:26:47</sys_created_on><sys_id>453d841edb3b7300bb528f423a961961</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-12 01:26:47</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>5</position><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-12 01:26:47</sys_created_on><sys_id>c53d841edb3b7300bb528f423a961961</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-12 01:26:47</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>condition</element><position>6</position><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-12 01:26:47</sys_created_on><sys_id>493d841edb3b7300bb528f423a961961</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Connector" display_value="Connector" name="sys_decision_question" sys_domain="global" view="88eb40dadb3b7300bb528f423a9619d6">900d041edb3b7300bb528f423a96196b</sys_ui_section><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-12 01:26:47</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Connector</caption><header>false</header><name>sys_decision_question</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-12 01:25:55</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>900d041edb3b7300bb528f423a96196b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Connector</sys_name><sys_overrides/><sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package><sys_policy/><sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope><sys_update_name>sys_ui_section_900d041edb3b7300bb528f423a96196b</sys_update_name><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-12 01:25:55</sys_updated_on><sys_user/><title>false</title><view display_value="Connector" name="connector">88eb40dadb3b7300bb528f423a9619d6</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>155747007</payload_hash>
+        <record_name>Decision</record_name>
+        <reverted_from/>
+        <source>169c2d2bdb6f3300bb528f423a9619b8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-12 01:26:47</sys_created_on>
+        <sys_id>0d3d841edb3b7300bb528f423a961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16d2314784f0000001</sys_recorded_at>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-12 01:26:47</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>853d841ec23b73001c41d62c0a539e63</update_guid>
+        <update_guid_history>853d841ec23b73001c41d62c0a539e63:155747007</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-12 01:28:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>0d4c56ec50ec4e3696e04bbdfca1a7f9</sys_id>
+        <sys_metadata>900d041edb3b7300bb528f423a96196b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Connector</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_parent display_value="">132ff827db2b3300bb528f423a9619a4</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_scope_delete display_value="">0378b0684cc94906889237221c6da631</sys_scope_delete>
+        <sys_update_name>sys_ui_section_900d041edb3b7300bb528f423a96196b</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_900d041edb3b7300bb528f423a96196b">0d3d841edb3b7300bb528f423a961963</sys_update_version>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-12 01:28:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

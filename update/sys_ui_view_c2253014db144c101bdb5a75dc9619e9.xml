@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>connector</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-30 19:44:53</sys_created_on>
+        <sys_id>c2253014db144c101bdb5a75dc9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Connector</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_ui_view_c2253014db144c101bdb5a75dc9619e9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-30 19:44:53</sys_updated_on>
+        <title>Connector</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

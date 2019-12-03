@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Endpoint" max_length="40" name="x_snc_con_endpoint" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Api key" max_length="32" name="api_key" read_only="true" type="string"/>
+        <element display="true" label="Company" mandatory="true" max_length="32" name="company" reference="core_company" reference_qual="sys_domainISNOTEMPTY^sys_domain!=global^EQ" reference_qual_condition="sys_domainISNOTEMPTY^sys_domain!=global^EQ" type="reference"/>
+        <element label="Credential" max_length="32" name="credential" reference="discovery_credentials" reference_qual="javascript:if (!current.credential_alias) {'tag=RETURNNOTHING'} else {'tagLIKE' + current.credential_alias + '^EQ'}" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Credential Alias" max_length="32" name="credential_alias" reference="sys_alias" reference_qual="type=credential^EQ" reference_qual_condition="type=credential^EQ" type="reference"/>
+        <element label="Endpoint" max_length="1024" name="endpoint" type="url"/>
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element label="Domain Path" max_length="255" name="sys_domain_path" type="domain_path"/>
+        <index name="index">
+            <element name="credential_alias"/>
+        </index>
+        <index name="index2">
+            <element name="credential"/>
+        </index>
+        <index name="index3">
+            <element name="sys_domain"/>
+        </index>
+        <index name="index4">
+            <element name="company"/>
+        </index>
+        <index name="index5">
+            <element name="sys_domain_path"/>
+        </index>
+    </element>
+</database>

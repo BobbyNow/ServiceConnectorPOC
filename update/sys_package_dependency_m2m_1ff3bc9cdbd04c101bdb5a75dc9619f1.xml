@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System Import Sets" source="com.glide.system_import_set">39927762db0484101bdb5a75dc961996</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-05 17:23:07</sys_created_on>
+        <sys_id>1ff3bc9cdbd04c101bdb5a75dc9619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-05 17:23:07</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

@@ -1,0 +1,2028 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>connector__process_staged_records</internal_name>
+        <label_cache>[{"name":"b2dd8373-14be-4765-8bdc-833dbdad158c.import_record","label":"1.1.1➛Import Record","reference":"x_snc_con_inc_ebonding","reference_display":"Connector eBonding","type":"reference","base_type":"reference"},{"name":"19dc23a3-d554-4250-baa4-ff598e6e1f5d.answer","label":"1➛Table Record","reference":"sys_db_object","reference_display":"Table","type":"reference","base_type":"reference"},{"name":"e75a671a-da57-4830-9915-268c1c6a8883.import_record","label":"1.1.1➛Import Record","reference":"x_snc_con_inc_ebonding","reference_display":"Connector eBonding","type":"reference","base_type":"reference"},{"name":"subflow.table","label":"Input➛Table","reference":"","reference_display":"","type":"string","base_type":"string","column_name":""},{"name":"subflow.api_key","label":"Input➛API key","reference":"","reference_display":"","type":"string","base_type":"string","column_name":""},{"name":"subflow.stage_id","label":"Input➛Stage ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":""}]</label_cache>
+        <latest_snapshot>848f8e30db58cc101bdb5a75dc961982</latest_snapshot>
+        <master_snapshot>ffb272eadbc844102443e7148a9619f0</master_snapshot>
+        <name>Connector - Process Staged Records</name>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:13:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1740326adbc844102443e7148a9619e6</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Connector - Process Staged Records</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_hub_flow_1740326adbc844102443e7148a9619e6</sys_update_name>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:47</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=1740326adbc844102443e7148a9619e6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1740326adbc844102443e7148a9619e6"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=1740326adbc844102443e7148a9619e6^sys_idNOT IN0adc0e7cdb18cc101bdb5a75dc96190f,823dc2bcdb18cc101bdb5a75dc961970,8edc0e7cdb18cc101bdb5a75dc961900,c63dc2bcdb18cc101bdb5a75dc96196b,e9a1f2aadbc844102443e7148a96199c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">46dc0e7cdb18cc101bdb5a75dc96190f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</flow>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>1.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>19dc23a3-d554-4250-baa4-ff598e6e1f5d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:24:57</sys_created_on>
+        <sys_id>0adc0e7cdb18cc101bdb5a75dc96190f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:47</sys_updated_on>
+        <ui_id>4b60861b-93fb-479d-851d-9096e9621e0c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0adc0e7cdb18cc101bdb5a75dc96190f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>0adc0e7cdb18cc101bdb5a75dc96190f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:24:57</sys_created_on>
+        <sys_id>4edc0e7cdb18cc101bdb5a75dc961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:24:57</sys_updated_on>
+        <value>d9bd3baadbc484101bdb5a75dc96191e</value>
+        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ce3dc2bcdb18cc101bdb5a75dc96196f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1.1.2</order>
+        <outputs_assigned>import_record</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>465d40d7-d621-40f1-a1fc-7cd62dca8d76</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:36</sys_created_on>
+        <sys_id>823dc2bcdb18cc101bdb5a75dc961970</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:47</sys_updated_on>
+        <ui_id>1d6d77fb-0ae5-4a10-a4c9-bea1f69fcc3e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=823dc2bcdb18cc101bdb5a75dc961970"/>
+    <sys_element_mapping action="delete_multiple" query="id=823dc2bcdb18cc101bdb5a75dc961970"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_record</field>
+        <id>823dc2bcdb18cc101bdb5a75dc961970</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:36</sys_created_on>
+        <sys_id>ce3dc2bcdb18cc101bdb5a75dc961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_1740326adbc844102443e7148a9619e6</table>
+        <value>{{b2dd8373-14be-4765-8bdc-833dbdad158c.import_record}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">06dcca7cdb18cc101bdb5a75dc9619ff</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</flow>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>1.1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>19dc23a3-d554-4250-baa4-ff598e6e1f5d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:24:57</sys_created_on>
+        <sys_id>8edc0e7cdb18cc101bdb5a75dc961900</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:47</sys_updated_on>
+        <ui_id>465d40d7-d621-40f1-a1fc-7cd62dca8d76</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8edc0e7cdb18cc101bdb5a75dc961900"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8edc0e7cdb18cc101bdb5a75dc961900</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:24:57</sys_created_on>
+        <sys_id>8adc0e7cdb18cc101bdb5a75dc961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:24:57</sys_updated_on>
+        <value>b05bfba2dbc484101bdb5a75dc961975</value>
+        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Connector - Process Staged Incident">a24ff99adb8804102443e7148a9619f3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>a24ff99adb8804102443e7148a9619f3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</flow>
+        <order>1.1.1</order>
+        <parent_ui_id>465d40d7-d621-40f1-a1fc-7cd62dca8d76</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:35</sys_created_on>
+        <sys_id>c63dc2bcdb18cc101bdb5a75dc96196b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:36:36</sys_updated_on>
+        <ui_id>b2dd8373-14be-4765-8bdc-833dbdad158c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c63dc2bcdb18cc101bdb5a75dc96196b"/>
+    <sys_element_mapping action="delete_multiple" query="id=c63dc2bcdb18cc101bdb5a75dc96196b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_key</field>
+        <id>c63dc2bcdb18cc101bdb5a75dc96196b</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:41</sys_created_on>
+        <sys_id>6f3d06bcdb18cc101bdb5a75dc961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
+        <value>{{subflow.api_key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_key</field>
+        <id>c63dc2bcdb18cc101bdb5a75dc96196b</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:36</sys_created_on>
+        <sys_id>ca3dc2bcdb18cc101bdb5a75dc96196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d655f952db8804102443e7148a961947</table>
+        <value>{{subflow.api_key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>stage_id</field>
+        <id>c63dc2bcdb18cc101bdb5a75dc96196b</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:41</sys_created_on>
+        <sys_id>233d06bcdb18cc101bdb5a75dc961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
+        <value>{{subflow.stage_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>stage_id</field>
+        <id>c63dc2bcdb18cc101bdb5a75dc96196b</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:36</sys_created_on>
+        <sys_id>0a3dc2bcdb18cc101bdb5a75dc96196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d655f952db8804102443e7148a961947</table>
+        <value>{{subflow.stage_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4adc0e7cdb18cc101bdb5a75dc961915</block>
+        <comment/>
+        <connected_to/>
+        <decision_table display_value="Connector - Process Staged Payloads">98482662dbc844102443e7148a96192e</decision_table>
+        <decision_table_inputs/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</flow>
+        <inputs/>
+        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:19:26</sys_created_on>
+        <sys_id>e9a1f2aadbc844102443e7148a96199c</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:47</sys_updated_on>
+        <ui_id>19dc23a3-d554-4250-baa4-ff598e6e1f5d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e9a1f2aadbc844102443e7148a96199c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e9a1f2aadbc844102443e7148a96199c</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:19:26</sys_created_on>
+        <sys_id>2da1f2aadbc844102443e7148a96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:19:26</sys_updated_on>
+        <value>98482662dbc844102443e7148a96192e</value>
+        <variable display_value="">a9a0bc2b0b2313009002cab937673ac6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e9a1f2aadbc844102443e7148a96199c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:19:26</sys_created_on>
+        <sys_id>69a1f2aadbc844102443e7148a96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:19:26</sys_updated_on>
+        <value>sys_db_object</value>
+        <variable display_value="">4cbdbf94c35823002841b63b12d3aeb6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e9a1f2aadbc844102443e7148a96199c</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:19:26</sys_created_on>
+        <sys_id>eda1f2aadbc844102443e7148a96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:19:26</sys_updated_on>
+        <value>Process staged records</value>
+        <variable display_value="">2d6a2ca70b2313009002cab937673aff</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e9a1f2aadbc844102443e7148a96199c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>u_table</field>
+        <id>e9a1f2aadbc844102443e7148a96199c</id>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:19:26</sys_created_on>
+        <sys_id>eda1f2aadbc844102443e7148a9619a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:19:26</sys_updated_on>
+        <table>var__m_sys_decision_input_98482662dbc844102443e7148a96192e</table>
+        <value>{{subflow.table}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1740326adbc844102443e7148a9619e6^sys_idNOT IN5f40326adbc844102443e7148a9619e7"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1740326adbc844102443e7148a9619e6</id>
+        <name>Connector - Process Staged Records</name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:13:32</sys_created_on>
+        <sys_id>5f40326adbc844102443e7148a9619e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:13:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=1740326adbc844102443e7148a9619e6^sys_idNOT IN355ab662db0c44102443e7148a9619d3,51a1b2aadbc844102443e7148a961969,b15ab662db0c44102443e7148a9619ce"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>stage_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Stage ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</model>
+        <model_id>1740326adbc844102443e7148a9619e6</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1740326adbc844102443e7148a9619e6</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:57:24</sys_created_on>
+        <sys_id>355ab662db0c44102443e7148a9619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:57:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Table</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</model>
+        <model_id>1740326adbc844102443e7148a9619e6</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1740326adbc844102443e7148a9619e6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:19:25</sys_created_on>
+        <sys_id>51a1b2aadbc844102443e7148a961969</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:57:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>api_key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>API key</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</model>
+        <model_id>1740326adbc844102443e7148a9619e6</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1740326adbc844102443e7148a9619e6</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:57:24</sys_created_on>
+        <sys_id>b15ab662db0c44102443e7148a9619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:57:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=1740326adbc844102443e7148a9619e6^sys_idNOT IN7becfae2db0c44102443e7148a9619b0"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>import_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Import Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</model>
+        <model_id>1740326adbc844102443e7148a9619e6</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_1740326adbc844102443e7148a9619e6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_con_inc_ebonding">x_snc_con_inc_ebonding</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 19:08:44</sys_created_on>
+        <sys_id>7becfae2db0c44102443e7148a9619b0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 19:08:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1740326adbc844102443e7148a9619e6^sys_idNOT INc63dc2bcdb18cc101bdb5a75dc96196b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Connector - Process Staged Incident">a24ff99adb8804102443e7148a9619f3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>a24ff99adb8804102443e7148a9619f3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</flow>
+        <order>1.1.1</order>
+        <parent_ui_id>465d40d7-d621-40f1-a1fc-7cd62dca8d76</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:35</sys_created_on>
+        <sys_id>c63dc2bcdb18cc101bdb5a75dc96196b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:36:36</sys_updated_on>
+        <ui_id>b2dd8373-14be-4765-8bdc-833dbdad158c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c63dc2bcdb18cc101bdb5a75dc96196b"/>
+    <sys_element_mapping action="delete_multiple" query="id=c63dc2bcdb18cc101bdb5a75dc96196b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_key</field>
+        <id>c63dc2bcdb18cc101bdb5a75dc96196b</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:41</sys_created_on>
+        <sys_id>6f3d06bcdb18cc101bdb5a75dc961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
+        <value>{{subflow.api_key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_key</field>
+        <id>c63dc2bcdb18cc101bdb5a75dc96196b</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:36</sys_created_on>
+        <sys_id>ca3dc2bcdb18cc101bdb5a75dc96196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d655f952db8804102443e7148a961947</table>
+        <value>{{subflow.api_key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>stage_id</field>
+        <id>c63dc2bcdb18cc101bdb5a75dc96196b</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:41</sys_created_on>
+        <sys_id>233d06bcdb18cc101bdb5a75dc961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
+        <value>{{subflow.stage_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>stage_id</field>
+        <id>c63dc2bcdb18cc101bdb5a75dc96196b</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:36</sys_created_on>
+        <sys_id>0a3dc2bcdb18cc101bdb5a75dc96196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d655f952db8804102443e7148a961947</table>
+        <value>{{subflow.stage_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=1740326adbc844102443e7148a9619e6^sys_idNOT IN0adc0e7cdb18cc101bdb5a75dc96190f,823dc2bcdb18cc101bdb5a75dc961970,8edc0e7cdb18cc101bdb5a75dc961900,e9a1f2aadbc844102443e7148a96199c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">46dc0e7cdb18cc101bdb5a75dc96190f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</flow>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>1.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>19dc23a3-d554-4250-baa4-ff598e6e1f5d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:24:57</sys_created_on>
+        <sys_id>0adc0e7cdb18cc101bdb5a75dc96190f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:47</sys_updated_on>
+        <ui_id>4b60861b-93fb-479d-851d-9096e9621e0c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0adc0e7cdb18cc101bdb5a75dc96190f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>0adc0e7cdb18cc101bdb5a75dc96190f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:24:57</sys_created_on>
+        <sys_id>4edc0e7cdb18cc101bdb5a75dc961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:24:57</sys_updated_on>
+        <value>d9bd3baadbc484101bdb5a75dc96191e</value>
+        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ce3dc2bcdb18cc101bdb5a75dc96196f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1.1.2</order>
+        <outputs_assigned>import_record</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>465d40d7-d621-40f1-a1fc-7cd62dca8d76</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:36</sys_created_on>
+        <sys_id>823dc2bcdb18cc101bdb5a75dc961970</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:47</sys_updated_on>
+        <ui_id>1d6d77fb-0ae5-4a10-a4c9-bea1f69fcc3e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=823dc2bcdb18cc101bdb5a75dc961970"/>
+    <sys_element_mapping action="delete_multiple" query="id=823dc2bcdb18cc101bdb5a75dc961970"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_record</field>
+        <id>823dc2bcdb18cc101bdb5a75dc961970</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:36</sys_created_on>
+        <sys_id>ce3dc2bcdb18cc101bdb5a75dc961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_1740326adbc844102443e7148a9619e6</table>
+        <value>{{b2dd8373-14be-4765-8bdc-833dbdad158c.import_record}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">06dcca7cdb18cc101bdb5a75dc9619ff</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</flow>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>1.1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>19dc23a3-d554-4250-baa4-ff598e6e1f5d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:24:57</sys_created_on>
+        <sys_id>8edc0e7cdb18cc101bdb5a75dc961900</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:47</sys_updated_on>
+        <ui_id>465d40d7-d621-40f1-a1fc-7cd62dca8d76</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8edc0e7cdb18cc101bdb5a75dc961900"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8edc0e7cdb18cc101bdb5a75dc961900</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:24:57</sys_created_on>
+        <sys_id>8adc0e7cdb18cc101bdb5a75dc961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:24:57</sys_updated_on>
+        <value>b05bfba2dbc484101bdb5a75dc961975</value>
+        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4adc0e7cdb18cc101bdb5a75dc961915</block>
+        <comment/>
+        <connected_to/>
+        <decision_table display_value="Connector - Process Staged Payloads">98482662dbc844102443e7148a96192e</decision_table>
+        <decision_table_inputs/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</flow>
+        <inputs/>
+        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:19:26</sys_created_on>
+        <sys_id>e9a1f2aadbc844102443e7148a96199c</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:47</sys_updated_on>
+        <ui_id>19dc23a3-d554-4250-baa4-ff598e6e1f5d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e9a1f2aadbc844102443e7148a96199c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e9a1f2aadbc844102443e7148a96199c</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:19:26</sys_created_on>
+        <sys_id>2da1f2aadbc844102443e7148a96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:19:26</sys_updated_on>
+        <value>98482662dbc844102443e7148a96192e</value>
+        <variable display_value="">a9a0bc2b0b2313009002cab937673ac6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e9a1f2aadbc844102443e7148a96199c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:19:26</sys_created_on>
+        <sys_id>69a1f2aadbc844102443e7148a96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:19:26</sys_updated_on>
+        <value>sys_db_object</value>
+        <variable display_value="">4cbdbf94c35823002841b63b12d3aeb6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e9a1f2aadbc844102443e7148a96199c</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:19:26</sys_created_on>
+        <sys_id>eda1f2aadbc844102443e7148a96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:19:26</sys_updated_on>
+        <value>Process staged records</value>
+        <variable display_value="">2d6a2ca70b2313009002cab937673aff</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e9a1f2aadbc844102443e7148a96199c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>u_table</field>
+        <id>e9a1f2aadbc844102443e7148a96199c</id>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:19:26</sys_created_on>
+        <sys_id>eda1f2aadbc844102443e7148a9619a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:19:26</sys_updated_on>
+        <table>var__m_sys_decision_input_98482662dbc844102443e7148a96192e</table>
+        <value>{{subflow.table}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1740326adbc844102443e7148a9619e6^sys_idNOT IN755ab662db0c44102443e7148a9619d2,d1a1b2aadbc844102443e7148a96196e,f55ab662db0c44102443e7148a9619d7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>api_key</element>
+        <help/>
+        <hint/>
+        <label>API key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1740326adbc844102443e7148a9619e6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:57:24</sys_created_on>
+        <sys_id>755ab662db0c44102443e7148a9619d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>API key</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_1740326adbc844102443e7148a9619e6_api_key_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:57:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table</element>
+        <help/>
+        <hint/>
+        <label>Table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1740326adbc844102443e7148a9619e6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:19:25</sys_created_on>
+        <sys_id>d1a1b2aadbc844102443e7148a96196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_1740326adbc844102443e7148a9619e6_table_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:19:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>stage_id</element>
+        <help/>
+        <hint/>
+        <label>Stage ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1740326adbc844102443e7148a9619e6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:57:24</sys_created_on>
+        <sys_id>f55ab662db0c44102443e7148a9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Stage ID</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_1740326adbc844102443e7148a9619e6_stage_id_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:57:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_1740326adbc844102443e7148a9619e6^sys_idNOT INbbecfae2db0c44102443e7148a9619c5"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>import_record</element>
+        <help/>
+        <hint/>
+        <label>Import Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_1740326adbc844102443e7148a9619e6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 19:08:44</sys_created_on>
+        <sys_id>bbecfae2db0c44102443e7148a9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import Record</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_1740326adbc844102443e7148a9619e6_import_record_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 19:08:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=1740326adbc844102443e7148a9619e6^sys_idNOT IN44c2b2eadbc844102443e7148a96193f"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"44c2b2eadbc844102443e7148a96193f","name":"plan"}}</plan>
+        <plan_id display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</plan_id>
+        <snapshot>848f8e30db58cc101bdb5a75dc961982</snapshot>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>44c2b2eadbc844102443e7148a96193f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:46</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>connector__process_staged_records</internal_name>
+        <label_cache>[{"name":"19dc23a3-d554-4250-baa4-ff598e6e1f5d.answer","label":"1➛Table Record","reference":"sys_db_object","reference_display":"Table","type":"reference","base_type":"reference"},{"name":"subflow.table","label":"Input➛Table","type":"string","base_type":"string"}]</label_cache>
+        <master>true</master>
+        <name>Connector - Process Staged Records</name>
+        <outputs/>
+        <parent_flow display_value="Connector - Process Staged Records">1740326adbc844102443e7148a9619e6</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ffb272eadbc844102443e7148a9619f0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:45</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=ffb272eadbc844102443e7148a9619f0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ffb272eadbc844102443e7148a9619f0"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=ffb272eadbc844102443e7148a9619f0^sys_idNOT IN104d06bcdb18cc101bdb5a75dc9619f4,4c4d06bcdb18cc101bdb5a75dc9619ef,5c4d06bcdb18cc101bdb5a75dc9619f5,73b2b2eadbc844102443e7148a961925,844d06bcdb18cc101bdb5a75dc9619f1"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">06dcca7cdb18cc101bdb5a75dc9619ff</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</flow>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>1.1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>19dc23a3-d554-4250-baa4-ff598e6e1f5d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>104d06bcdb18cc101bdb5a75dc9619f4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:45</sys_updated_on>
+        <ui_id>465d40d7-d621-40f1-a1fc-7cd62dca8d76</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=104d06bcdb18cc101bdb5a75dc9619f4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>104d06bcdb18cc101bdb5a75dc9619f4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>544d06bcdb18cc101bdb5a75dc9619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:44</sys_updated_on>
+        <value>b05bfba2dbc484101bdb5a75dc961975</value>
+        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Connector - Process Staged Incident">a24ff99adb8804102443e7148a9619f3</action_type>
+        <action_type_parent display_value="Connector - Process Staged Incident">d655f952db8804102443e7148a961947</action_type_parent>
+        <comment/>
+        <compiled_snapshot>a24ff99adb8804102443e7148a9619f3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</flow>
+        <order>1.1.1</order>
+        <parent_ui_id>465d40d7-d621-40f1-a1fc-7cd62dca8d76</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>4c4d06bcdb18cc101bdb5a75dc9619ef</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:45</sys_updated_on>
+        <ui_id>b2dd8373-14be-4765-8bdc-833dbdad158c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4c4d06bcdb18cc101bdb5a75dc9619ef"/>
+    <sys_element_mapping action="delete_multiple" query="id=4c4d06bcdb18cc101bdb5a75dc9619ef"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_key</field>
+        <id>4c4d06bcdb18cc101bdb5a75dc9619ef</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>0c4d06bcdb18cc101bdb5a75dc9619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
+        <value>{{subflow.api_key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>stage_id</field>
+        <id>4c4d06bcdb18cc101bdb5a75dc9619ef</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>cc4d06bcdb18cc101bdb5a75dc9619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
+        <value>{{subflow.stage_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">46dc0e7cdb18cc101bdb5a75dc96190f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</flow>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>1.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>19dc23a3-d554-4250-baa4-ff598e6e1f5d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>5c4d06bcdb18cc101bdb5a75dc9619f5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:45</sys_updated_on>
+        <ui_id>4b60861b-93fb-479d-851d-9096e9621e0c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5c4d06bcdb18cc101bdb5a75dc9619f5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5c4d06bcdb18cc101bdb5a75dc9619f5</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>904d06bcdb18cc101bdb5a75dc9619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:44</sys_updated_on>
+        <value>d9bd3baadbc484101bdb5a75dc96191e</value>
+        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4adc0e7cdb18cc101bdb5a75dc961915</block>
+        <comment/>
+        <connected_to/>
+        <decision_table display_value="Connector - Process Staged Payloads">98482662dbc844102443e7148a96192e</decision_table>
+        <decision_table_inputs/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</flow>
+        <inputs/>
+        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>73b2b2eadbc844102443e7148a961925</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:45</sys_updated_on>
+        <ui_id>19dc23a3-d554-4250-baa4-ff598e6e1f5d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=73b2b2eadbc844102443e7148a961925"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>73b2b2eadbc844102443e7148a961925</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>73b2b2eadbc844102443e7148a961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:24:14</sys_updated_on>
+        <value>Process staged records</value>
+        <variable display_value="">2d6a2ca70b2313009002cab937673aff</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>73b2b2eadbc844102443e7148a961925</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>bfb2b2eadbc844102443e7148a961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:24:14</sys_updated_on>
+        <value>98482662dbc844102443e7148a96192e</value>
+        <variable display_value="">a9a0bc2b0b2313009002cab937673ac6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>73b2b2eadbc844102443e7148a961925</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>fbb2b2eadbc844102443e7148a961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:24:14</sys_updated_on>
+        <value>sys_db_object</value>
+        <variable display_value="">4cbdbf94c35823002841b63b12d3aeb6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=73b2b2eadbc844102443e7148a961925"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>u_table</field>
+        <id>73b2b2eadbc844102443e7148a961925</id>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>77b2b2eadbc844102443e7148a961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:24:14</sys_updated_on>
+        <table>var__m_sys_decision_input_98482662dbc844102443e7148a96192e</table>
+        <value>{{subflow.table}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ce3dc2bcdb18cc101bdb5a75dc96196f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1.1.2</order>
+        <outputs_assigned>import_record</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>465d40d7-d621-40f1-a1fc-7cd62dca8d76</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>844d06bcdb18cc101bdb5a75dc9619f1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:45</sys_updated_on>
+        <ui_id>1d6d77fb-0ae5-4a10-a4c9-bea1f69fcc3e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=844d06bcdb18cc101bdb5a75dc9619f1"/>
+    <sys_element_mapping action="delete_multiple" query="id=844d06bcdb18cc101bdb5a75dc9619f1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_record</field>
+        <id>844d06bcdb18cc101bdb5a75dc9619f1</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>544d06bcdb18cc101bdb5a75dc9619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_ffb272eadbc844102443e7148a9619f0</table>
+        <value>{{b2dd8373-14be-4765-8bdc-833dbdad158c.import_record}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ffb272eadbc844102443e7148a9619f0^sys_idNOT IN7fb272eadbc844102443e7148a9619f1"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ffb272eadbc844102443e7148a9619f0</id>
+        <name>Connector - Process Staged Records</name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>7fb272eadbc844102443e7148a9619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:24:14</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=ffb272eadbc844102443e7148a9619f0^sys_idNOT INbfb272eadbc844102443e7148a9619f2,d16a3a62db0c44102443e7148a9619b3,dd6a3a62db0c44102443e7148a9619a3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Table</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</model>
+        <model_id>ffb272eadbc844102443e7148a9619f0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ffb272eadbc844102443e7148a9619f0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>bfb272eadbc844102443e7148a9619f2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:57:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>stage_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Stage ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</model>
+        <model_id>ffb272eadbc844102443e7148a9619f0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ffb272eadbc844102443e7148a9619f0</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:57:38</sys_created_on>
+        <sys_id>d16a3a62db0c44102443e7148a9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:57:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>api_key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>API key</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</model>
+        <model_id>ffb272eadbc844102443e7148a9619f0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ffb272eadbc844102443e7148a9619f0</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:57:38</sys_created_on>
+        <sys_id>dd6a3a62db0c44102443e7148a9619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:57:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=ffb272eadbc844102443e7148a9619f0^sys_idNOT IN39fc3ee2db0c44102443e7148a9619ea"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>import_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Import Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</model>
+        <model_id>ffb272eadbc844102443e7148a9619f0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_ffb272eadbc844102443e7148a9619f0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_con_inc_ebonding">x_snc_con_inc_ebonding</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 19:08:52</sys_created_on>
+        <sys_id>39fc3ee2db0c44102443e7148a9619ea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 19:08:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=ffb272eadbc844102443e7148a9619f0^sys_idNOT IN4c4d06bcdb18cc101bdb5a75dc9619ef"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Connector - Process Staged Incident">a24ff99adb8804102443e7148a9619f3</action_type>
+        <action_type_parent display_value="Connector - Process Staged Incident">d655f952db8804102443e7148a961947</action_type_parent>
+        <comment/>
+        <compiled_snapshot>a24ff99adb8804102443e7148a9619f3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</flow>
+        <order>1.1.1</order>
+        <parent_ui_id>465d40d7-d621-40f1-a1fc-7cd62dca8d76</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>4c4d06bcdb18cc101bdb5a75dc9619ef</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:45</sys_updated_on>
+        <ui_id>b2dd8373-14be-4765-8bdc-833dbdad158c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4c4d06bcdb18cc101bdb5a75dc9619ef"/>
+    <sys_element_mapping action="delete_multiple" query="id=4c4d06bcdb18cc101bdb5a75dc9619ef"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_key</field>
+        <id>4c4d06bcdb18cc101bdb5a75dc9619ef</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>0c4d06bcdb18cc101bdb5a75dc9619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
+        <value>{{subflow.api_key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>stage_id</field>
+        <id>4c4d06bcdb18cc101bdb5a75dc9619ef</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>cc4d06bcdb18cc101bdb5a75dc9619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
+        <value>{{subflow.stage_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=ffb272eadbc844102443e7148a9619f0^sys_idNOT IN104d06bcdb18cc101bdb5a75dc9619f4,5c4d06bcdb18cc101bdb5a75dc9619f5,73b2b2eadbc844102443e7148a961925,844d06bcdb18cc101bdb5a75dc9619f1"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">06dcca7cdb18cc101bdb5a75dc9619ff</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</flow>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>1.1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>19dc23a3-d554-4250-baa4-ff598e6e1f5d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>104d06bcdb18cc101bdb5a75dc9619f4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:45</sys_updated_on>
+        <ui_id>465d40d7-d621-40f1-a1fc-7cd62dca8d76</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=104d06bcdb18cc101bdb5a75dc9619f4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>104d06bcdb18cc101bdb5a75dc9619f4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>544d06bcdb18cc101bdb5a75dc9619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:44</sys_updated_on>
+        <value>b05bfba2dbc484101bdb5a75dc961975</value>
+        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">46dc0e7cdb18cc101bdb5a75dc96190f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</flow>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>1.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>19dc23a3-d554-4250-baa4-ff598e6e1f5d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>5c4d06bcdb18cc101bdb5a75dc9619f5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:45</sys_updated_on>
+        <ui_id>4b60861b-93fb-479d-851d-9096e9621e0c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5c4d06bcdb18cc101bdb5a75dc9619f5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5c4d06bcdb18cc101bdb5a75dc9619f5</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>904d06bcdb18cc101bdb5a75dc9619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:44</sys_updated_on>
+        <value>d9bd3baadbc484101bdb5a75dc96191e</value>
+        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4adc0e7cdb18cc101bdb5a75dc961915</block>
+        <comment/>
+        <connected_to/>
+        <decision_table display_value="Connector - Process Staged Payloads">98482662dbc844102443e7148a96192e</decision_table>
+        <decision_table_inputs/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</flow>
+        <inputs/>
+        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>73b2b2eadbc844102443e7148a961925</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:45</sys_updated_on>
+        <ui_id>19dc23a3-d554-4250-baa4-ff598e6e1f5d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=73b2b2eadbc844102443e7148a961925"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>73b2b2eadbc844102443e7148a961925</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>73b2b2eadbc844102443e7148a961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:24:14</sys_updated_on>
+        <value>Process staged records</value>
+        <variable display_value="">2d6a2ca70b2313009002cab937673aff</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>73b2b2eadbc844102443e7148a961925</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>bfb2b2eadbc844102443e7148a961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:24:14</sys_updated_on>
+        <value>98482662dbc844102443e7148a96192e</value>
+        <variable display_value="">a9a0bc2b0b2313009002cab937673ac6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>73b2b2eadbc844102443e7148a961925</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>fbb2b2eadbc844102443e7148a961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:24:14</sys_updated_on>
+        <value>sys_db_object</value>
+        <variable display_value="">4cbdbf94c35823002841b63b12d3aeb6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=73b2b2eadbc844102443e7148a961925"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>u_table</field>
+        <id>73b2b2eadbc844102443e7148a961925</id>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>77b2b2eadbc844102443e7148a961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:24:14</sys_updated_on>
+        <table>var__m_sys_decision_input_98482662dbc844102443e7148a96192e</table>
+        <value>{{subflow.table}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ce3dc2bcdb18cc101bdb5a75dc96196f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Connector - Process Staged Records">ffb272eadbc844102443e7148a9619f0</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1.1.2</order>
+        <outputs_assigned>import_record</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>465d40d7-d621-40f1-a1fc-7cd62dca8d76</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>844d06bcdb18cc101bdb5a75dc9619f1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:45</sys_updated_on>
+        <ui_id>1d6d77fb-0ae5-4a10-a4c9-bea1f69fcc3e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=844d06bcdb18cc101bdb5a75dc9619f1"/>
+    <sys_element_mapping action="delete_multiple" query="id=844d06bcdb18cc101bdb5a75dc9619f1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_record</field>
+        <id>844d06bcdb18cc101bdb5a75dc9619f1</id>
+        <sys_created_by>bobby.edmonds@snc</sys_created_by>
+        <sys_created_on>2019-10-02 15:26:44</sys_created_on>
+        <sys_id>544d06bcdb18cc101bdb5a75dc9619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-10-02 15:26:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_ffb272eadbc844102443e7148a9619f0</table>
+        <value>{{b2dd8373-14be-4765-8bdc-833dbdad158c.import_record}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_ffb272eadbc844102443e7148a9619f0^sys_idNOT IN116a3a62db0c44102443e7148a9619b8,956a3a62db0c44102443e7148a9619a8,bbb272eadbc844102443e7148a9619f7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>stage_id</element>
+        <help/>
+        <hint/>
+        <label>Stage ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ffb272eadbc844102443e7148a9619f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:57:38</sys_created_on>
+        <sys_id>116a3a62db0c44102443e7148a9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Stage ID</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_ffb272eadbc844102443e7148a9619f0_stage_id_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:57:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>api_key</element>
+        <help/>
+        <hint/>
+        <label>API key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ffb272eadbc844102443e7148a9619f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:57:38</sys_created_on>
+        <sys_id>956a3a62db0c44102443e7148a9619a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>API key</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_ffb272eadbc844102443e7148a9619f0_api_key_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:57:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table</element>
+        <help/>
+        <hint/>
+        <label>Table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ffb272eadbc844102443e7148a9619f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 18:24:14</sys_created_on>
+        <sys_id>bbb272eadbc844102443e7148a9619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_ffb272eadbc844102443e7148a9619f0_table_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 18:24:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ffb272eadbc844102443e7148a9619f0^sys_idNOT INbdfc3ee2db0c44102443e7148a9619f1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>import_record</element>
+        <help/>
+        <hint/>
+        <label>Import Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_ffb272eadbc844102443e7148a9619f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-25 19:08:53</sys_created_on>
+        <sys_id>bdfc3ee2db0c44102443e7148a9619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import Record</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_ffb272eadbc844102443e7148a9619f0_import_record_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 19:08:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

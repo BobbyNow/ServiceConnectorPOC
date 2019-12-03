@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>connector__incident_updated</internal_name>
+        <label_cache>null</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Connector - Incident Updated</name>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 04:05:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c62e3530db884810bb528f423a961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Connector - Incident Updated</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_hub_flow_c62e3530db884810bb528f423a961904</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 04:05:05</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c62e3530db884810bb528f423a961904"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c62e3530db884810bb528f423a961904"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c62e3530db884810bb528f423a961904^sys_idNOT IN4e2e3530db884810bb528f423a961906"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c62e3530db884810bb528f423a961904</id>
+        <name>Connector - Incident Updated</name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 04:05:05</sys_created_on>
+        <sys_id>4e2e3530db884810bb528f423a961906</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 04:05:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</application>
+        <file_path/>
+        <instance_id>63489765db7633403050ac44d49619d5</instance_id>
+        <instance_name>serviceconnectaus</instance_name>
+        <name>sys_hub_flow_c62e3530db884810bb528f423a961904</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><copied_from/><copied_from_name/><description/><internal_name>connector__incident_updated</internal_name><label_cache>null</label_cache><latest_snapshot/><master_snapshot/><name>Connector - Incident Updated</name><outputs/><remote_trigger_id/><run_as>system</run_as><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-20 04:05:05</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c62e3530db884810bb528f423a961904</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Connector - Incident Updated</sys_name><sys_overrides/><sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package><sys_policy/><sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope><sys_update_name>sys_hub_flow_c62e3530db884810bb528f423a961904</sys_update_name><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-20 04:05:05</sys_updated_on><type>flow</type></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=c62e3530db884810bb528f423a961904"/><sys_variable_value action="delete_multiple" query="document_key=c62e3530db884810bb528f423a961904"/><sys_flow_cat_variable_model action="delete_multiple" query="id=c62e3530db884810bb528f423a961904^sys_idNOT IN4e2e3530db884810bb528f423a961906"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>c62e3530db884810bb528f423a961904</id><name>Connector - Incident Updated</name><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-20 04:05:05</sys_created_on><sys_id>4e2e3530db884810bb528f423a961906</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-20 04:05:05</sys_updated_on></sys_flow_cat_variable_model></record_update>]]></payload>
+        <payload_hash>1370578468</payload_hash>
+        <record_name>Connector - Incident Updated</record_name>
+        <reverted_from/>
+        <source>169c2d2bdb6f3300bb528f423a9619b8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 04:05:05</sys_created_on>
+        <sys_id>c62e7530db884810bb528f423a9619a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16d4cd848e50000001</sys_recorded_at>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 04:05:05</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>022e7530cc88481073bf1302dbb3eba6</update_guid>
+        <update_guid_history>022e7530cc88481073bf1302dbb3eba6:1370578468</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 04:24:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>a36c1c92dffb4e5ea74eb13de657d164</sys_id>
+        <sys_metadata>c62e3530db884810bb528f423a961904</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Connector - Incident Updated</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_scope_delete display_value="">0378b0684cc94906889237221c6da631</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_c62e3530db884810bb528f423a961904</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_c62e3530db884810bb528f423a961904">c62e7530db884810bb528f423a9619a6</sys_update_version>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 04:24:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

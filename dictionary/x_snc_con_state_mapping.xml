@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_snc_con_mapping" label="State Mapping" max_length="40" name="x_snc_con_state_mapping" type="collection"/>
+</database>

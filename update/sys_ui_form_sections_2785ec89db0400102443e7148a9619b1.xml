@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="2785ec89db0400102443e7148a9619b1" sys_domain="global" table="x_snc_con_stage" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-20 16:16:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f785ec89db0400102443e7148a9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_con_stage" name="x_snc_con_stage" sys_domain="global" view="Default view">2785ec89db0400102443e7148a9619b1</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_con_stage" sys_domain="global" view="Default view">3d835cb4db044810bb528f423a9619ce</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-20 16:16:29</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-20 16:17:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cfb560c9db0400102443e7148a961974</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_con_stage" name="x_snc_con_stage" sys_domain="global" view="Default view">2785ec89db0400102443e7148a9619b1</sys_ui_form>
+            <sys_ui_section caption="Endpoint" display_value="Endpoint" name="x_snc_con_stage" sys_domain="global" view="Default view">cfb560c9db0400102443e7148a961972</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-20 16:18:14</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-20 16:16:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f385ec89db0400102443e7148a9619b5</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_con_stage" name="x_snc_con_stage" sys_domain="global" view="Default view">2785ec89db0400102443e7148a9619b1</sys_ui_form>
+            <sys_ui_section caption="Payload" display_value="Payload" name="x_snc_con_stage" sys_domain="global" view="Default view">3385ec89db0400102443e7148a9619b3</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-20 16:18:14</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_con_stage</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-20 16:16:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2785ec89db0400102443e7148a9619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_con_stage</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+            <sys_update_name>sys_ui_form_sections_2785ec89db0400102443e7148a9619b1</sys_update_name>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-20 16:16:28</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

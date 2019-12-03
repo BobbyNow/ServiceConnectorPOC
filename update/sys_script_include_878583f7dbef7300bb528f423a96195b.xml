@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_con.PayloadBuilder</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>PayloadBuilder</name>
+        <script><![CDATA[var PayloadBuilder = Class.create();
+PayloadBuilder.prototype = {
+    initialize: function() {},
+    createIncidentPayload: function(incident_sys_id) {
+        var incidentSysId = incident_sys_id;
+        var incidentRec = new GlideRecord('incident');
+        incidentRec.get(incidentSysId);
+
+        var incidentValues = {};
+
+        var fields = {};
+        var fm = new GlideRecord('x_snc_con_field_mapping');
+        fm.addActiveQuery();
+        fm.addQuery('table', incidentRec.getTableName() + '');
+        fm.query();
+        while (fm.next()) {
+            fields[fm.field] = {};
+            fields[fm.field].id = fm.getValue('sys_id') + '';
+            fields[fm.field].display_value = fm.getValue('display_value') + '';
+            fields[fm.field].mandatory = fm.getValue('mandatory') + '';
+            fields[fm.field].advanced = fm.getValue('advanced') + '';
+        }
+
+        for (i in fields) {
+            var field = i + '';
+            var id = fields[i].id + '';
+            var displayValue = fields[i].display_value + '';
+            var mandatory = fields[i].mandatory + '';
+            var advanced = fields[i].advanced + '';
+
+            if (displayValue == '1') {
+				gs.info('displayValue:'+field);
+                incidentValues['u_' + field] = incidentRec.getDisplayValue(field) + '';
+            } else if (advanced == '1') {
+				gs.info('advanced:'+field);
+                var fmGR = new GlideRecord('x_snc_con_field_mapping');
+                fmGR.get(id);
+
+				var scriptedValue = this.getScriptedValue(fmGR, incidentRec)+'';
+				gs.info('scriptedValue: ' + scriptedValue);
+                incidentValues['u_' + field] = scriptedValue;
+            } else {
+				gs.info('else:'+field);
+                incidentValues['u_' + field] = incidentRec.getValue(field) + '';
+            }
+        }
+
+        incidentValues.u_system_id = incidentRec.getValue('sys_id') + '';
+        return incidentValues;
+
+
+        //         var incidentValues = {
+        //             u_correlation_id: incidentRec.getDisplayValue('correlation_id'),
+        //             u_correlation_display: incidentRec.getDisplayValue('correlation_display'),
+        //             u_number: incidentRec.getDisplayValue('number'),
+        //             u_short_description: incidentRec.getDisplayValue('short_description'),
+        //             u_description: incidentRec.getDisplayValue('description'),
+        //             u_caller_id: incidentRec.getDisplayValue('caller_id'),
+        //             u_business_service: incidentRec.getDisplayValue('business_service'),
+        //             u_category: incidentRec.getDisplayValue('category'),
+        //             u_impact: incidentRec.getDisplayValue('impact'),
+        //             u_urgency: incidentRec.getDisplayValue('urgency'),
+        //             u_cmdb_ci: incidentRec.getDisplayValue('cmdb_ci'),
+        //             u_assignment_group: incidentRec.getDisplayValue('assignment_group'),
+        //             u_assigned_to: incidentRec.getDisplayValue('assigned_to'),
+        //             u_system_id: incidentRec.getDisplayValue('sys_id')
+        //         };
+        //         var contactType = incidentRec.getDisplayValue('contact_type');
+        //         if (contactType) {
+        //             incidentValues.u_contact_type = contactType;
+        //         }
+
+        //         var subcategory = incidentRec.getDisplayValue('subcategory');
+        //         if (subcategory) {
+        //             incidentValues.u_subcategory = subcategory;
+        //         }
+        //         return incidentValues;
+    },
+
+    getScriptedValue: function(fmGR, incidentRec) {
+        var evaluator = new GlideScopedEvaluator();
+        var vars = {
+            'current': incidentRec,
+            'field': fmGR.field + ''
+        };
+        return evaluator.evaluateScript(fmGR, 'script', vars) + '';
+    },
+
+    type: 'PayloadBuilder'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-04 20:27:22</sys_created_on>
+        <sys_id>878583f7dbef7300bb528f423a96195b</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>PayloadBuilder</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_script_include_878583f7dbef7300bb528f423a96195b</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 18:29:29</sys_updated_on>
+    </sys_script_include>
+</record_update>

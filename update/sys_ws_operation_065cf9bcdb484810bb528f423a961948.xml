@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>ping</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    try {
+        gs.info('RUNNING SCRIPTED: Stage ID: ' + request.queryParams.stage_id + ' - API key: ' + request.queryParams.api_key + ' - Table: ' + request.queryParams.table);
+        var inputs = {};
+        inputs['stage_id'] = request.queryParams.stage_id + '';
+        inputs['api_key'] = request.queryParams.api_key + '';
+        inputs['table'] = request.queryParams.table + '';
+
+        //var outputs = sn_fd.FlowAPI.executeAction('connector__fetch_staged_payload', inputs);
+        var outputs = sn_fd.FlowAPI.executeSubflow('x_snc_con.connector__process_staged_records', inputs);
+
+        var importState = outputs.import_record.sys_import_state + '';
+
+        gs.info('IMPORT STATE: ' + importState);
+        gs.info('IMPORT ERROR: ' + outputs.import_record.sys_import_state_comment);
+
+        response.setStatus(200);
+		/*
+        switch (importState) {
+            case "inserted":
+                response.setStatus(201); //Crested - Success with response body.
+                break;
+
+            case "ignored":
+                response.setStatus(200); //Success - Success with response body.
+                break;
+
+            case "skipped":
+                response.setStatus(404); //The requested resource was not found.
+                break;
+        }
+*/
+        var body = {};
+        body.message = "PING RECEIVED";
+        body.import_state = outputs.import_record.sys_import_state + '';
+        body.import_error = outputs.import_record.sys_import_state_comment + '';
+
+        response.setBody(body);
+
+    } catch (ex) {
+        var message = ex.getMessage();
+        gs.error(message);
+    }
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_con/connector_push</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 03:59:22</sys_created_on>
+        <sys_id>065cf9bcdb484810bb528f423a961948</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>ping</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_ws_operation_065cf9bcdb484810bb528f423a961948</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-25 23:44:06</sys_updated_on>
+        <web_service_definition display_value="Connector Push">071c39bcdb484810bb528f423a961917</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

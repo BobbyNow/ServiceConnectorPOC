@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>package_private</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>make_a_decision</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Make a Decision</name>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-12 18:03:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2351b396db37b300bb528f423a9619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Make a Decision</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_2351b396db37b300bb528f423a9619b6</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-12 18:03:38</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=2351b396db37b300bb528f423a9619b6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2351b396db37b300bb528f423a9619b6"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</application>
+        <file_path/>
+        <instance_id>63489765db7633403050ac44d49619d5</instance_id>
+        <instance_name>serviceconnectaus</instance_name>
+        <name>sys_hub_action_type_definition_2351b396db37b300bb528f423a9619b6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>package_private</access><acls/><action_template/><active>true</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><copied_from/><copied_from_name/><description/><ih_action>false</ih_action><internal_name>make_a_decision</internal_name><label_cache/><latest_snapshot/><master_snapshot/><name>Make a Decision</name><outputs/><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-12 18:03:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2351b396db37b300bb528f423a9619b6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Make a Decision</sys_name><sys_overrides/><sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package><sys_policy/><sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope><sys_update_name>sys_hub_action_type_definition_2351b396db37b300bb528f423a9619b6</sys_update_name><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-12 18:03:38</sys_updated_on><system_level>false</system_level><type/></sys_hub_action_type_definition><sys_translated_text action="delete_multiple" query="documentkey=2351b396db37b300bb528f423a9619b6"/><sys_variable_value action="delete_multiple" query="document_key=2351b396db37b300bb528f423a9619b6"/></record_update>]]></payload>
+        <payload_hash>-1561081821</payload_hash>
+        <record_name>Make a Decision</record_name>
+        <reverted_from/>
+        <source>169c2d2bdb6f3300bb528f423a9619b8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-12 18:03:39</sys_created_on>
+        <sys_id>27517f96db37b300bb528f423a96191f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16d26a521610000001</sys_recorded_at>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-12 18:03:39</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>6f517f96aa37b30084a06898fc12181e</update_guid>
+        <update_guid_history>6f517f96aa37b30084a06898fc12181e:-1561081821</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-12 18:31:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>40accf8f6647465c8714c1eff8546789</sys_id>
+        <sys_metadata>2351b396db37b300bb528f423a9619b6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Make a Decision</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_scope_delete display_value="">0378b0684cc94906889237221c6da631</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_2351b396db37b300bb528f423a9619b6</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_2351b396db37b300bb528f423a9619b6">27517f96db37b300bb528f423a96191f</sys_update_version>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-12 18:31:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Mapping" max_length="40" name="x_snc_con_mapping" type="collection">
+        <element display="true" label="Label" max_length="40" name="label" type="string"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element label="Domain Path" max_length="255" name="sys_domain_path" type="domain_path"/>
+        <element label="Overrides" max_length="32" name="sys_overrides" reference="x_snc_con_mapping" type="reference"/>
+        <element label="Value" max_length="40" name="value" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
+        <index name="index2">
+            <element name="sys_overrides"/>
+        </index>
+        <index name="index3">
+            <element name="sys_domain_path"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

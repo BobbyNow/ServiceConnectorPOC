@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>connector__payload_parser</internal_name>
+        <label_cache>[{"name":"{{action.payload}}","label":"action➛Payload","type":"action","ref":""},{"name":"{{action.payload.payload}}","label":"action➛Payload➛Payload","type":"action","ref":""}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Connector - Payload Parser</name>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 22:51:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c24670f4db844810bb528f423a96197e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Connector - Payload Parser</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_c24670f4db844810bb528f423a96197e</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:11:51</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=c24670f4db844810bb528f423a96197e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c24670f4db844810bb528f423a96197e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>c24670f4db844810bb528f423a96197e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:11:51</sys_created_on>
+        <sys_id>a486d170db084810bb528f423a9619f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:11:51</sys_updated_on>
+        <value>{"version":{"majorVersion":1,"minorVersion":0,"artifactId":"","groupId":"","uknownVersion":false,"snapshot":false,"patchLevel":0,"unknownVersion":false},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FD6dd599303c08481084ef5508be8b5889":{},"FlowDesigner:FD6dd599303c08481084ef5508be8b5889.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD6dd599303c08481084ef5508be8b5889\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Payload\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{}}</value>
+        <variable display_value="">21d59930db084810bb528f423a96198c</variable>
+    </sys_variable_value>
+    <sys_hub_step_instance action="delete_multiple" query="action=c24670f4db844810bb528f423a96197e^sys_idNOT IN11d59930db084810bb528f423a96195d"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Connector - Payload Parser">c24670f4db844810bb528f423a96197e</action>
+        <cid>d36b257c-deb8-4d70-9391-35b01dd1c0f2</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>XML Parser step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="XML Parser">34371337773223007b2380733b106170</step_type>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:54</sys_created_on>
+        <sys_id>11d59930db084810bb528f423a96195d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:11:51</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=11d59930db084810bb528f423a96195d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>11d59930db084810bb528f423a96195d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:55</sys_created_on>
+        <sys_id>61d59930db084810bb528f423a961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:08:55</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"u_api_key","children":[],"type":"string","xpath":"/root/u_api_key","previewValue":""},{"name":"u_assigned_to","children":[],"type":"string","xpath":"/root/u_assigned_to","previewValue":"Fred Luddy"},{"name":"u_assignment_group","children":[],"type":"string","xpath":"/root/u_assignment_group","previewValue":"MSP Support"},{"name":"u_business_service","children":[],"type":"string","xpath":"/root/u_business_service","previewValue":""},{"name":"u_caller_id","children":[],"type":"string","xpath":"/root/u_caller_id","previewValue":"Initech Employee"},{"name":"u_category","children":[],"type":"string","xpath":"/root/u_category","previewValue":"Inquiry / Help"},{"name":"u_cmdb_ci","children":[],"type":"string","xpath":"/root/u_cmdb_ci","previewValue":""},{"name":"u_contact_type","children":[],"type":"string","xpath":"/root/u_contact_type","previewValue":"Phone"},{"name":"u_correlation_display","children":[],"type":"string","xpath":"/root/u_correlation_display","previewValue":"INC0011463"},{"name":"u_correlation_id","children":[],"type":"string","xpath":"/root/u_correlation_id","previewValue":"e19dead81b8448106b06a7d76e4bcb16"},{"name":"u_description","children":[],"type":"string","xpath":"/root/u_description","previewValue":""},{"name":"u_impact","children":[],"type":"string","xpath":"/root/u_impact","previewValue":"3 - Low"},{"name":"u_number","children":[],"type":"string","xpath":"/root/u_number","previewValue":"INC0010187"},{"name":"u_priority","children":[],"type":"string","xpath":"/root/u_priority","previewValue":"5"},{"name":"u_short_description","children":[],"type":"string","xpath":"/root/u_short_description","previewValue":"DEMO - 10"},{"name":"u_state","children":[],"type":"string","xpath":"/root/u_state","previewValue":"2"},{"name":"u_subcategory","children":[],"type":"string","xpath":"/root/u_subcategory","previewValue":"Email"},{"name":"u_sys_id","children":[],"type":"string","xpath":"/root/u_sys_id","previewValue":"500ee29cdb800810bb528f423a9619b4"},{"name":"u_system_id","children":[],"type":"string","xpath":"/root/u_system_id","previewValue":"500ee29cdb800810bb528f423a9619b4"},{"name":"u_urgency","children":[],"type":"string","xpath":"/root/u_urgency","previewValue":"3 - Low"}],"type":"object","xpath":"/root","previewValue":""}</value>
+        <variable display_value="">13e1f5fd735b2300ab7931d7caf6a76b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>11d59930db084810bb528f423a96195d</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:55</sys_created_on>
+        <sys_id>6dd59930db084810bb528f423a961987</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:11:51</sys_updated_on>
+        <value/>
+        <variable display_value="">48ff5bb7773223007b2380733b10612c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=11d59930db084810bb528f423a96195d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>11d59930db084810bb528f423a96195d</id>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:55</sys_created_on>
+        <sys_id>edd59930db084810bb528f423a961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:08:55</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_34371337773223007b2380733b106170</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>11d59930db084810bb528f423a96195d</id>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:55</sys_created_on>
+        <sys_id>51d59930db084810bb528f423a961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:08:55</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_34371337773223007b2380733b106170</table>
+        <value>{{action.payload.payload}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>11d59930db084810bb528f423a96195d</id>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:55</sys_created_on>
+        <sys_id>2dd59930db084810bb528f423a961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:08:55</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_34371337773223007b2380733b106170</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_input action="delete_multiple" query="model=c24670f4db844810bb528f423a96197e^sys_idNOT IN55d55130db084810bb528f423a96193c"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Payload</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Connector - Payload Parser">c24670f4db844810bb528f423a96197e</model>
+        <model_id>c24670f4db844810bb528f423a96197e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_c24670f4db844810bb528f423a96197e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_con_stage">x_snc_con_stage</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:54</sys_created_on>
+        <sys_id>55d55130db084810bb528f423a96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:08:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=c24670f4db844810bb528f423a96197e^sys_idNOT IN21d59930db084810bb528f423a96198c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD6dd599303c08481084ef5508be8b5889,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>payload</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Payload</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Connector - Payload Parser">c24670f4db844810bb528f423a96197e</model>
+        <model_id>c24670f4db844810bb528f423a96197e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_c24670f4db844810bb528f423a96197e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:55</sys_created_on>
+        <sys_id>21d59930db084810bb528f423a96198c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:08:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=c24670f4db844810bb528f423a96197e^sys_idNOT IN11d59930db084810bb528f423a96195d"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Connector - Payload Parser">c24670f4db844810bb528f423a96197e</action>
+        <cid>d36b257c-deb8-4d70-9391-35b01dd1c0f2</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>XML Parser step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="XML Parser">34371337773223007b2380733b106170</step_type>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:54</sys_created_on>
+        <sys_id>11d59930db084810bb528f423a96195d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:11:51</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=11d59930db084810bb528f423a96195d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>11d59930db084810bb528f423a96195d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:55</sys_created_on>
+        <sys_id>61d59930db084810bb528f423a961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:08:55</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"u_api_key","children":[],"type":"string","xpath":"/root/u_api_key","previewValue":""},{"name":"u_assigned_to","children":[],"type":"string","xpath":"/root/u_assigned_to","previewValue":"Fred Luddy"},{"name":"u_assignment_group","children":[],"type":"string","xpath":"/root/u_assignment_group","previewValue":"MSP Support"},{"name":"u_business_service","children":[],"type":"string","xpath":"/root/u_business_service","previewValue":""},{"name":"u_caller_id","children":[],"type":"string","xpath":"/root/u_caller_id","previewValue":"Initech Employee"},{"name":"u_category","children":[],"type":"string","xpath":"/root/u_category","previewValue":"Inquiry / Help"},{"name":"u_cmdb_ci","children":[],"type":"string","xpath":"/root/u_cmdb_ci","previewValue":""},{"name":"u_contact_type","children":[],"type":"string","xpath":"/root/u_contact_type","previewValue":"Phone"},{"name":"u_correlation_display","children":[],"type":"string","xpath":"/root/u_correlation_display","previewValue":"INC0011463"},{"name":"u_correlation_id","children":[],"type":"string","xpath":"/root/u_correlation_id","previewValue":"e19dead81b8448106b06a7d76e4bcb16"},{"name":"u_description","children":[],"type":"string","xpath":"/root/u_description","previewValue":""},{"name":"u_impact","children":[],"type":"string","xpath":"/root/u_impact","previewValue":"3 - Low"},{"name":"u_number","children":[],"type":"string","xpath":"/root/u_number","previewValue":"INC0010187"},{"name":"u_priority","children":[],"type":"string","xpath":"/root/u_priority","previewValue":"5"},{"name":"u_short_description","children":[],"type":"string","xpath":"/root/u_short_description","previewValue":"DEMO - 10"},{"name":"u_state","children":[],"type":"string","xpath":"/root/u_state","previewValue":"2"},{"name":"u_subcategory","children":[],"type":"string","xpath":"/root/u_subcategory","previewValue":"Email"},{"name":"u_sys_id","children":[],"type":"string","xpath":"/root/u_sys_id","previewValue":"500ee29cdb800810bb528f423a9619b4"},{"name":"u_system_id","children":[],"type":"string","xpath":"/root/u_system_id","previewValue":"500ee29cdb800810bb528f423a9619b4"},{"name":"u_urgency","children":[],"type":"string","xpath":"/root/u_urgency","previewValue":"3 - Low"}],"type":"object","xpath":"/root","previewValue":""}</value>
+        <variable display_value="">13e1f5fd735b2300ab7931d7caf6a76b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>11d59930db084810bb528f423a96195d</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:55</sys_created_on>
+        <sys_id>6dd59930db084810bb528f423a961987</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:11:51</sys_updated_on>
+        <value/>
+        <variable display_value="">48ff5bb7773223007b2380733b10612c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=11d59930db084810bb528f423a96195d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>11d59930db084810bb528f423a96195d</id>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:55</sys_created_on>
+        <sys_id>edd59930db084810bb528f423a961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:08:55</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_34371337773223007b2380733b106170</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>11d59930db084810bb528f423a96195d</id>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:55</sys_created_on>
+        <sys_id>51d59930db084810bb528f423a961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:08:55</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_34371337773223007b2380733b106170</table>
+        <value>{{action.payload.payload}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>11d59930db084810bb528f423a96195d</id>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:55</sys_created_on>
+        <sys_id>2dd59930db084810bb528f423a961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:08:55</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_34371337773223007b2380733b106170</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_c24670f4db844810bb528f423a96197e^sys_idNOT IN59d59930db084810bb528f423a96195a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>payload</element>
+        <help/>
+        <hint/>
+        <label>Payload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c24670f4db844810bb528f423a96197e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:54</sys_created_on>
+        <sys_id>59d59930db084810bb528f423a96195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Payload</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_c24670f4db844810bb528f423a96197e_payload_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:08:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_c24670f4db844810bb528f423a96197e^sys_idNOT INe5d59930db084810bb528f423a961991"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>payload</element>
+        <help/>
+        <hint/>
+        <label>Payload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c24670f4db844810bb528f423a96197e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:08:55</sys_created_on>
+        <sys_id>e5d59930db084810bb528f423a961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Payload</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_c24670f4db844810bb528f423a96197e_payload_en</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:08:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</application>
+        <file_path/>
+        <instance_id>63489765db7633403050ac44d49619d5</instance_id>
+        <instance_name>serviceconnectaus</instance_name>
+        <name>sys_hub_action_type_definition_c24670f4db844810bb528f423a96197e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_action_type_definition"&gt;&lt;sys_hub_action_type_definition action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_template/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;ih_action&gt;false&lt;/ih_action&gt;&lt;internal_name&gt;connector__payload_parser&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{action.payload}}","label":"action➛Payload","type":"action","ref":""},{"name":"{{action.payload.payload}}","label":"action➛Payload➛Payload","type":"action","ref":""}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;Connector - Payload Parser&lt;/name&gt;&lt;outputs/&gt;&lt;state&gt;draft&lt;/state&gt;&lt;sys_class_name&gt;sys_hub_action_type_definition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-19 22:51:04&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c24670f4db844810bb528f423a96197e&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Connector - Payload Parser&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Connector" source="x_snc_con"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_type_definition_c24670f4db844810bb528f423a96197e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:11:51&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_definition&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c24670f4db844810bb528f423a96197e"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=c24670f4db844810bb528f423a96197e"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_definition&lt;/document&gt;&lt;document_key&gt;c24670f4db844810bb528f423a96197e&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:11:51&lt;/sys_created_on&gt;&lt;sys_id&gt;a486d170db084810bb528f423a9619f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:11:51&lt;/sys_updated_on&gt;&lt;value&gt;{"version":{"majorVersion":1,"minorVersion":0,"artifactId":"","groupId":"","uknownVersion":false,"snapshot":false,"patchLevel":0,"unknownVersion":false},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FD6dd599303c08481084ef5508be8b5889":{},"FlowDesigner:FD6dd599303c08481084ef5508be8b5889.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD6dd599303c08481084ef5508be8b5889\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Payload\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{}}&lt;/value&gt;&lt;variable display_value=""&gt;21d59930db084810bb528f423a96198c&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=c24670f4db844810bb528f423a96197e^sys_idNOT IN11d59930db084810bb528f423a96195d"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="Connector - Payload Parser"&gt;c24670f4db844810bb528f423a96197e&lt;/action&gt;&lt;cid&gt;d36b257c-deb8-4d70-9391-35b01dd1c0f2&lt;/cid&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;label&gt;XML Parser step&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="XML Parser"&gt;34371337773223007b2380733b106170&lt;/step_type&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:54&lt;/sys_created_on&gt;&lt;sys_id&gt;11d59930db084810bb528f423a96195d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:11:51&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=11d59930db084810bb528f423a96195d"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;11d59930db084810bb528f423a96195d&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;61d59930db084810bb528f423a961987&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:08:55&lt;/sys_updated_on&gt;&lt;value&gt;{"name":"root","children":[{"name":"u_api_key","children":[],"type":"string","xpath":"/root/u_api_key","previewValue":""},{"name":"u_assigned_to","children":[],"type":"string","xpath":"/root/u_assigned_to","previewValue":"Fred Luddy"},{"name":"u_assignment_group","children":[],"type":"string","xpath":"/root/u_assignment_group","previewValue":"MSP Support"},{"name":"u_business_service","children":[],"type":"string","xpath":"/root/u_business_service","previewValue":""},{"name":"u_caller_id","children":[],"type":"string","xpath":"/root/u_caller_id","previewValue":"Initech Employee"},{"name":"u_category","children":[],"type":"string","xpath":"/root/u_category","previewValue":"Inquiry / Help"},{"name":"u_cmdb_ci","children":[],"type":"string","xpath":"/root/u_cmdb_ci","previewValue":""},{"name":"u_contact_type","children":[],"type":"string","xpath":"/root/u_contact_type","previewValue":"Phone"},{"name":"u_correlation_display","children":[],"type":"string","xpath":"/root/u_correlation_display","previewValue":"INC0011463"},{"name":"u_correlation_id","children":[],"type":"string","xpath":"/root/u_correlation_id","previewValue":"e19dead81b8448106b06a7d76e4bcb16"},{"name":"u_description","children":[],"type":"string","xpath":"/root/u_description","previewValue":""},{"name":"u_impact","children":[],"type":"string","xpath":"/root/u_impact","previewValue":"3 - Low"},{"name":"u_number","children":[],"type":"string","xpath":"/root/u_number","previewValue":"INC0010187"},{"name":"u_priority","children":[],"type":"string","xpath":"/root/u_priority","previewValue":"5"},{"name":"u_short_description","children":[],"type":"string","xpath":"/root/u_short_description","previewValue":"DEMO - 10"},{"name":"u_state","children":[],"type":"string","xpath":"/root/u_state","previewValue":"2"},{"name":"u_subcategory","children":[],"type":"string","xpath":"/root/u_subcategory","previewValue":"Email"},{"name":"u_sys_id","children":[],"type":"string","xpath":"/root/u_sys_id","previewValue":"500ee29cdb800810bb528f423a9619b4"},{"name":"u_system_id","children":[],"type":"string","xpath":"/root/u_system_id","previewValue":"500ee29cdb800810bb528f423a9619b4"},{"name":"u_urgency","children":[],"type":"string","xpath":"/root/u_urgency","previewValue":"3 - Low"}],"type":"object","xpath":"/root","previewValue":""}&lt;/value&gt;&lt;variable display_value=""&gt;13e1f5fd735b2300ab7931d7caf6a76b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;11d59930db084810bb528f423a96195d&lt;/document_key&gt;&lt;order&gt;300&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;6dd59930db084810bb528f423a961987&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:11:51&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;48ff5bb7773223007b2380733b10612c&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=11d59930db084810bb528f423a96195d"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sample_payload&lt;/field&gt;&lt;id&gt;11d59930db084810bb528f423a96195d&lt;/id&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;edd59930db084810bb528f423a961986&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:08:55&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_34371337773223007b2380733b106170&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;source_data&lt;/field&gt;&lt;id&gt;11d59930db084810bb528f423a96195d&lt;/id&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;51d59930db084810bb528f423a961986&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:08:55&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_34371337773223007b2380733b106170&lt;/table&gt;&lt;value&gt;{{action.payload.payload}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;target_schema&lt;/field&gt;&lt;id&gt;11d59930db084810bb528f423a96195d&lt;/id&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;2dd59930db084810bb528f423a961986&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:08:55&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_34371337773223007b2380733b106170&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=c24670f4db844810bb528f423a96197e^sys_idNOT IN55d55130db084810bb528f423a96193c"/&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;payload&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Payload&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Connector - Payload Parser"&gt;c24670f4db844810bb528f423a96197e&lt;/model&gt;&lt;model_id&gt;c24670f4db844810bb528f423a96197e&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_c24670f4db844810bb528f423a96197e&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="x_snc_con_stage"&gt;x_snc_con_stage&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:54&lt;/sys_created_on&gt;&lt;sys_id&gt;55d55130db084810bb528f423a96193c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:08:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_output action="delete_multiple" query="model=c24670f4db844810bb528f423a96197e^sys_idNOT IN21d59930db084810bb528f423a96198c"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;co_type_name=FD6dd599303c08481084ef5508be8b5889,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;payload&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Payload&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Connector - Payload Parser"&gt;c24670f4db844810bb528f423a96197e&lt;/model&gt;&lt;model_id&gt;c24670f4db844810bb528f423a96197e&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_c24670f4db844810bb528f423a96197e&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;21d59930db084810bb528f423a96198c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:08:55&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=c24670f4db844810bb528f423a96197e^sys_idNOT IN11d59930db084810bb528f423a96195d"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="Connector - Payload Parser"&gt;c24670f4db844810bb528f423a96197e&lt;/action&gt;&lt;cid&gt;d36b257c-deb8-4d70-9391-35b01dd1c0f2&lt;/cid&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;label&gt;XML Parser step&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="XML Parser"&gt;34371337773223007b2380733b106170&lt;/step_type&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:54&lt;/sys_created_on&gt;&lt;sys_id&gt;11d59930db084810bb528f423a96195d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:11:51&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=11d59930db084810bb528f423a96195d"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;11d59930db084810bb528f423a96195d&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;61d59930db084810bb528f423a961987&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:08:55&lt;/sys_updated_on&gt;&lt;value&gt;{"name":"root","children":[{"name":"u_api_key","children":[],"type":"string","xpath":"/root/u_api_key","previewValue":""},{"name":"u_assigned_to","children":[],"type":"string","xpath":"/root/u_assigned_to","previewValue":"Fred Luddy"},{"name":"u_assignment_group","children":[],"type":"string","xpath":"/root/u_assignment_group","previewValue":"MSP Support"},{"name":"u_business_service","children":[],"type":"string","xpath":"/root/u_business_service","previewValue":""},{"name":"u_caller_id","children":[],"type":"string","xpath":"/root/u_caller_id","previewValue":"Initech Employee"},{"name":"u_category","children":[],"type":"string","xpath":"/root/u_category","previewValue":"Inquiry / Help"},{"name":"u_cmdb_ci","children":[],"type":"string","xpath":"/root/u_cmdb_ci","previewValue":""},{"name":"u_contact_type","children":[],"type":"string","xpath":"/root/u_contact_type","previewValue":"Phone"},{"name":"u_correlation_display","children":[],"type":"string","xpath":"/root/u_correlation_display","previewValue":"INC0011463"},{"name":"u_correlation_id","children":[],"type":"string","xpath":"/root/u_correlation_id","previewValue":"e19dead81b8448106b06a7d76e4bcb16"},{"name":"u_description","children":[],"type":"string","xpath":"/root/u_description","previewValue":""},{"name":"u_impact","children":[],"type":"string","xpath":"/root/u_impact","previewValue":"3 - Low"},{"name":"u_number","children":[],"type":"string","xpath":"/root/u_number","previewValue":"INC0010187"},{"name":"u_priority","children":[],"type":"string","xpath":"/root/u_priority","previewValue":"5"},{"name":"u_short_description","children":[],"type":"string","xpath":"/root/u_short_description","previewValue":"DEMO - 10"},{"name":"u_state","children":[],"type":"string","xpath":"/root/u_state","previewValue":"2"},{"name":"u_subcategory","children":[],"type":"string","xpath":"/root/u_subcategory","previewValue":"Email"},{"name":"u_sys_id","children":[],"type":"string","xpath":"/root/u_sys_id","previewValue":"500ee29cdb800810bb528f423a9619b4"},{"name":"u_system_id","children":[],"type":"string","xpath":"/root/u_system_id","previewValue":"500ee29cdb800810bb528f423a9619b4"},{"name":"u_urgency","children":[],"type":"string","xpath":"/root/u_urgency","previewValue":"3 - Low"}],"type":"object","xpath":"/root","previewValue":""}&lt;/value&gt;&lt;variable display_value=""&gt;13e1f5fd735b2300ab7931d7caf6a76b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;11d59930db084810bb528f423a96195d&lt;/document_key&gt;&lt;order&gt;300&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;6dd59930db084810bb528f423a961987&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:11:51&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;48ff5bb7773223007b2380733b10612c&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=11d59930db084810bb528f423a96195d"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sample_payload&lt;/field&gt;&lt;id&gt;11d59930db084810bb528f423a96195d&lt;/id&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;edd59930db084810bb528f423a961986&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:08:55&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_34371337773223007b2380733b106170&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;source_data&lt;/field&gt;&lt;id&gt;11d59930db084810bb528f423a96195d&lt;/id&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;51d59930db084810bb528f423a961986&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:08:55&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_34371337773223007b2380733b106170&lt;/table&gt;&lt;value&gt;{{action.payload.payload}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;target_schema&lt;/field&gt;&lt;id&gt;11d59930db084810bb528f423a96195d&lt;/id&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;2dd59930db084810bb528f423a961986&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:08:55&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_34371337773223007b2380733b106170&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_c24670f4db844810bb528f423a96197e^sys_idNOT IN59d59930db084810bb528f423a96195a"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;payload&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Payload&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_c24670f4db844810bb528f423a96197e&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:54&lt;/sys_created_on&gt;&lt;sys_id&gt;59d59930db084810bb528f423a96195a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Payload&lt;/sys_name&gt;&lt;sys_package display_value="Connector" source="x_snc_con"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_var__m_sys_hub_action_input_c24670f4db844810bb528f423a96197e_payload_en&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:08:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_c24670f4db844810bb528f423a96197e^sys_idNOT INe5d59930db084810bb528f423a961991"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;payload&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Payload&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_c24670f4db844810bb528f423a96197e&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bobby.edmonds&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 01:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;e5d59930db084810bb528f423a961991&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Payload&lt;/sys_name&gt;&lt;sys_package display_value="Connector" source="x_snc_con"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Connector"&gt;1e9c2d2bdb6f3300bb528f423a9619b5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_var__m_sys_hub_action_output_c24670f4db844810bb528f423a96197e_payload_en&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bobby.edmonds&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-20 01:08:55&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1293208211</payload_hash>
+        <record_name>Connector - Payload Parser</record_name>
+        <reverted_from/>
+        <source>169c2d2bdb6f3300bb528f423a9619b8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:11:52</sys_created_on>
+        <sys_id>a4861570db084810bb528f423a961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16d4c39b14f0000001</sys_recorded_at>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:11:52</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>208615706d0848103b2c60ffd90a6811</update_guid>
+        <update_guid_history>208615706d0848103b2c60ffd90a6811:1293208211,69d599303f084810ccb6624e87d0e0a9:-326209613,ce467038a3844810d7f4cfd1c031d9c7:-87582648</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 01:20:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>38a9d6ad5c064414bca789f2308cfc44</sys_id>
+        <sys_metadata>c24670f4db844810bb528f423a96197e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Connector - Payload Parser</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_scope_delete display_value="">0378b0684cc94906889237221c6da631</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_c24670f4db844810bb528f423a96197e</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_c24670f4db844810bb528f423a96197e">a4861570db084810bb528f423a961911</sys_update_version>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-20 01:20:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

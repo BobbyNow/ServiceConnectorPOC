@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>71cb8b86db777300bb528f423a9619e5</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="DELETE">
+        <active>true</active>
+        <answer>d71b30abdba73300bb528f423a9619bc</answer>
+        <condition table="var__m_sys_decision_input_9baa4b46db777300bb528f423a961922">u_domain=c94122494a362312007f2ce5bd78768f^u_state=2^EQ<item display_table="domain" display_value="Initech" endquery="false" field="u_domain" goto="false" newquery="false" operator="=" or="false" value="c94122494a362312007f2ce5bd78768f"/>
+            <item display_value="In Progress (2)" endquery="false" field="u_state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Connector - Outbound State Mapping">9baa4b46db777300bb528f423a961922</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_9baa4b46db777300bb528f423a961922</input_table>
+        <label>In Progress (Initech)</label>
+        <order>0</order>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-11 20:42:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>71cb8b86db777300bb528f423a9619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-11 20:42:16</sys_updated_on>
+    </sys_decision_question>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-11 20:42:16</sys_created_on>
+        <sys_id>a11ccb86db777300bb528f423a961921</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>In Progress (Initech)</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_metadata_link_a11ccb86db777300bb528f423a961921</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-11 21:35:34</sys_updated_on>
+        <tablename>sys_decision_question</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="decision_table" label="Decision table" language="en" table="var__m_sys_hub_action_input_0058b31edb37b300bb528f423a961978">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>decision_table</element>
+            <help/>
+            <hint/>
+            <label>Decision table</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_0058b31edb37b300bb528f423a961978</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-12 19:19:46</sys_created_on>
+            <sys_id>e2c20426db77b300bb528f423a9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Decision table</sys_name>
+            <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_0058b31edb37b300bb528f423a961978_decision_table_en</sys_update_name>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-12 19:19:46</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

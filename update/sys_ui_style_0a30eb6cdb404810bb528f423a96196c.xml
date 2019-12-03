@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>advanced</element>
+        <name>x_snc_con_field_mapping</name>
+        <style>background-color:tomato</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-19 16:35:15</sys_created_on>
+        <sys_id>0a30eb6cdb404810bb528f423a96196c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>x_snc_con_field_mapping</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_ui_style_0a30eb6cdb404810bb528f423a96196c</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-19 16:38:03</sys_updated_on>
+        <value>1</value>
+    </sys_ui_style>
+    <sys_translated_text action="delete_multiple" query="documentkey=0a30eb6cdb404810bb528f423a96196c"/>
+</record_update>

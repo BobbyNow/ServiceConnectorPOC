@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_con.StagePayloadBuilder</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>StagePayloadBuilder</name>
+        <script><![CDATA[var StagePayloadBuilder = Class.create();
+StagePayloadBuilder.prototype = {
+    initialize: function() {},
+    createPayload: function(record) {
+        var recordValues = {};
+
+        var fields = {};
+        var fm = new GlideRecord('x_snc_con_field_mapping');
+        fm.addActiveQuery();
+        fm.addQuery('table', record.getTableName() + '');
+        fm.query();
+        while (fm.next()) {
+            fields[fm.field] = {};
+            fields[fm.field].id = fm.getValue('sys_id') + '';
+            fields[fm.field].display_value = fm.getValue('display_value') + '';
+            fields[fm.field].mandatory = fm.getValue('mandatory') + '';
+            fields[fm.field].advanced = fm.getValue('advanced') + '';
+        }
+
+        for (i in fields) {
+            var field = i + '';
+            var id = fields[i].id + '';
+            var displayValue = fields[i].display_value + '';
+            var mandatory = fields[i].mandatory + '';
+            var advanced = fields[i].advanced + '';
+
+            if (displayValue == '1') {
+				gs.info('getDisplayValue for ' + field + ' - ' + record[field].getDisplayValue());
+                recordValues[field] = record[field].getDisplayValue() + '';
+            } else if (advanced == '1') {
+                var fmGR = new GlideRecord('x_snc_con_field_mapping');
+                fmGR.get(id);
+
+				var scriptedValue = this.getScriptedValue(fmGR, record)+'';
+                recordValues[field] = scriptedValue;
+            } else {
+                recordValues[field] = record.getValue(field) + '';
+            }
+        }
+
+        recordValues.u_system_id = record.getValue('sys_id') + '';
+        return recordValues;
+    },
+
+    getScriptedValue: function(fmGR, record) {
+        var evaluator = new GlideScopedEvaluator();
+        var vars = {
+            'current': record,
+            'field': fmGR.field + ''
+        };
+        return evaluator.evaluateScript(fmGR, 'script', vars) + '';
+    },
+
+    type: 'StagePayloadBuilder'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-20 03:43:01</sys_created_on>
+        <sys_id>e219313cdb484810bb528f423a961985</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>StagePayloadBuilder</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_script_include_e219313cdb484810bb528f423a961985</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-26 01:25:26</sys_updated_on>
+    </sys_script_include>
+</record_update>

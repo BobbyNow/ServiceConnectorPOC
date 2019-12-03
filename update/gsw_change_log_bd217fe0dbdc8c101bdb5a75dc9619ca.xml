@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
+    <gsw_change_log action="INSERT_OR_UPDATE">
+        <change_date>2019-10-02 04:04:44</change_date>
+        <changed_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</changed_by>
+        <content display_value="Set Up Email Client Experience">0d77105453152300afffddeeff7b1225</content>
+        <related_change_log_entry/>
+        <related_task_entry/>
+        <sys_class_name>gsw_change_log</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-02 04:04:44</sys_created_on>
+        <sys_id>bd217fe0dbdc8c101bdb5a75dc9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2019-10-02 04:04:44</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>gsw_change_log_bd217fe0dbdc8c101bdb5a75dc9619ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-02 04:04:44</sys_updated_on>
+        <type>4</type>
+    </gsw_change_log>
+</record_update>

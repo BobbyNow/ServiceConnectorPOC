@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Customer Key (Provided by your service provider)</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_snc_con.api_key</name>
+        <read_roles/>
+        <suffix>api_key</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-11 19:09:01</sys_created_on>
+        <sys_id>0c963606db377300bb528f423a961942</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_snc_con.api_key</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_properties_0c963606db377300bb528f423a961942</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-02 04:33:02</sys_updated_on>
+        <type>string</type>
+        <value>7ac02796db0044102443e7148a9619e2</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=0c963606db377300bb528f423a961942"/>
+</record_update>

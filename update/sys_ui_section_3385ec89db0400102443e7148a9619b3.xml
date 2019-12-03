@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Payload" section_id="3385ec89db0400102443e7148a9619b3" sys_domain="global" table="x_snc_con_stage" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-24 02:52:01</sys_created_on>
+            <sys_id>66c3960adb8cc0102443e7148a961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-24 02:52:01</sys_updated_on>
+            <text/>
+            <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-24 02:52:01</sys_created_on>
+            <sys_id>aac3960adb8cc0102443e7148a961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-24 02:52:01</sys_updated_on>
+            <text/>
+            <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>table</element>
+            <position>0</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-24 02:52:01</sys_created_on>
+            <sys_id>e2c3960adb8cc0102443e7148a961948</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Payload" display_value="Payload" name="x_snc_con_stage" sys_domain="global" view="Default view">3385ec89db0400102443e7148a9619b3</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-24 02:52:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>66c3960adb8cc0102443e7148a961944</element>
+            <position>1</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-24 02:52:01</sys_created_on>
+            <sys_id>66c3960adb8cc0102443e7148a961948</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Payload" display_value="Payload" name="x_snc_con_stage" sys_domain="global" view="Default view">3385ec89db0400102443e7148a9619b3</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-24 02:52:01</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_con_stringify_json.xml</element>
+            <position>2</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-24 02:52:01</sys_created_on>
+            <sys_id>e6c3960adb8cc0102443e7148a961948</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="JSON View">c614a849db0400102443e7148a961971</sys_ui_formatter>
+            <sys_ui_section caption="Payload" display_value="Payload" name="x_snc_con_stage" sys_domain="global" view="Default view">3385ec89db0400102443e7148a9619b3</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-24 02:52:01</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>aac3960adb8cc0102443e7148a961944</element>
+            <position>3</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-24 02:52:01</sys_created_on>
+            <sys_id>eac3960adb8cc0102443e7148a961948</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Payload" display_value="Payload" name="x_snc_con_stage" sys_domain="global" view="Default view">3385ec89db0400102443e7148a9619b3</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-24 02:52:01</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Payload</caption>
+            <header>false</header>
+            <name>x_snc_con_stage</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-20 16:16:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3385ec89db0400102443e7148a9619b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Payload</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+            <sys_update_name>sys_ui_section_3385ec89db0400102443e7148a9619b3</sys_update_name>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-20 16:16:29</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

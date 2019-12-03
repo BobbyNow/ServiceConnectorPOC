@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c905cbb7dbef7300bb528f423a96190b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="http_connection">
+    <http_connection action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="ALL">35aa573fd7802200bdbaee5b5e610375</application>
+        <base_path/>
+        <capabilities/>
+        <connection_alias display_value="x_snc_con.Connector">3f678f3bdbef7300bb528f423a9619de</connection_alias>
+        <connection_retries>0</connection_retries>
+        <connection_timeout>0</connection_timeout>
+        <connection_url>https://serviceconnectaus.service-now.com</connection_url>
+        <credential display_value="admin">45150fb7dbef7300bb528f423a961911</credential>
+        <extended_attributes/>
+        <host>serviceconnectaus.service-now.com</host>
+        <mutual_auth>false</mutual_auth>
+        <name>Connector eBonding</name>
+        <order>100</order>
+        <port/>
+        <protocol>https</protocol>
+        <protocol_profile/>
+        <sys_class_name>http_connection</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-04 20:25:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c905cbb7dbef7300bb528f423a96190b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-05 18:05:59</sys_updated_on>
+        <url_builder>false</url_builder>
+        <use_mid>false</use_mid>
+    </http_connection>
+    <sys_variable_value action="delete_multiple" query="document_key=c905cbb7dbef7300bb528f423a96190b"/>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-05 18:06:20</sys_created_on>
+        <sys_id>b2deeb00dbbfb300bb528f423a96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Connector eBonding</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_metadata_link_b2deeb00dbbfb300bb528f423a96194e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-05 18:06:20</sys_updated_on>
+        <tablename>sys_connection</tablename>
+    </sys_metadata_link>
+</record_update>

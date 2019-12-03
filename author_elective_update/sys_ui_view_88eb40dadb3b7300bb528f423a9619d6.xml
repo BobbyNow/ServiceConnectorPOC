@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="DELETE">
+        <group/>
+        <hidden>false</hidden>
+        <name>connector</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-12 01:20:59</sys_created_on>
+        <sys_id>88eb40dadb3b7300bb528f423a9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Connector</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_ui_view_88eb40dadb3b7300bb528f423a9619d6</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-12 01:20:59</sys_updated_on>
+        <title>Connector</title>
+        <user/>
+    </sys_ui_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</application>
+        <file_path/>
+        <instance_id>63489765db7633403050ac44d49619d5</instance_id>
+        <instance_name>serviceconnectaus</instance_name>
+        <name>sys_ui_view_88eb40dadb3b7300bb528f423a9619d6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view"><sys_ui_view action="INSERT_OR_UPDATE"><group/><hidden>false</hidden><name>connector</name><roles/><sys_class_name>sys_ui_view</sys_class_name><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-12 01:20:59</sys_created_on><sys_id>88eb40dadb3b7300bb528f423a9619d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Connector</sys_name><sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package><sys_policy/><sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope><sys_update_name>sys_ui_view_88eb40dadb3b7300bb528f423a9619d6</sys_update_name><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-12 01:20:59</sys_updated_on><title>Connector</title><user/></sys_ui_view></record_update>]]></payload>
+        <payload_hash>389970202</payload_hash>
+        <record_name>Connector</record_name>
+        <reverted_from/>
+        <source>169c2d2bdb6f3300bb528f423a9619b8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-12 01:20:59</sys_created_on>
+        <sys_id>c0eb44dadb3b7300bb528f423a96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16d230f299d0000001</sys_recorded_at>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-12 01:20:59</sys_updated_on>
+        <type>UI View</type>
+        <update_guid>0ceb44da6e3b73005b12cefc4aa2774b</update_guid>
+        <update_guid_history>0ceb44da6e3b73005b12cefc4aa2774b:389970202</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-12 01:28:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_view">sys_ui_view</sys_db_object>
+        <sys_id>2c3e2e4462534d66a7794f7b00ce8144</sys_id>
+        <sys_metadata>88eb40dadb3b7300bb528f423a9619d6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Connector</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_scope_delete display_value="">0378b0684cc94906889237221c6da631</sys_scope_delete>
+        <sys_update_name>sys_ui_view_88eb40dadb3b7300bb528f423a9619d6</sys_update_name>
+        <sys_update_version display_value="sys_ui_view_88eb40dadb3b7300bb528f423a9619d6">c0eb44dadb3b7300bb528f423a96194c</sys_update_version>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-12 01:28:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

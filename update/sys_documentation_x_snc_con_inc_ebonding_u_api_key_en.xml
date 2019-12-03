@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_api_key" label="Api key" language="en" table="x_snc_con_inc_ebonding">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_api_key</element>
+            <help/>
+            <hint/>
+            <label>Api key</label>
+            <language>en</language>
+            <name>x_snc_con_inc_ebonding</name>
+            <plural>Api keys</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-09 15:37:40</sys_created_on>
+            <sys_id>13f3bc9cdbd04c101bdb5a75dc9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Api key</sys_name>
+            <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_con_inc_ebonding_u_api_key_en</sys_update_name>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-09 15:37:40</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

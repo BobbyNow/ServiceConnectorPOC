@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="DELETE">
+        <connection_type>http_connection</connection_type>
+        <id>x_snc_con.ConnectorTest</id>
+        <multiple_connections>false</multiple_connections>
+        <name>ConnectorTest</name>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-09 16:53:08</sys_created_on>
+        <sys_id>cb54c025db3fb700bb528f423a961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_con.ConnectorTest</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_alias_cb54c025db3fb700bb528f423a961943</sys_update_name>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-09 16:53:08</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</application>
+        <file_path/>
+        <instance_id>63489765db7633403050ac44d49619d5</instance_id>
+        <instance_name>serviceconnectaus</instance_name>
+        <name>sys_alias_cb54c025db3fb700bb528f423a961943</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><connection_type>http_connection</connection_type><id>x_snc_con.ConnectorTest</id><multiple_connections>false</multiple_connections><name>ConnectorTest</name><retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy><sys_class_name>sys_alias</sys_class_name><sys_created_by>bobby.edmonds</sys_created_by><sys_created_on>2019-09-09 16:53:08</sys_created_on><sys_id>cb54c025db3fb700bb528f423a961943</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_con.ConnectorTest</sys_name><sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package><sys_policy/><sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope><sys_update_name>sys_alias_cb54c025db3fb700bb528f423a961943</sys_update_name><sys_updated_by>bobby.edmonds</sys_updated_by><sys_updated_on>2019-09-09 16:53:08</sys_updated_on><type>connection</type></sys_alias></record_update>]]></payload>
+        <payload_hash>-1960792085</payload_hash>
+        <record_name>x_snc_con.ConnectorTest</record_name>
+        <reverted_from/>
+        <source>169c2d2bdb6f3300bb528f423a9619b8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-09 16:53:08</sys_created_on>
+        <sys_id>ad744c25db3fb700bb528f423a9619ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16d16f17fc20000001</sys_recorded_at>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-09 16:53:08</sys_updated_on>
+        <type>Connection &amp; Credential Aliases</type>
+        <update_guid>e5744c25d53fb700af4f0e7b10022aee</update_guid>
+        <update_guid_history>e5744c25d53fb700af4f0e7b10022aee:-1960792085</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bobby.edmonds</sys_created_by>
+        <sys_created_on>2019-09-09 16:54:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_alias">sys_alias</sys_db_object>
+        <sys_id>6fecccba47db4b30aae26072b9e681f9</sys_id>
+        <sys_metadata>cb54c025db3fb700bb528f423a961943</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_con.ConnectorTest</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_scope_delete display_value="">0378b0684cc94906889237221c6da631</sys_scope_delete>
+        <sys_update_name>sys_alias_cb54c025db3fb700bb528f423a961943</sys_update_name>
+        <sys_update_version display_value="sys_alias_cb54c025db3fb700bb528f423a961943">ad744c25db3fb700bb528f423a9619ee</sys_update_version>
+        <sys_updated_by>bobby.edmonds</sys_updated_by>
+        <sys_updated_on>2019-09-09 16:54:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

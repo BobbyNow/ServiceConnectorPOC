@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="name" label="name" language="en" table="var__m_sys_hub_step_ext_output_646fca30db58cc101bdb5a75dc961917">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <help/>
+            <hint/>
+            <label>name</label>
+            <language>en</language>
+            <name>var__m_sys_hub_step_ext_output_646fca30db58cc101bdb5a75dc961917</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bobby.edmonds@snc</sys_created_by>
+            <sys_created_on>2019-10-02 15:36:04</sys_created_on>
+            <sys_id>bc6fca30db58cc101bdb5a75dc96194c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>name</sys_name>
+            <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_646fca30db58cc101bdb5a75dc961917_name_en</sys_update_name>
+            <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+            <sys_updated_on>2019-10-02 15:36:04</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

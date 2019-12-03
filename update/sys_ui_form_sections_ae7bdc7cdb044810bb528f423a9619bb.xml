@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="ae7bdc7cdb044810bb528f423a9619bb" sys_domain="global" table="sys_hub_flow_input" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:53:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a27bdc7cdb044810bb528f423a9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_input" name="sys_hub_flow_input" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ae7bdc7cdb044810bb528f423a9619bb</sys_ui_form>
+            <sys_ui_section display_value="">a67bdc7cdb044810bb528f423a9619c7</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:53:57</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:53:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a67bdc7cdb044810bb528f423a9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_input" name="sys_hub_flow_input" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ae7bdc7cdb044810bb528f423a9619bb</sys_ui_form>
+            <sys_ui_section display_value="">a67bdc7cdb044810bb528f423a9619cd</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:53:57</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:53:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6e7bdc7cdb044810bb528f423a9619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_input" name="sys_hub_flow_input" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ae7bdc7cdb044810bb528f423a9619bb</sys_ui_form>
+            <sys_ui_section display_value="">2e7bdc7cdb044810bb528f423a9619bd</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:53:57</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:53:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>627bdc7cdb044810bb528f423a9619c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_input" name="sys_hub_flow_input" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ae7bdc7cdb044810bb528f423a9619bb</sys_ui_form>
+            <sys_ui_section display_value="">627bdc7cdb044810bb528f423a9619c1</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:53:57</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:53:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a27bdc7cdb044810bb528f423a9619c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_input" name="sys_hub_flow_input" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ae7bdc7cdb044810bb528f423a9619bb</sys_ui_form>
+            <sys_ui_section display_value="">667bdc7cdb044810bb528f423a9619c4</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:53:57</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:53:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a7bdc7cdb044810bb528f423a9619d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_flow_input" name="sys_hub_flow_input" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ae7bdc7cdb044810bb528f423a9619bb</sys_ui_form>
+            <sys_ui_section display_value="">aa7bdc7cdb044810bb528f423a9619d2</sys_ui_section>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:53:57</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sys_hub_flow_input</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>bobby.edmonds</sys_created_by>
+            <sys_created_on>2019-09-19 20:53:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ae7bdc7cdb044810bb528f423a9619bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_hub_flow_input</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+            <sys_update_name>sys_ui_form_sections_ae7bdc7cdb044810bb528f423a9619bb</sys_update_name>
+            <sys_updated_by>bobby.edmonds</sys_updated_by>
+            <sys_updated_on>2019-09-19 20:53:57</sys_updated_on>
+            <sys_user/>
+            <view display_value="Advanced" name="advanced">7966be310a0a0b8c00bd504090503227</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
