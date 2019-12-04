@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
     <sys_transform_entry action="INSERT_OR_UPDATE">
         <choice_action>ignore</choice_action>
-        <coalesce>false</coalesce>
+        <coalesce>true</coalesce>
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
-        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <coalesce_empty_fields>true</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
         <map display_value="Connector eBonding">d138e3d9dbbbb700bb528f423a96198e</map>
         <reference_value_field/>
-        <source_field>u_system_id</source_field>
+        <source_field>[Script]</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {
 
-	// Add your code here
-	return ""; // return the value to be put into the target field
+    if (!source.u_correlation_id) {
+        var gr = new GlideRecord('incident');
+        if (gr.get('correlation_id', source.u_system_id)) {
+            return gr.sys_id + '';
+        }
+    }
+	
+	return source.u_correlation_id;
 
 })(source);]]></source_script>
         <source_table>x_snc_con_inc_ebonding</source_table>
         <sys_class_name>sys_transform_entry</sys_class_name>
-        <sys_created_by>bobby.edmonds</sys_created_by>
-        <sys_created_on>2019-09-09 14:49:48</sys_created_on>
-        <sys_id>8338a31ddbbbb700bb528f423a9619e6</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>u_system_id</sys_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-03 21:30:19</sys_created_on>
+        <sys_id>a6037a34dbe1c8d01bdb5a75dc9619b3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>[Script]</sys_name>
         <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_update_name>sys_transform_entry_8338a31ddbbbb700bb528f423a9619e6</sys_update_name>
+        <sys_update_name>sys_transform_entry_a6037a34dbe1c8d01bdb5a75dc9619b3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-03 23:37:43</sys_updated_on>
-        <target_field>correlation_id</target_field>
+        <sys_updated_on>2019-12-04 02:23:34</sys_updated_on>
+        <target_field>sys_id</target_field>
         <target_table>incident</target_table>
-        <use_source_script>false</use_source_script>
+        <use_source_script>true</use_source_script>
     </sys_transform_entry>
 </record_update>

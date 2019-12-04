@@ -6,6 +6,7 @@
         <element label="Credential" max_length="32" name="credential" reference="discovery_credentials" reference_qual="javascript:if (!current.credential_alias) {'tag=RETURNNOTHING'} else {'tagLIKE' + current.credential_alias + '^EQ'}" type="reference" use_reference_qualifier="advanced"/>
         <element label="Credential Alias" max_length="32" name="credential_alias" reference="sys_alias" reference_qual="type=credential^EQ" reference_qual_condition="type=credential^EQ" type="reference"/>
         <element label="Endpoint" max_length="1024" name="endpoint" type="url"/>
+        <element label="Managed domain" max_length="40" name="managed_domain" type="boolean"/>
         <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
         <element label="Domain Path" max_length="255" name="sys_domain_path" type="domain_path"/>
         <index name="index">

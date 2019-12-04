@@ -12,7 +12,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_snc_con_endpoint</collection>
-        <condition>current.sys_domain == 'global' || current.sys_domain.nil()</condition>
+        <condition>(current.sys_domain == 'global' || current.sys_domain.nil())  &amp;&amp; (current.managed_domain == false || current.managed_domain.changesTo(false))</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -37,7 +37,7 @@ function setEndpointDefaultDomain() {
     // If the endpoint is still global, put it in the Default domain
     if (current.sys_domain == 'global' || current.sys_domain.nil())
         current.setAbortAction(true);
-    gs.addErrorMessage('The company set must have a valid domain.')
+    gs.addErrorMessage('The company set must have a valid domain.');
 }]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>bobby.edmonds</sys_created_by>
@@ -45,15 +45,15 @@ function setEndpointDefaultDomain() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>01500f60db004810bb528f423a96199a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Domain - Default - Endpoint</sys_name>
         <sys_overrides/>
         <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_update_name>sys_script_01500f60db004810bb528f423a96199a</sys_update_name>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-19 14:35:53</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-03 20:54:12</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
