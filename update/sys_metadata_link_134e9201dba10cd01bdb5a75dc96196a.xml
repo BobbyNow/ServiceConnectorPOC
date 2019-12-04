@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c94993314a362312005cfc20c1aa15d2</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="c90a2b444a3623120064ed56263be407" table="core_company">
+    <core_company action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <apple_icon/>
+        <banner_image/>
+        <banner_image_light/>
+        <banner_text/>
+        <city/>
+        <contact/>
+        <country>USA</country>
+        <customer>true</customer>
+        <discount/>
+        <fax_phone/>
+        <fiscal_year/>
+        <lat_long_error/>
+        <latitude/>
+        <longitude/>
+        <manufacturer>false</manufacturer>
+        <market_cap>0</market_cap>
+        <name>MSP</name>
+        <notes/>
+        <num_employees/>
+        <parent/>
+        <phone/>
+        <primary>false</primary>
+        <profits>0</profits>
+        <publicly_traded>false</publicly_traded>
+        <rank_tier/>
+        <revenue_per_year>0</revenue_per_year>
+        <state/>
+        <stock_price/>
+        <stock_symbol/>
+        <street/>
+        <sys_class_name>core_company</sys_class_name>
+        <sys_created_by>rob.phillips@snc</sys_created_by>
+        <sys_created_on>2016-09-17 22:24:26</sys_created_on>
+        <sys_domain>c90a2b444a3623120064ed56263be407</sys_domain>
+        <sys_domain_path>!!!/!!!/</sys_domain_path>
+        <sys_id>c94993314a362312005cfc20c1aa15d2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>bobby.edmonds@snc</sys_updated_by>
+        <sys_updated_on>2019-07-07 21:49:11</sys_updated_on>
+        <theme/>
+        <vendor>false</vendor>
+        <vendor_manager/>
+        <vendor_type/>
+        <website/>
+        <zip/>
+    </core_company>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-04 14:38:12</sys_created_on>
+        <sys_id>134e9201dba10cd01bdb5a75dc96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MSP</sys_name>
+        <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_update_name>sys_metadata_link_134e9201dba10cd01bdb5a75dc96196a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-04 14:38:12</sys_updated_on>
+        <tablename>core_company</tablename>
+    </sys_metadata_link>
+</record_update>
