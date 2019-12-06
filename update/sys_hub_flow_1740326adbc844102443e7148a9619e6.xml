@@ -2,7 +2,7 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>package_private</access>
         <acls/>
-        <active>true</active>
+        <active>false</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1740326adbc844102443e7148a9619e6</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Connector - Process Staged Records</sys_name>
         <sys_overrides/>
         <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_update_name>sys_hub_flow_1740326adbc844102443e7148a9619e6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:33:23</sys_updated_on>
+        <sys_updated_on>2019-12-06 04:56:38</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=1740326adbc844102443e7148a9619e6"/>

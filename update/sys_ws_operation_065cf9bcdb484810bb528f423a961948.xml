@@ -10,19 +10,19 @@
         <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
     try {
-        gs.info('RUNNING SCRIPTED: Stage ID: ' + request.queryParams.stage_id + ' - API key: ' + request.queryParams.api_key + ' - Table: ' + request.queryParams.table);
+        //gs.info('RUNNING SCRIPTED: Stage ID: ' + request.queryParams.stage_id + ' - API key: ' + request.queryParams.api_key + ' - Table: ' + request.queryParams.table);
         var inputs = {};
         inputs['stage_id'] = request.queryParams.stage_id + '';
         inputs['api_key'] = request.queryParams.api_key + '';
         inputs['table'] = request.queryParams.table + '';
 
         //var outputs = sn_fd.FlowAPI.executeAction('connector__fetch_staged_payload', inputs);
-        var outputs = sn_fd.FlowAPI.executeSubflow('x_snc_con.connector__process_staged_records', inputs);
+        var outputs = sn_fd.FlowAPI.executeSubflow('x_snc_con.process_staged_records', inputs);
 
         var importState = outputs.import_record.sys_import_state + '';
 
-        gs.info('IMPORT STATE: ' + importState);
-        gs.info('IMPORT ERROR: ' + outputs.import_record.sys_import_state_comment);
+        //gs.info('IMPORT STATE: ' + importState);
+        //gs.info('IMPORT ERROR: ' + outputs.import_record.sys_import_state_comment);
 
         response.setStatus(200);
 		/*
@@ -66,14 +66,14 @@
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-20 03:59:22</sys_created_on>
         <sys_id>065cf9bcdb484810bb528f423a961948</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>ping</sys_name>
         <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_update_name>sys_ws_operation_065cf9bcdb484810bb528f423a961948</sys_update_name>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-25 23:44:06</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 04:56:13</sys_updated_on>
         <web_service_definition display_value="Connector Push">071c39bcdb484810bb528f423a961917</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
