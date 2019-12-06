@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_group">
     <gsw_content_group action="INSERT_OR_UPDATE">
         <active>true</active>
-        <checksum>iCeitNZgi2rpw75sj2QSLL8LKUI=</checksum>
+        <checksum>2oGtCEsM7+I4sTMD+nJC7sHerFo=</checksum>
         <child_can_have_roles>false</child_can_have_roles>
         <children_layout>0</children_layout>
         <dependent_on_contents/>
@@ -28,14 +28,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-10-02 04:04:01</sys_created_on>
         <sys_id>d490f3e0dbdc8c101bdb5a75dc9619c8</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Connector Setup</sys_name>
         <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_update_name>gsw_content_group_d490f3e0dbdc8c101bdb5a75dc9619c8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-10-02 04:46:08</sys_updated_on>
+        <sys_updated_on>2019-12-06 04:20:08</sys_updated_on>
         <title>Connector Setup</title>
         <weight>1</weight>
     </gsw_content_group>

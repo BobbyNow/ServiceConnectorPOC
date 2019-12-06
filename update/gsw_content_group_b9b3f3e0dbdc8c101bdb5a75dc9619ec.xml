@@ -8,7 +8,8 @@
         <dependent_on_plugins/>
         <dependent_on_plugins_ids/>
         <description><![CDATA[<p>Update the provider endpoint with the credentials provided to you.</p>
-<p>Update customer API key with the key provided to you.</p>]]></description>
+<p>Update customer API key with the key provided to you.</p>
+<p>Update Provider Endpoint with the URL provided to you.</p>]]></description>
         <display_child_max_num/>
         <done_status_text/>
         <hide_getting_started>false</hide_getting_started>
@@ -29,14 +30,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-10-02 04:18:59</sys_created_on>
         <sys_id>b9b3f3e0dbdc8c101bdb5a75dc9619ec</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Configure Credentials and Customer key</sys_name>
         <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_update_name>gsw_content_group_b9b3f3e0dbdc8c101bdb5a75dc9619ec</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-10-02 04:43:43</sys_updated_on>
+        <sys_updated_on>2019-12-06 04:21:59</sys_updated_on>
         <title>Configure Credentials and Customer key</title>
         <weight>1</weight>
     </gsw_content_group>

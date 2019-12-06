@@ -7,19 +7,19 @@
         <more_info_visited>false</more_info_visited>
         <previous_status>0</previous_status>
         <progress>0</progress>
-        <related_log_entry display_value="2019-10-30 12:05:51">faeb0331db78cc101bdb5a75dc9619d6</related_log_entry>
+        <related_log_entry display_value="2019-12-05 20:23:05">a8b46ee9dba18cd01bdb5a75dc9619e5</related_log_entry>
         <status>1</status>
         <sys_class_name>gsw_status_of_content</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-10-02 04:27:27</sys_created_on>
         <sys_id>e656b3a8dbdc8c101bdb5a75dc96195e</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>85</sys_mod_count>
         <sys_name>1</sys_name>
         <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_update_name>gsw_status_of_content_e656b3a8dbdc8c101bdb5a75dc96195e</sys_update_name>
-        <sys_updated_by>david.loo</sys_updated_by>
-        <sys_updated_on>2019-10-30 19:05:51</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 04:23:05</sys_updated_on>
     </gsw_status_of_content>
 </record_update>

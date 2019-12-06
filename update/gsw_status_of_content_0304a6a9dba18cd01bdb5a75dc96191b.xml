@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_status_of_content">
     <gsw_status_of_content action="INSERT_OR_UPDATE">
         <best_practice_allowed_ever>0</best_practice_allowed_ever>
-        <checksum>2oGtCEsM7+I4sTMD+nJC7sHerFo=</checksum>
-        <content display_value="Connector Setup">d490f3e0dbdc8c101bdb5a75dc9619c8</content>
+        <checksum/>
+        <content display_value="Update Endpoint">9d04ae29dba18cd01bdb5a75dc961947</content>
         <effective_weight>1</effective_weight>
         <more_info_visited>false</more_info_visited>
         <previous_status>0</previous_status>
@@ -11,14 +11,14 @@
         <status>1</status>
         <sys_class_name>gsw_status_of_content</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-10-02 04:27:27</sys_created_on>
-        <sys_id>a656b3a8dbdc8c101bdb5a75dc961961</sys_id>
-        <sys_mod_count>160</sys_mod_count>
+        <sys_created_on>2019-12-06 04:20:15</sys_created_on>
+        <sys_id>0304a6a9dba18cd01bdb5a75dc96191b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>1</sys_name>
         <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_update_name>gsw_status_of_content_a656b3a8dbdc8c101bdb5a75dc961961</sys_update_name>
+        <sys_update_name>gsw_status_of_content_0304a6a9dba18cd01bdb5a75dc96191b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2019-12-06 04:23:05</sys_updated_on>
     </gsw_status_of_content>
