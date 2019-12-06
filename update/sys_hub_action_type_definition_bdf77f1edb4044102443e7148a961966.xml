@@ -31,7 +31,7 @@ The fields passed to the remote instance are the display names of the following 
         <ih_action>true</ih_action>
         <internal_name>connector__retry_staging</internal_name>
         <label_cache>[{"name":"{{action.stage}}","label":"action➛Stage","type":"action","ref":""},{"name":"{{action.stage.endpoint.credential_alias}}","label":"action➛Stage➛Endpoint➛Credential Alias","type":"action","ref":"sys_alias"},{"name":"{{action.stage.endpoint.endpoint}}","label":"action➛Stage➛Endpoint➛Endpoint","type":"action","ref":""},{"name":"{{action.stage.endpoint.api_key}}","label":"action➛Stage➛Endpoint➛Api key","type":"action","ref":""},{"name":"{{action.stage.sys_id}}","label":"action➛Stage➛Sys ID","type":"action","ref":""},{"name":"{{action.stage.endpoint.credential_alias.sys_id}}","label":"action➛Stage➛Endpoint➛Credential Alias➛Sys ID","type":"action","ref":""},{"name":"{{action.stage.table}}","label":"action➛Stage➛Table","type":"action","ref":""},{"name":"{{step[318456df-9525-4fa2-9781-73c285c6f087].response_body}}","label":"step➛Connector Push➛Response Body","type":"step","ref":""},{"name":"{{step[318456df-9525-4fa2-9781-73c285c6f087].status_code}}","label":"step➛Connector Push➛Status Code","type":"step","ref":""},{"name":"{{step[5c4a94d2-a652-4a5e-aa7a-de1b00aa1459].credential_alias}}","label":"step➛Parse inputs for REST➛Credential Alias","type":"step","ref":""},{"name":"{{step[5c4a94d2-a652-4a5e-aa7a-de1b00aa1459].endpoint_url}}","label":"step➛Parse inputs for REST➛Endpoint URL","type":"step","ref":""},{"name":"{{step[5c4a94d2-a652-4a5e-aa7a-de1b00aa1459].table}}","label":"step➛Parse inputs for REST➛Table","type":"step","ref":""},{"name":"{{step[fa750595-9371-4d87-8054-f27ee4d825e2].activity}}","label":"step➛Parse Response➛Activity","type":"step","ref":""},{"name":"{{step[fa750595-9371-4d87-8054-f27ee4d825e2].state}}","label":"step➛Parse Response➛State","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>95418954db544c101bdb5a75dc9619e6</latest_snapshot>
+        <latest_snapshot>39618ba9db258cd01bdb5a75dc9619fd</latest_snapshot>
         <master_snapshot>a8b640eadb8044102443e7148a96191d</master_snapshot>
         <name>Connector - Retry Staging</name>
         <outputs/>
@@ -43,15 +43,15 @@ The fields passed to the remote instance are the display names of the following 
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bdf77f1edb4044102443e7148a961966</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Connector - Retry Staging</sys_name>
         <sys_overrides/>
         <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_bdf77f1edb4044102443e7148a961966</sys_update_name>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-26 01:33:51</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:37</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -87,10 +87,10 @@ The fields passed to the remote instance are the display names of the following 
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-26 01:33:36</sys_created_on>
         <sys_id>210510f2db4084102443e7148a961983</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-26 01:33:37</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:25</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=210510f2db4084102443e7148a961983"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -101,16 +101,14 @@ The fields passed to the remote instance are the display names of the following 
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-26 01:33:37</sys_created_on>
         <sys_id>250510f2db4084102443e7148a9619db</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-26 01:33:37</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:25</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var responseBody = JSON.parse(inputs.response);
   
-  var importState = responseBody.result.import_state +'';
-  var importError = responseBody.result.import_error +'';
-  var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
-  
+
+  var activity = '';
   if(inputs.status!=201 &amp;&amp; inputs.status!=200){
     outputs.state = 'Error';
    	//var errorMsg =  responseBody.error.message;
@@ -118,7 +116,9 @@ The fields passed to the remote instance are the display names of the following 
     //throw "Error creating. Message: "+errorMsg + " Details:"+errorDetail;
   } else {
     outputs.state = 'Complete';
-    
+    var importState = responseBody.result.import_state +'';
+    var importError = responseBody.result.import_error +'';
+    var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
   }
   
   outputs.activity = activity;
@@ -1730,10 +1730,10 @@ outputs.table = inputs.table+'';
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-26 01:33:36</sys_created_on>
         <sys_id>210510f2db4084102443e7148a961983</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-26 01:33:37</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:25</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=210510f2db4084102443e7148a961983"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1744,16 +1744,14 @@ outputs.table = inputs.table+'';
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-26 01:33:37</sys_created_on>
         <sys_id>250510f2db4084102443e7148a9619db</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-26 01:33:37</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:25</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var responseBody = JSON.parse(inputs.response);
   
-  var importState = responseBody.result.import_state +'';
-  var importError = responseBody.result.import_error +'';
-  var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
-  
+
+  var activity = '';
   if(inputs.status!=201 &amp;&amp; inputs.status!=200){
     outputs.state = 'Error';
    	//var errorMsg =  responseBody.error.message;
@@ -1761,7 +1759,9 @@ outputs.table = inputs.table+'';
     //throw "Error creating. Message: "+errorMsg + " Details:"+errorDetail;
   } else {
     outputs.state = 'Complete';
-    
+    var importState = responseBody.result.import_state +'';
+    var importError = responseBody.result.import_error +'';
+    var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
   }
   
   outputs.activity = activity;
@@ -3242,17 +3242,17 @@ outputs.table = inputs.table+'';
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Connector - Retry Staging">bdf77f1edb4044102443e7148a961966</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"b9b680eadb8044102443e7148a961976","name":"plan"}}</plan>
-        <snapshot>95418954db544c101bdb5a75dc9619e6</snapshot>
+        <snapshot>39618ba9db258cd01bdb5a75dc9619fd</snapshot>
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-25 05:52:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9b680eadb8044102443e7148a961976</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-26 01:33:54</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:42</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3943,10 +3943,10 @@ outputs.table = inputs.table+'';
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-26 01:33:50</sys_created_on>
         <sys_id>3415d0f2db4084102443e7148a9619c8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-26 01:33:50</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:36</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3415d0f2db4084102443e7148a9619c8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3971,16 +3971,14 @@ outputs.table = inputs.table+'';
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-26 01:33:50</sys_created_on>
         <sys_id>c91514f2db4084102443e7148a961908</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-26 01:33:50</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:36</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var responseBody = JSON.parse(inputs.response);
   
-  var importState = responseBody.result.import_state +'';
-  var importError = responseBody.result.import_error +'';
-  var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
-  
+
+  var activity = '';
   if(inputs.status!=201 &amp;&amp; inputs.status!=200){
     outputs.state = 'Error';
    	//var errorMsg =  responseBody.error.message;
@@ -3988,7 +3986,9 @@ outputs.table = inputs.table+'';
     //throw "Error creating. Message: "+errorMsg + " Details:"+errorDetail;
   } else {
     outputs.state = 'Complete';
-    
+    var importState = responseBody.result.import_state +'';
+    var importError = responseBody.result.import_error +'';
+    var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
   }
   
   outputs.activity = activity;
@@ -5558,10 +5558,10 @@ outputs.table = inputs.table+'';
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-26 01:33:50</sys_created_on>
         <sys_id>3415d0f2db4084102443e7148a9619c8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-26 01:33:50</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:36</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3415d0f2db4084102443e7148a9619c8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5586,16 +5586,14 @@ outputs.table = inputs.table+'';
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-26 01:33:50</sys_created_on>
         <sys_id>c91514f2db4084102443e7148a961908</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-26 01:33:50</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:36</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var responseBody = JSON.parse(inputs.response);
   
-  var importState = responseBody.result.import_state +'';
-  var importError = responseBody.result.import_error +'';
-  var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
-  
+
+  var activity = '';
   if(inputs.status!=201 &amp;&amp; inputs.status!=200){
     outputs.state = 'Error';
    	//var errorMsg =  responseBody.error.message;
@@ -5603,7 +5601,9 @@ outputs.table = inputs.table+'';
     //throw "Error creating. Message: "+errorMsg + " Details:"+errorDetail;
   } else {
     outputs.state = 'Complete';
-    
+    var importState = responseBody.result.import_state +'';
+    var importError = responseBody.result.import_error +'';
+    var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
   }
   
   outputs.activity = activity;

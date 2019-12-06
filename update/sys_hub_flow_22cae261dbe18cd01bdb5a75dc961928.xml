@@ -10,7 +10,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>process_staged_records</internal_name>
-        <label_cache>[{"name":"535ee39f-98aa-43bc-a49c-5140a74c30d3.answer","label":"1➛Answer","reference_display":"Answer","type":"string","base_type":"string"},{"name":"535ee39f-98aa-43bc-a49c-5140a74c30d3.answer_display","label":"1➛Answer Display","reference_display":"Answer Display","type":"string","base_type":"string"},{"name":"subflow.table","label":"Input➛Table","type":"string","base_type":"string"},{"name":"3b7b0cbe-bbce-4636-a7e0-be2a012a7aff.answer","label":"1➛Table Record","reference":"sys_db_object","reference_display":"Table","type":"reference","base_type":"reference"},{"name":"c5f5f2e2-4e38-4a13-97be-d2d43a2fb3ce.import_record","label":"1.1.1➛Import Record","reference":"x_snc_con_inc_ebonding","reference_display":"Connector eBonding","type":"reference","base_type":"reference"},{"name":"subflow.api_key","label":"Input➛API key","type":"string","base_type":"string"},{"name":"subflow.stage_id","label":"Input➛Stage ID","type":"string","base_type":"string"}]</label_cache>
+        <label_cache>[{"name":"subflow.stage_id","label":"Input➛Stage ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":""},{"name":"subflow.api_key","label":"Input➛API key","reference":"","reference_display":"","type":"string","base_type":"string","column_name":""},{"name":"c5f5f2e2-4e38-4a13-97be-d2d43a2fb3ce.import_record","label":"1.1.1➛Import Record","reference":"x_snc_con_inc_ebonding","reference_display":"Connector eBonding","type":"reference","base_type":"reference"},{"name":"3b7b0cbe-bbce-4636-a7e0-be2a012a7aff.answer","label":"1➛Table Record","reference":"sys_db_object","reference_display":"Table","type":"reference","base_type":"reference"},{"name":"subflow.table","label":"Input➛Table","type":"string","base_type":"string"},{"name":"535ee39f-98aa-43bc-a49c-5140a74c30d3.answer_display","label":"1➛Answer Display","reference_display":"Answer Display","type":"string","base_type":"string"},{"name":"535ee39f-98aa-43bc-a49c-5140a74c30d3.answer","label":"1➛Answer","reference_display":"Answer","type":"string","base_type":"string"},{"name":"0bae37da-5f40-41a0-bd9e-409c22f7a70f.import_record","label":"1➛Import Record","reference":"x_snc_con_inc_ebonding","reference_display":"Connector eBonding","type":"reference","base_type":"reference"}]</label_cache>
         <latest_snapshot>19eb2225dbe18cd01bdb5a75dc9619b8</latest_snapshot>
         <master_snapshot>19eb2225dbe18cd01bdb5a75dc9619b8</master_snapshot>
         <name>Process Staged Records</name>
@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>22cae261dbe18cd01bdb5a75dc961928</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Process Staged Records</sys_name>
         <sys_overrides/>
         <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
@@ -35,53 +35,12 @@
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_update_name>sys_hub_flow_22cae261dbe18cd01bdb5a75dc961928</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:37</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:52</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=22cae261dbe18cd01bdb5a75dc961928"/>
     <sys_variable_value action="delete_multiple" query="document_key=22cae261dbe18cd01bdb5a75dc961928"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=22cae261dbe18cd01bdb5a75dc961928^sys_idNOT IN24eb2225dbe18cd01bdb5a75dc96193f,2ceb2225dbe18cd01bdb5a75dc961911,a8eb2225dbe18cd01bdb5a75dc961944,aceb2225dbe18cd01bdb5a75dc96193b,e8eb2225dbe18cd01bdb5a75dc961942"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">aceb2225dbe18cd01bdb5a75dc96193e</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">22cae261dbe18cd01bdb5a75dc961928</flow>
-        <inputs/>
-        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
-        <order>1.1</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>3b7b0cbe-bbce-4636-a7e0-be2a012a7aff</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>24eb2225dbe18cd01bdb5a75dc96193f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:36</sys_updated_on>
-        <ui_id>1570c64c-db48-4252-bb63-532bd60a684e</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=24eb2225dbe18cd01bdb5a75dc96193f"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>24eb2225dbe18cd01bdb5a75dc96193f</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>e0eb2225dbe18cd01bdb5a75dc961941</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
-        <value>b05bfba2dbc484101bdb5a75dc961975</value>
-        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
-    </sys_variable_value>
+    <sys_hub_flow_component action="delete_multiple" query="flow=22cae261dbe18cd01bdb5a75dc961928^sys_idNOT IN91d2072ddb258cd01bdb5a75dc961909,99d2072ddb258cd01bdb5a75dc96190d"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -91,129 +50,46 @@
         <compiled_snapshot/>
         <display_text/>
         <flow display_value="Process Staged Records">22cae261dbe18cd01bdb5a75dc961928</flow>
-        <order>1.1.1</order>
-        <parent_ui_id>1570c64c-db48-4252-bb63-532bd60a684e</parent_ui_id>
+        <order>1</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:29</sys_created_on>
-        <sys_id>2ceb2225dbe18cd01bdb5a75dc961911</sys_id>
+        <sys_created_on>2019-12-06 06:34:46</sys_created_on>
+        <sys_id>91d2072ddb258cd01bdb5a75dc961909</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:36</sys_updated_on>
-        <ui_id>c5f5f2e2-4e38-4a13-97be-d2d43a2fb3ce</ui_id>
+        <sys_updated_on>2019-12-06 06:34:51</sys_updated_on>
+        <ui_id>0bae37da-5f40-41a0-bd9e-409c22f7a70f</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=2ceb2225dbe18cd01bdb5a75dc961911"/>
-    <sys_element_mapping action="delete_multiple" query="id=2ceb2225dbe18cd01bdb5a75dc961911"/>
+    <sys_variable_value action="delete_multiple" query="document_key=91d2072ddb258cd01bdb5a75dc961909"/>
+    <sys_element_mapping action="delete_multiple" query="id=91d2072ddb258cd01bdb5a75dc961909"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>api_key</field>
-        <id>2ceb2225dbe18cd01bdb5a75dc961911</id>
+        <id>91d2072ddb258cd01bdb5a75dc961909</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:29</sys_created_on>
-        <sys_id>68eb2225dbe18cd01bdb5a75dc961914</sys_id>
+        <sys_created_on>2019-12-06 06:34:46</sys_created_on>
+        <sys_id>ddd2072ddb258cd01bdb5a75dc96190b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:29</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:46</sys_updated_on>
         <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
         <value>{{subflow.api_key}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>stage_id</field>
-        <id>2ceb2225dbe18cd01bdb5a75dc961911</id>
+        <id>91d2072ddb258cd01bdb5a75dc961909</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>68eb2225dbe18cd01bdb5a75dc96193a</sys_id>
+        <sys_created_on>2019-12-06 06:34:46</sys_created_on>
+        <sys_id>91d2072ddb258cd01bdb5a75dc96190c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:46</sys_updated_on>
         <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
         <value>{{subflow.stage_id}}</value>
     </sys_element_mapping>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">24eb2225dbe18cd01bdb5a75dc961944</block>
-        <comment/>
-        <connected_to/>
-        <decision_table display_value="Connector - Process Staged Payloads">98482662dbc844102443e7148a96192e</decision_table>
-        <decision_table_inputs/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">22cae261dbe18cd01bdb5a75dc961928</flow>
-        <inputs/>
-        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
-        <order>1</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>a8eb2225dbe18cd01bdb5a75dc961944</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:37</sys_updated_on>
-        <ui_id>3b7b0cbe-bbce-4636-a7e0-be2a012a7aff</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=a8eb2225dbe18cd01bdb5a75dc961944"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>a8eb2225dbe18cd01bdb5a75dc961944</document_key>
-        <order>5</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>60eb2225dbe18cd01bdb5a75dc961948</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
-        <value>Process staged records</value>
-        <variable display_value="">2d6a2ca70b2313009002cab937673aff</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>a8eb2225dbe18cd01bdb5a75dc961944</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>aceb2225dbe18cd01bdb5a75dc961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
-        <value>98482662dbc844102443e7148a96192e</value>
-        <variable display_value="">a9a0bc2b0b2313009002cab937673ac6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>a8eb2225dbe18cd01bdb5a75dc961944</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>e8eb2225dbe18cd01bdb5a75dc961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
-        <value>sys_db_object</value>
-        <variable display_value="">4cbdbf94c35823002841b63b12d3aeb6</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=a8eb2225dbe18cd01bdb5a75dc961944"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>u_table</field>
-        <id>a8eb2225dbe18cd01bdb5a75dc961944</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>f0eb2225dbe18cd01bdb5a75dc961949</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
-        <table>var__m_sys_decision_input_98482662dbc844102443e7148a96192e</table>
-        <value>{{subflow.table}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">20eb2225dbe18cd01bdb5a75dc96193b</block>
+        <block display_value="">59d2072ddb258cd01bdb5a75dc96190c</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -222,78 +98,37 @@
         <flow display_value="Process Staged Records">22cae261dbe18cd01bdb5a75dc961928</flow>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>1.1.2</order>
+        <order>2</order>
         <outputs_assigned>import_record</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
-        <parent_ui_id>1570c64c-db48-4252-bb63-532bd60a684e</parent_ui_id>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>aceb2225dbe18cd01bdb5a75dc96193b</sys_id>
+        <sys_created_on>2019-12-06 06:34:46</sys_created_on>
+        <sys_id>99d2072ddb258cd01bdb5a75dc96190d</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:36</sys_updated_on>
-        <ui_id>410ace58-dd07-4697-9efd-c4c6310fb3be</ui_id>
+        <sys_updated_on>2019-12-06 06:34:51</sys_updated_on>
+        <ui_id>4b088284-0ff1-4b1a-b99d-177e37f9a40d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=aceb2225dbe18cd01bdb5a75dc96193b"/>
-    <sys_element_mapping action="delete_multiple" query="id=aceb2225dbe18cd01bdb5a75dc96193b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=99d2072ddb258cd01bdb5a75dc96190d"/>
+    <sys_element_mapping action="delete_multiple" query="id=99d2072ddb258cd01bdb5a75dc96190d"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>import_record</field>
-        <id>aceb2225dbe18cd01bdb5a75dc96193b</id>
+        <id>99d2072ddb258cd01bdb5a75dc96190d</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>e0eb2225dbe18cd01bdb5a75dc96193e</sys_id>
+        <sys_created_on>2019-12-06 06:34:46</sys_created_on>
+        <sys_id>5dd2072ddb258cd01bdb5a75dc96190f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:46</sys_updated_on>
         <table>var__m_sys_hub_flow_output_22cae261dbe18cd01bdb5a75dc961928</table>
-        <value>{{c5f5f2e2-4e38-4a13-97be-d2d43a2fb3ce.import_record}}</value>
+        <value>{{0bae37da-5f40-41a0-bd9e-409c22f7a70f.import_record}}</value>
     </sys_element_mapping>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">64eb2225dbe18cd01bdb5a75dc961942</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">22cae261dbe18cd01bdb5a75dc961928</flow>
-        <inputs/>
-        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
-        <order>1.2</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>3b7b0cbe-bbce-4636-a7e0-be2a012a7aff</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>e8eb2225dbe18cd01bdb5a75dc961942</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:36</sys_updated_on>
-        <ui_id>61e1582c-83de-4ef4-b35c-02cd098ec585</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=e8eb2225dbe18cd01bdb5a75dc961942"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>e8eb2225dbe18cd01bdb5a75dc961942</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>20eb2225dbe18cd01bdb5a75dc961944</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
-        <value>d9bd3baadbc484101bdb5a75dc96191e</value>
-        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
-    </sys_variable_value>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=22cae261dbe18cd01bdb5a75dc961928^sys_idNOT IN2acae261dbe18cd01bdb5a75dc961929"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>22cae261dbe18cd01bdb5a75dc961928</id>
@@ -632,7 +467,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
-    <sys_hub_action_instance action="delete_multiple" query="flow=22cae261dbe18cd01bdb5a75dc961928^sys_idNOT IN2ceb2225dbe18cd01bdb5a75dc961911"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=22cae261dbe18cd01bdb5a75dc961928^sys_idNOT IN91d2072ddb258cd01bdb5a75dc961909"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -642,171 +477,47 @@
         <compiled_snapshot/>
         <display_text/>
         <flow display_value="Process Staged Records">22cae261dbe18cd01bdb5a75dc961928</flow>
-        <order>1.1.1</order>
-        <parent_ui_id>1570c64c-db48-4252-bb63-532bd60a684e</parent_ui_id>
+        <order>1</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:29</sys_created_on>
-        <sys_id>2ceb2225dbe18cd01bdb5a75dc961911</sys_id>
+        <sys_created_on>2019-12-06 06:34:46</sys_created_on>
+        <sys_id>91d2072ddb258cd01bdb5a75dc961909</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:36</sys_updated_on>
-        <ui_id>c5f5f2e2-4e38-4a13-97be-d2d43a2fb3ce</ui_id>
+        <sys_updated_on>2019-12-06 06:34:51</sys_updated_on>
+        <ui_id>0bae37da-5f40-41a0-bd9e-409c22f7a70f</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=2ceb2225dbe18cd01bdb5a75dc961911"/>
-    <sys_element_mapping action="delete_multiple" query="id=2ceb2225dbe18cd01bdb5a75dc961911"/>
+    <sys_variable_value action="delete_multiple" query="document_key=91d2072ddb258cd01bdb5a75dc961909"/>
+    <sys_element_mapping action="delete_multiple" query="id=91d2072ddb258cd01bdb5a75dc961909"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>api_key</field>
-        <id>2ceb2225dbe18cd01bdb5a75dc961911</id>
+        <id>91d2072ddb258cd01bdb5a75dc961909</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:29</sys_created_on>
-        <sys_id>68eb2225dbe18cd01bdb5a75dc961914</sys_id>
+        <sys_created_on>2019-12-06 06:34:46</sys_created_on>
+        <sys_id>ddd2072ddb258cd01bdb5a75dc96190b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:29</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:46</sys_updated_on>
         <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
         <value>{{subflow.api_key}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>stage_id</field>
-        <id>2ceb2225dbe18cd01bdb5a75dc961911</id>
+        <id>91d2072ddb258cd01bdb5a75dc961909</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>68eb2225dbe18cd01bdb5a75dc96193a</sys_id>
+        <sys_created_on>2019-12-06 06:34:46</sys_created_on>
+        <sys_id>91d2072ddb258cd01bdb5a75dc96190c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:46</sys_updated_on>
         <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
         <value>{{subflow.stage_id}}</value>
     </sys_element_mapping>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=22cae261dbe18cd01bdb5a75dc961928^sys_idNOT IN24eb2225dbe18cd01bdb5a75dc96193f,a8eb2225dbe18cd01bdb5a75dc961944,aceb2225dbe18cd01bdb5a75dc96193b,e8eb2225dbe18cd01bdb5a75dc961942"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=22cae261dbe18cd01bdb5a75dc961928^sys_idNOT IN99d2072ddb258cd01bdb5a75dc96190d"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">aceb2225dbe18cd01bdb5a75dc96193e</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">22cae261dbe18cd01bdb5a75dc961928</flow>
-        <inputs/>
-        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
-        <order>1.1</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>3b7b0cbe-bbce-4636-a7e0-be2a012a7aff</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>24eb2225dbe18cd01bdb5a75dc96193f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:36</sys_updated_on>
-        <ui_id>1570c64c-db48-4252-bb63-532bd60a684e</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=24eb2225dbe18cd01bdb5a75dc96193f"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>24eb2225dbe18cd01bdb5a75dc96193f</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>e0eb2225dbe18cd01bdb5a75dc961941</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
-        <value>b05bfba2dbc484101bdb5a75dc961975</value>
-        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
-    </sys_variable_value>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">24eb2225dbe18cd01bdb5a75dc961944</block>
-        <comment/>
-        <connected_to/>
-        <decision_table display_value="Connector - Process Staged Payloads">98482662dbc844102443e7148a96192e</decision_table>
-        <decision_table_inputs/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">22cae261dbe18cd01bdb5a75dc961928</flow>
-        <inputs/>
-        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
-        <order>1</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>a8eb2225dbe18cd01bdb5a75dc961944</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:37</sys_updated_on>
-        <ui_id>3b7b0cbe-bbce-4636-a7e0-be2a012a7aff</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=a8eb2225dbe18cd01bdb5a75dc961944"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>a8eb2225dbe18cd01bdb5a75dc961944</document_key>
-        <order>5</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>60eb2225dbe18cd01bdb5a75dc961948</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
-        <value>Process staged records</value>
-        <variable display_value="">2d6a2ca70b2313009002cab937673aff</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>a8eb2225dbe18cd01bdb5a75dc961944</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>aceb2225dbe18cd01bdb5a75dc961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
-        <value>98482662dbc844102443e7148a96192e</value>
-        <variable display_value="">a9a0bc2b0b2313009002cab937673ac6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>a8eb2225dbe18cd01bdb5a75dc961944</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>e8eb2225dbe18cd01bdb5a75dc961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
-        <value>sys_db_object</value>
-        <variable display_value="">4cbdbf94c35823002841b63b12d3aeb6</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=a8eb2225dbe18cd01bdb5a75dc961944"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>u_table</field>
-        <id>a8eb2225dbe18cd01bdb5a75dc961944</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>f0eb2225dbe18cd01bdb5a75dc961949</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
-        <table>var__m_sys_decision_input_98482662dbc844102443e7148a96192e</table>
-        <value>{{subflow.table}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">20eb2225dbe18cd01bdb5a75dc96193b</block>
+        <block display_value="">59d2072ddb258cd01bdb5a75dc96190c</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -815,78 +526,37 @@
         <flow display_value="Process Staged Records">22cae261dbe18cd01bdb5a75dc961928</flow>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>1.1.2</order>
+        <order>2</order>
         <outputs_assigned>import_record</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
-        <parent_ui_id>1570c64c-db48-4252-bb63-532bd60a684e</parent_ui_id>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>aceb2225dbe18cd01bdb5a75dc96193b</sys_id>
+        <sys_created_on>2019-12-06 06:34:46</sys_created_on>
+        <sys_id>99d2072ddb258cd01bdb5a75dc96190d</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:36</sys_updated_on>
-        <ui_id>410ace58-dd07-4697-9efd-c4c6310fb3be</ui_id>
+        <sys_updated_on>2019-12-06 06:34:51</sys_updated_on>
+        <ui_id>4b088284-0ff1-4b1a-b99d-177e37f9a40d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=aceb2225dbe18cd01bdb5a75dc96193b"/>
-    <sys_element_mapping action="delete_multiple" query="id=aceb2225dbe18cd01bdb5a75dc96193b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=99d2072ddb258cd01bdb5a75dc96190d"/>
+    <sys_element_mapping action="delete_multiple" query="id=99d2072ddb258cd01bdb5a75dc96190d"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>import_record</field>
-        <id>aceb2225dbe18cd01bdb5a75dc96193b</id>
+        <id>99d2072ddb258cd01bdb5a75dc96190d</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>e0eb2225dbe18cd01bdb5a75dc96193e</sys_id>
+        <sys_created_on>2019-12-06 06:34:46</sys_created_on>
+        <sys_id>5dd2072ddb258cd01bdb5a75dc96190f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:46</sys_updated_on>
         <table>var__m_sys_hub_flow_output_22cae261dbe18cd01bdb5a75dc961928</table>
-        <value>{{c5f5f2e2-4e38-4a13-97be-d2d43a2fb3ce.import_record}}</value>
+        <value>{{0bae37da-5f40-41a0-bd9e-409c22f7a70f.import_record}}</value>
     </sys_element_mapping>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">64eb2225dbe18cd01bdb5a75dc961942</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">22cae261dbe18cd01bdb5a75dc961928</flow>
-        <inputs/>
-        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
-        <order>1.2</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>3b7b0cbe-bbce-4636-a7e0-be2a012a7aff</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>e8eb2225dbe18cd01bdb5a75dc961942</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:36</sys_updated_on>
-        <ui_id>61e1582c-83de-4ef4-b35c-02cd098ec585</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=e8eb2225dbe18cd01bdb5a75dc961942"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>e8eb2225dbe18cd01bdb5a75dc961942</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:30</sys_created_on>
-        <sys_id>20eb2225dbe18cd01bdb5a75dc961944</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:30</sys_updated_on>
-        <value>d9bd3baadbc484101bdb5a75dc96191e</value>
-        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
-    </sys_variable_value>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_22cae261dbe18cd01bdb5a75dc961928^sys_idNOT IN10ebeee1dbe18cd01bdb5a75dc9619f5,14ebeee1dbe18cd01bdb5a75dc9619e3,58ebeee1dbe18cd01bdb5a75dc9619dd"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>stage_id</element>
@@ -983,7 +653,7 @@
     </sys_documentation>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=22cae261dbe18cd01bdb5a75dc961928^sys_idNOT INc2eba225dbe18cd01bdb5a75dc96191b"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@1ae0bea</plan>
+        <plan>com.snc.process_flow.engine.ProcessPlan@85da55</plan>
         <plan_id display_value="Process Staged Records">22cae261dbe18cd01bdb5a75dc961928</plan_id>
         <snapshot>19eb2225dbe18cd01bdb5a75dc9619b8</snapshot>
         <sys_created_by>admin</sys_created_by>
@@ -991,11 +661,11 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c2eba225dbe18cd01bdb5a75dc96191b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:36</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:51</sys_updated_on>
     </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>package_private</access>
@@ -1023,7 +693,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>19eb2225dbe18cd01bdb5a75dc9619b8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1031,218 +701,12 @@
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:32</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:50</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=19eb2225dbe18cd01bdb5a75dc9619b8"/>
     <sys_variable_value action="delete_multiple" query="document_key=19eb2225dbe18cd01bdb5a75dc9619b8"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=19eb2225dbe18cd01bdb5a75dc9619b8^sys_idNOT IN71eb6225dbe18cd01bdb5a75dc9619c1,75eb6225dbe18cd01bdb5a75dc9619c3,b5eb6225dbe18cd01bdb5a75dc9619c5,bdeb6225dbe18cd01bdb5a75dc9619bd,f5eb6225dbe18cd01bdb5a75dc9619d7"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">aceb2225dbe18cd01bdb5a75dc96193e</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">19eb2225dbe18cd01bdb5a75dc9619b8</flow>
-        <inputs/>
-        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
-        <order>1.1</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>3b7b0cbe-bbce-4636-a7e0-be2a012a7aff</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>71eb6225dbe18cd01bdb5a75dc9619c1</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <ui_id>1570c64c-db48-4252-bb63-532bd60a684e</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=71eb6225dbe18cd01bdb5a75dc9619c1"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>71eb6225dbe18cd01bdb5a75dc9619c1</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>b9eb6225dbe18cd01bdb5a75dc9619c2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <value>b05bfba2dbc484101bdb5a75dc961975</value>
-        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
-    </sys_variable_value>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">64eb2225dbe18cd01bdb5a75dc961942</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">19eb2225dbe18cd01bdb5a75dc9619b8</flow>
-        <inputs/>
-        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
-        <order>1.2</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>3b7b0cbe-bbce-4636-a7e0-be2a012a7aff</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>75eb6225dbe18cd01bdb5a75dc9619c3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <ui_id>61e1582c-83de-4ef4-b35c-02cd098ec585</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=75eb6225dbe18cd01bdb5a75dc9619c3"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>75eb6225dbe18cd01bdb5a75dc9619c3</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>b9eb6225dbe18cd01bdb5a75dc9619c4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <value>d9bd3baadbc484101bdb5a75dc96191e</value>
-        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
-    </sys_variable_value>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">24eb2225dbe18cd01bdb5a75dc961944</block>
-        <comment/>
-        <connected_to/>
-        <decision_table display_value="Connector - Process Staged Payloads">98482662dbc844102443e7148a96192e</decision_table>
-        <decision_table_inputs/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">19eb2225dbe18cd01bdb5a75dc9619b8</flow>
-        <inputs/>
-        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
-        <order>1</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>b5eb6225dbe18cd01bdb5a75dc9619c5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <ui_id>3b7b0cbe-bbce-4636-a7e0-be2a012a7aff</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=b5eb6225dbe18cd01bdb5a75dc9619c5"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>b5eb6225dbe18cd01bdb5a75dc9619c5</document_key>
-        <order>5</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>31eb6225dbe18cd01bdb5a75dc9619d5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <value>Process staged records</value>
-        <variable display_value="">2d6a2ca70b2313009002cab937673aff</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>b5eb6225dbe18cd01bdb5a75dc9619c5</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>7deb6225dbe18cd01bdb5a75dc9619d4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <value>98482662dbc844102443e7148a96192e</value>
-        <variable display_value="">a9a0bc2b0b2313009002cab937673ac6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>b5eb6225dbe18cd01bdb5a75dc9619c5</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>f1eb6225dbe18cd01bdb5a75dc9619c8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <value>sys_db_object</value>
-        <variable display_value="">4cbdbf94c35823002841b63b12d3aeb6</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=b5eb6225dbe18cd01bdb5a75dc9619c5"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>u_table</field>
-        <id>b5eb6225dbe18cd01bdb5a75dc9619c5</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>35eb6225dbe18cd01bdb5a75dc9619d5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <table>var__m_sys_decision_input_98482662dbc844102443e7148a96192e</table>
-        <value>{{subflow.table}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">20eb2225dbe18cd01bdb5a75dc96193b</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">19eb2225dbe18cd01bdb5a75dc9619b8</flow>
-        <inputs/>
-        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>1.1.2</order>
-        <outputs_assigned>import_record</outputs_assigned>
-        <outputs_to_assign/>
-        <outputs_to_assign/>
-        <parent_ui_id>1570c64c-db48-4252-bb63-532bd60a684e</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:34</sys_created_on>
-        <sys_id>bdeb6225dbe18cd01bdb5a75dc9619bd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:34</sys_updated_on>
-        <ui_id>410ace58-dd07-4697-9efd-c4c6310fb3be</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=bdeb6225dbe18cd01bdb5a75dc9619bd"/>
-    <sys_element_mapping action="delete_multiple" query="id=bdeb6225dbe18cd01bdb5a75dc9619bd"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>import_record</field>
-        <id>bdeb6225dbe18cd01bdb5a75dc9619bd</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:34</sys_created_on>
-        <sys_id>f1eb6225dbe18cd01bdb5a75dc9619c0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:34</sys_updated_on>
-        <table>var__m_sys_hub_flow_output_19eb2225dbe18cd01bdb5a75dc9619b8</table>
-        <value>{{c5f5f2e2-4e38-4a13-97be-d2d43a2fb3ce.import_record}}</value>
-    </sys_element_mapping>
+    <sys_hub_flow_component action="delete_multiple" query="flow=19eb2225dbe18cd01bdb5a75dc9619b8^sys_idNOT IN5ad2072ddb258cd01bdb5a75dc9619ef,ded2072ddb258cd01bdb5a75dc9619f1"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1252,43 +716,84 @@
         <compiled_snapshot>a24ff99adb8804102443e7148a9619f3</compiled_snapshot>
         <display_text/>
         <flow display_value="Process Staged Records">19eb2225dbe18cd01bdb5a75dc9619b8</flow>
-        <order>1.1.1</order>
-        <parent_ui_id>1570c64c-db48-4252-bb63-532bd60a684e</parent_ui_id>
+        <order>1</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>f5eb6225dbe18cd01bdb5a75dc9619d7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2019-12-06 06:34:50</sys_created_on>
+        <sys_id>5ad2072ddb258cd01bdb5a75dc9619ef</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <ui_id>c5f5f2e2-4e38-4a13-97be-d2d43a2fb3ce</ui_id>
+        <sys_updated_on>2019-12-06 06:34:50</sys_updated_on>
+        <ui_id>0bae37da-5f40-41a0-bd9e-409c22f7a70f</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=f5eb6225dbe18cd01bdb5a75dc9619d7"/>
-    <sys_element_mapping action="delete_multiple" query="id=f5eb6225dbe18cd01bdb5a75dc9619d7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5ad2072ddb258cd01bdb5a75dc9619ef"/>
+    <sys_element_mapping action="delete_multiple" query="id=5ad2072ddb258cd01bdb5a75dc9619ef"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>api_key</field>
-        <id>f5eb6225dbe18cd01bdb5a75dc9619d7</id>
+        <id>5ad2072ddb258cd01bdb5a75dc9619ef</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>b5eb6225dbe18cd01bdb5a75dc9619d8</sys_id>
+        <sys_created_on>2019-12-06 06:34:50</sys_created_on>
+        <sys_id>1ad2072ddb258cd01bdb5a75dc9619f0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:50</sys_updated_on>
         <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
         <value>{{subflow.api_key}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>stage_id</field>
-        <id>f5eb6225dbe18cd01bdb5a75dc9619d7</id>
+        <id>5ad2072ddb258cd01bdb5a75dc9619ef</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>79eb6225dbe18cd01bdb5a75dc9619d8</sys_id>
+        <sys_created_on>2019-12-06 06:34:50</sys_created_on>
+        <sys_id>dad2072ddb258cd01bdb5a75dc9619f0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:50</sys_updated_on>
         <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
         <value>{{subflow.stage_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">59d2072ddb258cd01bdb5a75dc96190c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Process Staged Records">19eb2225dbe18cd01bdb5a75dc9619b8</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>import_record</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-06 06:34:50</sys_created_on>
+        <sys_id>ded2072ddb258cd01bdb5a75dc9619f1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:34:50</sys_updated_on>
+        <ui_id>4b088284-0ff1-4b1a-b99d-177e37f9a40d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ded2072ddb258cd01bdb5a75dc9619f1"/>
+    <sys_element_mapping action="delete_multiple" query="id=ded2072ddb258cd01bdb5a75dc9619f1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_record</field>
+        <id>ded2072ddb258cd01bdb5a75dc9619f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-06 06:34:50</sys_created_on>
+        <sys_id>1ed2072ddb258cd01bdb5a75dc9619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:34:50</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_19eb2225dbe18cd01bdb5a75dc9619b8</table>
+        <value>{{0bae37da-5f40-41a0-bd9e-409c22f7a70f.import_record}}</value>
     </sys_element_mapping>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=19eb2225dbe18cd01bdb5a75dc9619b8^sys_idNOT INd5eb2225dbe18cd01bdb5a75dc9619b9"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -1628,7 +1133,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
-    <sys_hub_action_instance action="delete_multiple" query="flow=19eb2225dbe18cd01bdb5a75dc9619b8^sys_idNOT INf5eb6225dbe18cd01bdb5a75dc9619d7"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=19eb2225dbe18cd01bdb5a75dc9619b8^sys_idNOT IN5ad2072ddb258cd01bdb5a75dc9619ef"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1638,212 +1143,47 @@
         <compiled_snapshot>a24ff99adb8804102443e7148a9619f3</compiled_snapshot>
         <display_text/>
         <flow display_value="Process Staged Records">19eb2225dbe18cd01bdb5a75dc9619b8</flow>
-        <order>1.1.1</order>
-        <parent_ui_id>1570c64c-db48-4252-bb63-532bd60a684e</parent_ui_id>
+        <order>1</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>f5eb6225dbe18cd01bdb5a75dc9619d7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2019-12-06 06:34:50</sys_created_on>
+        <sys_id>5ad2072ddb258cd01bdb5a75dc9619ef</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <ui_id>c5f5f2e2-4e38-4a13-97be-d2d43a2fb3ce</ui_id>
+        <sys_updated_on>2019-12-06 06:34:50</sys_updated_on>
+        <ui_id>0bae37da-5f40-41a0-bd9e-409c22f7a70f</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=f5eb6225dbe18cd01bdb5a75dc9619d7"/>
-    <sys_element_mapping action="delete_multiple" query="id=f5eb6225dbe18cd01bdb5a75dc9619d7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5ad2072ddb258cd01bdb5a75dc9619ef"/>
+    <sys_element_mapping action="delete_multiple" query="id=5ad2072ddb258cd01bdb5a75dc9619ef"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>api_key</field>
-        <id>f5eb6225dbe18cd01bdb5a75dc9619d7</id>
+        <id>5ad2072ddb258cd01bdb5a75dc9619ef</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>b5eb6225dbe18cd01bdb5a75dc9619d8</sys_id>
+        <sys_created_on>2019-12-06 06:34:50</sys_created_on>
+        <sys_id>1ad2072ddb258cd01bdb5a75dc9619f0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:50</sys_updated_on>
         <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
         <value>{{subflow.api_key}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>stage_id</field>
-        <id>f5eb6225dbe18cd01bdb5a75dc9619d7</id>
+        <id>5ad2072ddb258cd01bdb5a75dc9619ef</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>79eb6225dbe18cd01bdb5a75dc9619d8</sys_id>
+        <sys_created_on>2019-12-06 06:34:50</sys_created_on>
+        <sys_id>dad2072ddb258cd01bdb5a75dc9619f0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:50</sys_updated_on>
         <table>var__m_sys_hub_action_input_a24ff99adb8804102443e7148a9619f3</table>
         <value>{{subflow.stage_id}}</value>
     </sys_element_mapping>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=19eb2225dbe18cd01bdb5a75dc9619b8^sys_idNOT IN71eb6225dbe18cd01bdb5a75dc9619c1,75eb6225dbe18cd01bdb5a75dc9619c3,b5eb6225dbe18cd01bdb5a75dc9619c5,bdeb6225dbe18cd01bdb5a75dc9619bd"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=19eb2225dbe18cd01bdb5a75dc9619b8^sys_idNOT INded2072ddb258cd01bdb5a75dc9619f1"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">aceb2225dbe18cd01bdb5a75dc96193e</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">19eb2225dbe18cd01bdb5a75dc9619b8</flow>
-        <inputs/>
-        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
-        <order>1.1</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>3b7b0cbe-bbce-4636-a7e0-be2a012a7aff</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>71eb6225dbe18cd01bdb5a75dc9619c1</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <ui_id>1570c64c-db48-4252-bb63-532bd60a684e</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=71eb6225dbe18cd01bdb5a75dc9619c1"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>71eb6225dbe18cd01bdb5a75dc9619c1</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>b9eb6225dbe18cd01bdb5a75dc9619c2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <value>b05bfba2dbc484101bdb5a75dc961975</value>
-        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
-    </sys_variable_value>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">64eb2225dbe18cd01bdb5a75dc961942</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">19eb2225dbe18cd01bdb5a75dc9619b8</flow>
-        <inputs/>
-        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
-        <order>1.2</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>3b7b0cbe-bbce-4636-a7e0-be2a012a7aff</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>75eb6225dbe18cd01bdb5a75dc9619c3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <ui_id>61e1582c-83de-4ef4-b35c-02cd098ec585</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=75eb6225dbe18cd01bdb5a75dc9619c3"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>75eb6225dbe18cd01bdb5a75dc9619c3</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>b9eb6225dbe18cd01bdb5a75dc9619c4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <value>d9bd3baadbc484101bdb5a75dc96191e</value>
-        <variable display_value="">70ef385873002300612c273ffff6a764</variable>
-    </sys_variable_value>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">24eb2225dbe18cd01bdb5a75dc961944</block>
-        <comment/>
-        <connected_to/>
-        <decision_table display_value="Connector - Process Staged Payloads">98482662dbc844102443e7148a96192e</decision_table>
-        <decision_table_inputs/>
-        <decision_table_inputs/>
-        <display_text/>
-        <flow display_value="Process Staged Records">19eb2225dbe18cd01bdb5a75dc9619b8</flow>
-        <inputs/>
-        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
-        <order>1</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>b5eb6225dbe18cd01bdb5a75dc9619c5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <ui_id>3b7b0cbe-bbce-4636-a7e0-be2a012a7aff</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=b5eb6225dbe18cd01bdb5a75dc9619c5"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>b5eb6225dbe18cd01bdb5a75dc9619c5</document_key>
-        <order>5</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>31eb6225dbe18cd01bdb5a75dc9619d5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <value>Process staged records</value>
-        <variable display_value="">2d6a2ca70b2313009002cab937673aff</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>b5eb6225dbe18cd01bdb5a75dc9619c5</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>7deb6225dbe18cd01bdb5a75dc9619d4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <value>98482662dbc844102443e7148a96192e</value>
-        <variable display_value="">a9a0bc2b0b2313009002cab937673ac6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>b5eb6225dbe18cd01bdb5a75dc9619c5</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>f1eb6225dbe18cd01bdb5a75dc9619c8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <value>sys_db_object</value>
-        <variable display_value="">4cbdbf94c35823002841b63b12d3aeb6</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=b5eb6225dbe18cd01bdb5a75dc9619c5"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>u_table</field>
-        <id>b5eb6225dbe18cd01bdb5a75dc9619c5</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:35</sys_created_on>
-        <sys_id>35eb6225dbe18cd01bdb5a75dc9619d5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:35</sys_updated_on>
-        <table>var__m_sys_decision_input_98482662dbc844102443e7148a96192e</table>
-        <value>{{subflow.table}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">20eb2225dbe18cd01bdb5a75dc96193b</block>
+        <block display_value="">59d2072ddb258cd01bdb5a75dc96190c</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1852,36 +1192,36 @@
         <flow display_value="Process Staged Records">19eb2225dbe18cd01bdb5a75dc9619b8</flow>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>1.1.2</order>
+        <order>2</order>
         <outputs_assigned>import_record</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
-        <parent_ui_id>1570c64c-db48-4252-bb63-532bd60a684e</parent_ui_id>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:34</sys_created_on>
-        <sys_id>bdeb6225dbe18cd01bdb5a75dc9619bd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_created_on>2019-12-06 06:34:50</sys_created_on>
+        <sys_id>ded2072ddb258cd01bdb5a75dc9619f1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:34</sys_updated_on>
-        <ui_id>410ace58-dd07-4697-9efd-c4c6310fb3be</ui_id>
+        <sys_updated_on>2019-12-06 06:34:50</sys_updated_on>
+        <ui_id>4b088284-0ff1-4b1a-b99d-177e37f9a40d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=bdeb6225dbe18cd01bdb5a75dc9619bd"/>
-    <sys_element_mapping action="delete_multiple" query="id=bdeb6225dbe18cd01bdb5a75dc9619bd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ded2072ddb258cd01bdb5a75dc9619f1"/>
+    <sys_element_mapping action="delete_multiple" query="id=ded2072ddb258cd01bdb5a75dc9619f1"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>import_record</field>
-        <id>bdeb6225dbe18cd01bdb5a75dc9619bd</id>
+        <id>ded2072ddb258cd01bdb5a75dc9619f1</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-12-06 04:54:34</sys_created_on>
-        <sys_id>f1eb6225dbe18cd01bdb5a75dc9619c0</sys_id>
+        <sys_created_on>2019-12-06 06:34:50</sys_created_on>
+        <sys_id>1ed2072ddb258cd01bdb5a75dc9619f3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-06 04:54:34</sys_updated_on>
+        <sys_updated_on>2019-12-06 06:34:50</sys_updated_on>
         <table>var__m_sys_hub_flow_output_19eb2225dbe18cd01bdb5a75dc9619b8</table>
-        <value>{{c5f5f2e2-4e38-4a13-97be-d2d43a2fb3ce.import_record}}</value>
+        <value>{{0bae37da-5f40-41a0-bd9e-409c22f7a70f.import_record}}</value>
     </sys_element_mapping>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_19eb2225dbe18cd01bdb5a75dc9619b8^sys_idNOT IN61eb6225dbe18cd01bdb5a75dc9619a6,65eb6225dbe18cd01bdb5a75dc9619ad,99eb2225dbe18cd01bdb5a75dc9619bf"/>
     <sys_documentation action="INSERT_OR_UPDATE">

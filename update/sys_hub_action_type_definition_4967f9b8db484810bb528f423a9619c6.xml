@@ -31,7 +31,7 @@ The fields passed to the remote instance are the display names of the following 
         <ih_action>true</ih_action>
         <internal_name>connector__incident_ebonding_v2</internal_name>
         <label_cache>[{"name":"{{action.api_key}}","label":"action➛API Key","type":"action","ref":""},{"name":"{{action.record}}","label":"action➛Record","type":"action","ref":""},{"name":"{{step[318456df-9525-4fa2-9781-73c285c6f087].response_body}}","label":"step➛Connector Push➛Response Body","type":"step","ref":""},{"name":"{{step[318456df-9525-4fa2-9781-73c285c6f087].status_code}}","label":"step➛Connector Push➛Status Code","type":"step","ref":""},{"name":"{{step[97986a6d-4c91-4b4b-afa2-8eca3d070e2f].stage}}","label":"step➛Create Payload➛stage","type":"step","ref":"x_snc_con_stage"},{"name":"{{step[97986a6d-4c91-4b4b-afa2-8eca3d070e2f].stage_id}}","label":"step➛Create Payload➛Stage ID","type":"step","ref":""},{"name":"{{step[97986a6d-4c91-4b4b-afa2-8eca3d070e2f].credential_alias}}","label":"step➛Create Payload➛Credential Alias","type":"step","ref":""},{"name":"{{step[97986a6d-4c91-4b4b-afa2-8eca3d070e2f].endpoint}}","label":"step➛Create Payload➛Endpoint","type":"step","ref":""},{"name":"{{step[8ad415a1-949f-46f7-bf3f-a674e88f5c04].activity}}","label":"step➛Parse Response➛Activity","type":"step","ref":""},{"name":"{{step[97986a6d-4c91-4b4b-afa2-8eca3d070e2f].table}}","label":"step➛Create Payload➛Table","type":"step","ref":""},{"name":"{{step[8ad415a1-949f-46f7-bf3f-a674e88f5c04].state}}","label":"step➛Parse Response➛State","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>058ef890db544c101bdb5a75dc96194e</latest_snapshot>
+        <latest_snapshot>af41c7a9db258cd01bdb5a75dc96191a</latest_snapshot>
         <master_snapshot>2fed7130db884810bb528f423a961981</master_snapshot>
         <name>Connector - Payload Staging</name>
         <outputs/>
@@ -43,15 +43,15 @@ The fields passed to the remote instance are the display names of the following 
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4967f9b8db484810bb528f423a9619c6</sys_id>
-        <sys_mod_count>160</sys_mod_count>
+        <sys_mod_count>164</sys_mod_count>
         <sys_name>Connector - Payload Staging</sys_name>
         <sys_overrides/>
         <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_4967f9b8db484810bb528f423a9619c6</sys_update_name>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-25 23:43:52</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:14</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -812,10 +812,10 @@ The fields passed to the remote instance are the display names of the following 
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-25 19:53:29</sys_created_on>
         <sys_id>9727436edb0c44102443e7148a9619e4</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-25 23:43:40</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:27:57</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9727436edb0c44102443e7148a9619e4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -840,16 +840,14 @@ The fields passed to the remote instance are the display names of the following 
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-25 19:53:30</sys_created_on>
         <sys_id>eb27436edb0c44102443e7148a9619ff</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-25 23:43:41</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:27:57</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var responseBody = JSON.parse(inputs.response);
   
-  var importState = responseBody.result.import_state +'';
-  var importError = responseBody.result.import_error +'';
-  var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
-  
+
+  var activity = '';
   if(inputs.status!=201 &amp;&amp; inputs.status!=200){
     outputs.state = 'Error';
    	//var errorMsg =  responseBody.error.message;
@@ -857,7 +855,9 @@ The fields passed to the remote instance are the display names of the following 
     //throw "Error creating. Message: "+errorMsg + " Details:"+errorDetail;
   } else {
     outputs.state = 'Complete';
-    
+    var importState = responseBody.result.import_state +'';
+    var importError = responseBody.result.import_error +'';
+    var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
   }
   
   outputs.activity = activity;
@@ -2683,10 +2683,10 @@ The fields passed to the remote instance are the display names of the following 
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-25 19:53:29</sys_created_on>
         <sys_id>9727436edb0c44102443e7148a9619e4</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-25 23:43:40</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:27:57</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9727436edb0c44102443e7148a9619e4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2711,16 +2711,14 @@ The fields passed to the remote instance are the display names of the following 
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-25 19:53:30</sys_created_on>
         <sys_id>eb27436edb0c44102443e7148a9619ff</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-25 23:43:41</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:27:57</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var responseBody = JSON.parse(inputs.response);
   
-  var importState = responseBody.result.import_state +'';
-  var importError = responseBody.result.import_error +'';
-  var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
-  
+
+  var activity = '';
   if(inputs.status!=201 &amp;&amp; inputs.status!=200){
     outputs.state = 'Error';
    	//var errorMsg =  responseBody.error.message;
@@ -2728,7 +2726,9 @@ The fields passed to the remote instance are the display names of the following 
     //throw "Error creating. Message: "+errorMsg + " Details:"+errorDetail;
   } else {
     outputs.state = 'Complete';
-    
+    var importState = responseBody.result.import_state +'';
+    var importError = responseBody.result.import_error +'';
+    var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
   }
   
   outputs.activity = activity;
@@ -3640,17 +3640,17 @@ The fields passed to the remote instance are the display names of the following 
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Connector - Payload Staging">4967f9b8db484810bb528f423a9619c6</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"9cfdb130db884810bb528f423a961983","name":"plan"}}</plan>
-        <snapshot>59eb3b6edbcc44102443e7148a96190d</snapshot>
+        <snapshot>af41c7a9db258cd01bdb5a75dc96191a</snapshot>
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-20 04:04:09</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9cfdb130db884810bb528f423a961983</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-25 23:43:55</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:19</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -4091,10 +4091,10 @@ The fields passed to the remote instance are the display names of the following 
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-25 19:53:47</sys_created_on>
         <sys_id>3b37476edb0c44102443e7148a961937</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-25 23:43:52</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:13</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3b37476edb0c44102443e7148a961937"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4105,16 +4105,14 @@ The fields passed to the remote instance are the display names of the following 
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-25 19:53:47</sys_created_on>
         <sys_id>3b37476edb0c44102443e7148a96194d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-25 23:43:52</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:13</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var responseBody = JSON.parse(inputs.response);
   
-  var importState = responseBody.result.import_state +'';
-  var importError = responseBody.result.import_error +'';
-  var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
-  
+
+  var activity = '';
   if(inputs.status!=201 &amp;&amp; inputs.status!=200){
     outputs.state = 'Error';
    	//var errorMsg =  responseBody.error.message;
@@ -4122,7 +4120,9 @@ The fields passed to the remote instance are the display names of the following 
     //throw "Error creating. Message: "+errorMsg + " Details:"+errorDetail;
   } else {
     outputs.state = 'Complete';
-    
+    var importState = responseBody.result.import_state +'';
+    var importError = responseBody.result.import_error +'';
+    var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
   }
   
   outputs.activity = activity;
@@ -5900,10 +5900,10 @@ The fields passed to the remote instance are the display names of the following 
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-25 19:53:47</sys_created_on>
         <sys_id>3b37476edb0c44102443e7148a961937</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-25 23:43:52</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:13</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3b37476edb0c44102443e7148a961937"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5914,16 +5914,14 @@ The fields passed to the remote instance are the display names of the following 
         <sys_created_by>bobby.edmonds</sys_created_by>
         <sys_created_on>2019-09-25 19:53:47</sys_created_on>
         <sys_id>3b37476edb0c44102443e7148a96194d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>bobby.edmonds</sys_updated_by>
-        <sys_updated_on>2019-09-25 23:43:52</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-06 06:28:13</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var responseBody = JSON.parse(inputs.response);
   
-  var importState = responseBody.result.import_state +'';
-  var importError = responseBody.result.import_error +'';
-  var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
-  
+
+  var activity = '';
   if(inputs.status!=201 &amp;&amp; inputs.status!=200){
     outputs.state = 'Error';
    	//var errorMsg =  responseBody.error.message;
@@ -5931,7 +5929,9 @@ The fields passed to the remote instance are the display names of the following 
     //throw "Error creating. Message: "+errorMsg + " Details:"+errorDetail;
   } else {
     outputs.state = 'Complete';
-    
+    var importState = responseBody.result.import_state +'';
+    var importError = responseBody.result.import_error +'';
+    var activity = 'Import State: ' + importState + '\n Import Message: ' + importError;
   }
   
   outputs.activity = activity;
