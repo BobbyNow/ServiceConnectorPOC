@@ -5,7 +5,7 @@
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="x_snc_con_endpoint">
     <x_snc_con_endpoint action="INSERT_OR_UPDATE">
         <active>true</active>
-        <api_key>7ac02796db0044102443e7148a9619e2</api_key>
+        <api_key>c94993314a362312005cfc20c1aa15d2</api_key>
         <company display_value="MSP">c94993314a362312005cfc20c1aa15d2</company>
         <credential display_value="Connector - serviceprovider">41cc709cdb144c101bdb5a75dc961990</credential>
         <credential_alias display_value="x_snc_con.connector_serviceprovider">d5683916db8804102443e7148a96194f</credential_alias>
@@ -16,9 +16,9 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>!!!/!!&amp;/</sys_domain_path>
         <sys_id>8c9f27dadb8044101bdb5a75dc9619a7</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-04 14:59:01</sys_updated_on>
+        <sys_updated_on>2019-12-06 07:09:23</sys_updated_on>
     </x_snc_con_endpoint>
 </record_update>
 ]]></payload>
@@ -26,14 +26,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-04 14:38:43</sys_created_on>
         <sys_id>c36e9601dba10cd01bdb5a75dc961922</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>MSP</sys_name>
         <sys_package display_value="Connector" source="x_snc_con">1e9c2d2bdb6f3300bb528f423a9619b5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Connector">1e9c2d2bdb6f3300bb528f423a9619b5</sys_scope>
         <sys_update_name>sys_metadata_link_c36e9601dba10cd01bdb5a75dc961922</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-04 14:59:08</sys_updated_on>
+        <sys_updated_on>2019-12-06 07:09:31</sys_updated_on>
         <tablename>x_snc_con_endpoint</tablename>
     </sys_metadata_link>
 </record_update>
